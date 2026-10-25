@@ -967,6 +967,14 @@ a.lang-flag{text-decoration:none;display:inline-block}
 .ku-filter{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem 1rem;margin:.4rem 0 1.4rem;padding:.7rem 1rem;border-radius:.7rem;background:var(--paper);border:1px solid var(--line);font-size:.98rem}
 .ku-filter-all{font:inherit;font-size:.95rem;background:none;border:0;padding:0;color:var(--accent);text-decoration:underline;cursor:pointer}
 .kush-sug-main{padding-right:2.8rem}
+/* instructions: a very light tropical green box; steps are numbered in green circles (owner, 25 Oct) */
+:root{--how-bg:#e9f8f0;--how-line:#bfe7d2;--how-num:#159a68}
+.how-box,.wb-tip,.we-hint,.join-explain-hint,.hz-tip{background:var(--how-bg);border:1px solid var(--how-line);border-radius:.7rem;padding:.8rem 1rem;color:var(--ink)}
+ol.how-box{list-style:none;counter-reset:how;margin:.4rem 0 0;padding:.8rem 1rem;display:flex;flex-direction:column;gap:.55rem;font-size:.95rem;line-height:1.55;color:var(--ink)}
+ol.how-box>li{counter-increment:how;position:relative;padding-left:2.1rem;min-height:1.5rem}
+ol.how-box>li::before{content:counter(how);position:absolute;left:0;top:.05rem;width:1.45rem;height:1.45rem;border-radius:50%;background:var(--how-num);color:#fff;font-size:.8rem;font-weight:700;display:flex;align-items:center;justify-content:center}
+ol.how-box b{color:var(--ink)}
+@media (forced-colors:active){.how-box,.wb-tip,.we-hint,.join-explain-hint,.hz-tip{border-color:CanvasText}}
 /* ===== Miracles page (mrekullite.html) ===== */
 .mk-nav{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem}
 .mk-chip{font-size:.85rem;padding:.35rem .8rem;border:1px solid var(--line);border-radius:999px;background:var(--paper-lift);color:var(--ink);text-decoration:none}
