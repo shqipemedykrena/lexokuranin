@@ -984,6 +984,9 @@ ol.prep-need>li::before{content:counter(need);position:absolute;left:0;top:.08re
 /* "Gabime të zakonshme": the mistakes column on a very light tropical red (owner, 25 Oct) */
 .prep-table tbody td:first-child,.prep-table thead th.prep-th-pitfall{background:#ffe3df}
 .prep-table tbody td:first-child{border-bottom-color:#f3c3bc}
+/* ... and the "what to do instead" column on a very light tropical green (owner, 25 Oct) */
+.prep-table tbody td:nth-child(2),.prep-table thead th.prep-th-do{background:var(--how-bg)}
+.prep-table tbody td:nth-child(2){border-bottom-color:var(--how-line);color:var(--ink)}
 /* ===== Miracles page (mrekullite.html) ===== */
 .mk-nav{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem}
 .mk-chip{font-size:.85rem;padding:.35rem .8rem;border:1px solid var(--line);border-radius:999px;background:var(--paper-lift);color:var(--ink);text-decoration:none}
