@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="sq">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pse jemi këtu? · Lexo Kuranin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#241A1A">
+<link rel="apple-touch-icon" href="icon-192.png">
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="./">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1l2.4 5.2L20 4l-2.2 5.6L23 12l-5.2 2.4L20 20l-5.6-2.2L12 23l-2.4-5.2L4 20l2.2-5.6L1 12l5.2-2.4L4 4l5.6 2.2z" fill="none" stroke="#C8102E" stroke-width="1.3"/></svg>
+      Lexo Kuranin
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <div class="nav-dropdown" id="navLearnDropdown">
+        <button type="button" class="nav-dropdown-btn" aria-haspopup="true" aria-expanded="false">Mëso ▾</button>
+        <div class="nav-dropdown-menu" hidden>
+          <a href="meso.html#pergatitja">Para se të fillosh</a>
+          <a href="meso.html#fillo">Rruga hap pas hapi</a>
+          <a href="meso.html#alfabeti">1. Alfabeti arab</a>
+          <a href="meso.html#texhvid">2. Texhvidi</a>
+          <a href="meso.html#kurani">3. Lexo Kuranin</a>
+          <a href="hifz.html">4. Mbaj përmendësh</a>
+          <a href="namazi.html">5. Si falet namazi</a>
+        </div>
+      </div>
+      <a href="kurani.html">Kurani</a>
+      <a href="mrekullite.html">Mrekullitë</a>
+      <a href="zoti-yt.html">Zoti yt</a>
+      <a href="deshmi.html">Dëshmi</a>
+      <a href="kujt-lutesh.html">Kujt i lutesh?</a>
+      <a href="pyetje.html">Pyetje</a>
+    </nav>
+    <div class="lang-switch" id="langSwitch" role="group" aria-label="Zgjidh gjuhën">
+      <a class="lang-flag active" aria-current="true" data-lang="sq" href="pse-jemi-ketu.html" hreflang="sq" lang="sq" aria-label="Shqip" title="Shqip">🇦🇱</a>
+      <a class="lang-flag" data-lang="en" href="en/pse-jemi-ketu.html" hreflang="en" lang="en" aria-label="English" title="English">🇬🇧</a>
+      <a class="lang-flag" data-lang="nl" href="nl/pse-jemi-ketu.html" hreflang="nl" lang="nl" aria-label="Nederlands" title="Nederlands">🇳🇱</a>
+      <a class="lang-flag" data-lang="de" href="de/pse-jemi-ketu.html" hreflang="de" lang="de" aria-label="Deutsch" title="Deutsch">🇩🇪</a>
+    </div>
+    <a class="btn cta" href="meso.html#fillo">Fillo falas</a>
+    <button type="button" class="nav-menu-btn" id="navMenuBtn" aria-expanded="false" aria-controls="navLinks">☰ Menu</button>
+  </div>
+</header>
+<div class="lang-toast" id="langToast" role="status" aria-live="polite" hidden></div>
+
+<main>
+<section class="page-head">
+  <div class="wrap">
+    <h1>Pse jemi këtu?</h1>
+    <p class="lead">Pse na krijoi Allahu? Kjo faqe mbështetet te Kurani dhe te tefsiret e Ibn Kethirit dhe të es-Sa'dit. E kemi përmbledhur në katër hapa, me fjalë të thjeshta.</p>
+  </div>
+</section>
+
+<section class="pse" id="pse">
+  <div class="wrap pse-wrap">
+    <div class="pse-stage" id="pseStage">
+      <canvas id="pseCanvas" aria-hidden="true"></canvas>
+      <div class="pse-veil" id="pseVeil"></div>
+      <span class="pse-tag pse-yr" data-at="0" hidden>Lindja</span>
+      <span class="pse-tag pse-yr" data-at="20" hidden>20 vjet</span>
+      <span class="pse-tag pse-yr" data-at="40" hidden>40 vjet</span>
+      <span class="pse-tag pse-yr" data-at="60" hidden>60 vjet</span>
+      <span class="pse-tag pse-yr pse-yr-end" data-at="80" hidden>80 vjet</span>
+      <p class="pse-hint" id="pseHint">Tërhiqe për ta rrotulluar</p>
+    </div>
+
+    <div class="pse-steps">
+      <article class="pse-step" data-scene="0">
+        <p class="pse-num">Hapi 1</p>
+        <h2>Allahu nuk krijoi asgjë kot</h2>
+        <p>Një nga emrat e Allahut është El-Hakim, i Urti. Ai nuk krijon asgjë pa arsye. Gjithçka e krijon me urtësi dhe për një qëllim të madh.</p>
+        <figure class="story-quote">
+          <p class="story-ar" lang="ar" dir="rtl">وَمَا خَلَقْنَا ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ وَمَا بَيْنَهُمَا لَٰعِبِينَ</p>
+          <figcaption><span class="story-tr">„Ne nuk i kemi krijuar qiejt, Tokën dhe çfarë gjendet midis tyre, për t’u zbavitur“</span><span class="story-ref">Kurani 44:38</span></figcaption>
+        </figure>
+        <figure class="story-quote">
+          <p class="story-ar" lang="ar" dir="rtl">أَفَحَسِبْتُمْ أَنَّمَا خَلَقْنَٰكُمْ عَبَثًا وَأَنَّكُمْ إِلَيْنَا لَا تُرْجَعُونَ</p>
+          <figcaption><span class="story-tr">„Mos vallë, keni menduar që Ne ju kemi krijuar kot dhe që nuk do të ktheheshit te Ne (për t’ju gjykuar)?!“</span><span class="story-ref">Kurani 23:115</span></figcaption>
+        </figure>
+        <p class="pse-note">Es-Sa'di shpjegon: Allahu i krijoi qiejt dhe tokën me të vërtetën, që ne ta njohim diturinë dhe fuqinë e Tij, dhe ta dimë se vetëm Ai meriton të adhurohet.</p>
+      </article>
+
+      <article class="pse-step" data-scene="1">
+        <p class="pse-num">Hapi 2</p>
+        <h2>Nuk u krijove vetëm për të ngrënë e për të pirë</h2>
+        <p>Allahu nuk e krijoi njeriun vetëm që të hajë, të pijë dhe të shtohet. Atëherë ai do të ishte si kafshët. Allahu e nderoi njeriun mbi shumë krijesa të tjera. Por shumë njerëz kujdesen vetëm për kënaqësitë e kësaj bote, dhe e harrojnë pse u krijuan.</p>
+        <figure class="story-quote">
+          <p class="story-ar" lang="ar" dir="rtl">ذَرْهُمْ يَأْكُلُوا۟ وَيَتَمَتَّعُوا۟ وَيُلْهِهِمُ ٱلْأَمَلُ ۖ فَسَوْفَ يَعْلَمُونَ</p>
+          <figcaption><span class="story-tr">„Lëri ata që të hanë e të kënaqen dhe le t’i mashtrojë shpresa; ata do ta marrin vesh“</span><span class="story-ref">Kurani 15:3</span></figcaption>
+        </figure>
+        <p class="pse-note">Ai që e bën një gjë, e di më mirë se kushdo pse e bëri. Prandaj përgjigjen e kërkojmë te Allahu, Krijuesi ynë.</p>
+      </article>
+
+      <article class="pse-step" data-scene="2">
+        <p class="pse-num">Hapi 3</p>
+        <h2>U krijuam për t'u sprovuar</h2>
+        <p>Allahu na tregoi se i krijoi qiejt e tokën, jetën dhe vdekjen, për të na sprovuar: kush prej nesh vepron më mirë. Kush i bindet Atij, Ai e shpërblen. Kush nuk i bindet, Ai e dënon.</p>
+        <figure class="story-quote">
+          <p class="story-ar" lang="ar" dir="rtl">ٱلَّذِى خَلَقَ ٱلْمَوْتَ وَٱلْحَيَوٰةَ لِيَبْلُوَكُمْ أَيُّكُمْ أَحْسَنُ عَمَلًا ۚ وَهُوَ ٱلْعَزِيزُ ٱلْغَفُورُ</p>
+          <figcaption><span class="story-tr">„Ai i ka krijuar jetën dhe vdekjen, për t’ju provuar se kush prej jush do të veprojë më mirë; Ai është i Plotfuqishmi dhe Falësi i madh“</span><span class="story-ref">Kurani 67:2</span></figcaption>
+        </figure>
+        <p class="pse-note">Në këtë sprovë shihet edhe mëshira e Allahut: Ai fal dhe e pranon pendimin.</p>
+        <div class="pse-slider">
+          <label for="pseLife">Vendose dritën te mosha jote</label>
+          <input type="range" id="pseLife" min="0" max="80" step="1" value="35">
+          <p class="pse-age" aria-live="polite"><span>Ke jetuar</span> <b id="pseAge">35</b> <span>vjet.</span> <span>Nëse jeton sa mesatarja, të kanë mbetur rreth</span> <b id="pseLeft">45</b> <span>vjet.</span></p>
+          <p class="pse-fine">Në Bashkimin Evropian, njerëzit jetojnë mesatarisht rreth 80 vjet (Eurostat, 2024: 81,7 vjet). Sa do të jetojë secili prej nesh, e di vetëm Allahu.</p>
+        </div>
+      </article>
+
+      <article class="pse-step" data-scene="3">
+        <p class="pse-num">Hapi 4</p>
+        <h2>U krijuam për ta adhuruar vetëm Allahun</h2>
+        <p>Ky është qëllimi kryesor. Ibn Kethiri shpjegon: Allahu na krijoi që të na urdhërojë ta adhurojmë Atë, dhe Ai nuk ka nevojë për ne.</p>
+        <figure class="story-quote">
+          <p class="story-ar" lang="ar" dir="rtl">وَمَا خَلَقْتُ ٱلْجِنَّ وَٱلْإِنسَ إِلَّا لِيَعْبُدُونِ ﴿٥٦﴾ مَآ أُرِيدُ مِنْهُم مِّن رِّزْقٍۢ وَمَآ أُرِيدُ أَن يُطْعِمُونِ ﴿٥٧﴾</p>
+          <figcaption><span class="story-tr">„Xhindet dhe njerëzit i kam krijuar vetëm që të Më adhurojnë Unë nuk kërkoj prej tyre risk, as nuk dëshiroj që të Më ushqejnë“</span><span class="story-ref">Kurani 51:56-57</span></figcaption>
+        </figure>
+        <p class="pse-note">Es-Sa'di shton: Allahu na krijoi që ta adhurojmë dhe ta njohim. Kush i bindet, ka sukses. Kush refuzon, humbet.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="pse-end">
+  <div class="wrap">
+    <p class="pse-closing">Allahu e di më së miri.</p>
+    <h2>Burimet</h2>
+    <ul class="pse-sources">
+      <li>IslamQA, përgjigjja nr. 45529: <a href="https://islamqa.info/en/answers/45529" target="_blank" rel="noopener">Why Did Allah Create Us?</a></li>
+      <li>Tefsiri i Ibn Kethirit (4/239) dhe Tefsiri i es-Sa'dit (f. 333 dhe 712), siç citohen në atë përgjigje.</li>
+      <li>Kurani: përkthimi i Hasan Efendi Nahit (QuranEnc).</li>
+      <li>Jetëgjatësia mesatare: <a href="https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20250911-1" target="_blank" rel="noopener">Eurostat, 2024</a>.</li>
+    </ul>
+    <p class="pse-next"><a class="btn" href="kujt-lutesh.html">Kujt po i lutesh? →</a> <a class="btn btn-ghost" href="kurani.html">Lexo Kuranin →</a></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap fgrid">
+    <div>
+      <h4>Lexo Kuranin</h4>
+      <p style="margin:0">Faqe falas për të mësuar leximin dhe kuptimin e Kuranit në gjuhën shqipe.</p>
+    </div>
+    <div>
+      <h4>Mëso</h4>
+      <ul>
+        <li><a href="meso.html#alfabeti">Alfabeti arab</a></li>
+        <li><a href="meso.html#texhvid">Texhvidi</a></li>
+        <li><a href="meso.html#kurani">Suret e shkurtra</a></li>
+        <li><a href="kurani.html">Kurani dhe progresi</a></li>
+        <li><a href="mrekullite.html">Mrekullitë e Kuranit</a></li>
+        <li><a href="zoti-yt.html">Kush është Zoti yt?</a></li>
+        <li><a href="fjalorth.html">Fjalorth</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Faqja</h4>
+      <ul>
+        <li><a href="pyetje.html">Pyetje të shpeshta</a></li>
+        <li><a href="rreth-nesh.html">Rreth nesh</a></li>
+        <li><a href="#">Kontakt</a></li>
+        <li><a href="privatesia.html">Privatësia</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap copy">© 2026 Lexo Kuranin. Materiali mund të përdoret lirisht për mësim.</div>
+</footer>
+
+<script src="site.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="cine-auto.js" data-stage="#pseStage"></script>
+<script src="pse-figures.js"></script>
+<script>
+(function () {
+  var root = document.getElementById('pse');
+  var stage = document.getElementById('pseStage');
+  var canvas = document.getElementById('pseCanvas');
+  if (!root || !stage || !canvas) return;
+  var steps = Array.prototype.slice.call(root.querySelectorAll('.pse-step'));
+  function noGL() { document.documentElement.classList.add('pse-no3d'); }
+  if (!window.THREE) { noGL(); return; }
+  var T = window.THREE;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  var renderer;
+  try {
+    renderer = new T.WebGLRenderer({ canvas: canvas, antialias: true, alpha: true });
+  } catch (e) { noGL(); return; }
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+  renderer.setClearColor(0x000000, 0);
+
+  var scene = new T.Scene();
+  var camera = new T.PerspectiveCamera(40, 1, 0.05, 2000);
+  var GOLD = 0xd9b45a, CREAM = 0xeadfcf;
+
+  // ---------- shared: stars + light ----------
+  (function stars() {
+    var n = 1600, pos = new Float32Array(n * 3);
+    for (var i = 0; i < n; i++) {
+      var u = Math.random() * 2 - 1, t = Math.random() * Math.PI * 2, r = 300 + Math.random() * 200;
+      var s = Math.sqrt(1 - u * u);
+      pos[i * 3] = r * s * Math.cos(t); pos[i * 3 + 1] = r * u; pos[i * 3 + 2] = r * s * Math.sin(t);
+    }
+    var g = new T.BufferGeometry(); g.setAttribute('position', new T.BufferAttribute(pos, 3));
+    scene.add(new T.Points(g, new T.PointsMaterial({ color: 0xffffff, size: 1.6, sizeAttenuation: false, transparent: true, opacity: 0.75 })));
+  })();
+  var ambient = new T.AmbientLight(0x6f7fa8, 0.35); scene.add(ambient);
+  var sun = new T.DirectionalLight(0xfff1dc, 1.25); sun.position.set(-6, 2.5, 4); scene.add(sun);
+  var fill = new T.DirectionalLight(0xffe9c8, 0); fill.position.set(5, 3.5, 4); scene.add(fill);
+
+  function glowTexture(inner, outer) {
+    var c = document.createElement('canvas'); c.width = c.height = 128;
+    var x = c.getContext('2d'), g = x.createRadialGradient(64, 64, 0, 64, 64, 64);
+    g.addColorStop(0, inner); g.addColorStop(0.35, outer); g.addColorStop(1, 'rgba(0,0,0,0)');
+    x.fillStyle = g; x.fillRect(0, 0, 128, 128);
+    return new T.CanvasTexture(c);
+  }
+  function glow(size, inner, outer) {
+    var m = new T.Sprite(new T.SpriteMaterial({ map: glowTexture(inner, outer), transparent: true, depthWrite: false, blending: T.AdditiveBlending }));
+    m.scale.set(size, size, 1); return m;
+  }
+
+  // ---------- scene 0: the heavens, the earth and what is between them ----------
+  var S0 = new T.Group(); scene.add(S0);
+  var earthTilt = new T.Group(); earthTilt.rotation.z = 0.41; S0.add(earthTilt);
+  var earth = new T.Mesh(new T.SphereGeometry(1.25, 64, 48), new T.MeshStandardMaterial({ map: earthTexture(), roughness: 0.9, metalness: 0 }));
+  earthTilt.add(earth);
+  var atmo = new T.Mesh(new T.SphereGeometry(1.32, 48, 32), new T.ShaderMaterial({
+    transparent: true, depthWrite: false, side: T.BackSide, blending: T.AdditiveBlending,
+    vertexShader: 'varying vec3 vN; void main(){ vN = normalize(normalMatrix * normal); gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0); }',
+    fragmentShader: 'varying vec3 vN; void main(){ float i = pow(0.75 - dot(vN, vec3(0.0,0.0,1.0)), 3.0); gl_FragColor = vec4(0.45,0.65,1.0,1.0) * i; }'
+  }));
+  S0.add(atmo);
+  var moonOrbit = new T.Group(); moonOrbit.rotation.x = 0.12; S0.add(moonOrbit);
+  var moon = new T.Mesh(new T.SphereGeometry(0.2, 32, 24), new T.MeshStandardMaterial({ color: 0xcfcac2, roughness: 1 }));
+  moon.position.set(3.1, 0, 0); moonOrbit.add(moon);
+  var sunGlow = glow(9, 'rgba(255,244,214,1)', 'rgba(255,196,110,.35)'); sunGlow.position.set(-14, 5.5, -12); S0.add(sunGlow);
+
+  function earthTexture() {
+    var W = 512, H = 256, c = document.createElement('canvas'); c.width = W; c.height = H;
+    var x = c.getContext('2d'), img = x.createImageData(W, H), d = img.data;
+    var P = []; for (var i = 0; i < 512; i++) P[i] = Math.random();
+    function h(ix, iy, iz) { return P[(ix * 73 + iy * 151 + iz * 283) & 511]; }
+    function lerp(a, b, t) { return a + (b - a) * t; }
+    function sm(t) { return t * t * (3 - 2 * t); }
+    function noise(px, py, pz) {
+      var ix = Math.floor(px), iy = Math.floor(py), iz = Math.floor(pz), fx = sm(px - ix), fy = sm(py - iy), fz = sm(pz - iz);
+      return lerp(lerp(lerp(h(ix, iy, iz), h(ix + 1, iy, iz), fx), lerp(h(ix, iy + 1, iz), h(ix + 1, iy + 1, iz), fx), fy),
+        lerp(lerp(h(ix, iy, iz + 1), h(ix + 1, iy, iz + 1), fx), lerp(h(ix, iy + 1, iz + 1), h(ix + 1, iy + 1, iz + 1), fx), fy), fz);
+    }
+    for (var y = 0; y < H; y++) {
+      var lat = (y / H - 0.5) * Math.PI;
+      for (var xx = 0; xx < W; xx++) {
+        var lon = (xx / W) * Math.PI * 2;
+        var px = Math.cos(lat) * Math.cos(lon), py = Math.sin(lat), pz = Math.cos(lat) * Math.sin(lon);
+        var n = 0, a = 1, f = 1.6, sum = 0;
+        for (var o = 0; o < 5; o++) { n += a * noise(px * f + 11, py * f + 7, pz * f + 3); sum += a; a *= 0.5; f *= 2; }
+        n /= sum;
+        var k = (y * W + xx) * 4, r, g, b, polar = Math.abs(py);
+        if (polar > 0.9) { r = 236; g = 240; b = 244; }
+        else if (n > 0.53) { var m = Math.min(1, (n - 0.53) * 6); r = lerp(84, 146, m); g = lerp(118, 128, m); b = lerp(72, 88, m); }
+        else { var dpt = Math.min(1, (0.53 - n) * 5); r = lerp(38, 14, dpt); g = lerp(92, 44, dpt); b = lerp(140, 92, dpt); }
+        d[k] = r; d[k + 1] = g; d[k + 2] = b; d[k + 3] = 255;
+      }
+    }
+    x.putImageData(img, 0, 0);
+    return new T.CanvasTexture(c);
+  }
+
+  // ---------- figure (built from joint positions) ----------
+  var skin = new T.MeshStandardMaterial({ color: CREAM, roughness: 0.65, metalness: 0, emissive: 0x2a2012, emissiveIntensity: 0.35 });
+  var UP = new T.Vector3(0, 1, 0);
+  function seg(group, a, b, r1, r2) {
+    var A = new T.Vector3(a[0], a[1], a[2]), B = new T.Vector3(b[0], b[1], b[2]);
+    var dir = B.clone().sub(A), len = dir.length();
+    var m = new T.Mesh(new T.CylinderGeometry(r2 === undefined ? r1 : r2, r1, len, 18), skin);
+    m.position.copy(A).add(B).multiplyScalar(0.5);
+    m.quaternion.setFromUnitVectors(UP, dir.normalize());
+    group.add(m);
+  }
+  function ball(group, p, r) {
+    var m = new T.Mesh(new T.SphereGeometry(r, 20, 14), skin); m.position.set(p[0], p[1], p[2]); group.add(m);
+  }
+  function figure(J) {
+    var g = new T.Group();
+    seg(g, J.pelvis, J.neck, 0.115, 0.14);
+    seg(g, J.shoulderL, J.shoulderR, 0.065);
+    seg(g, J.hipjL, J.hipjR, 0.09);
+    ['L', 'R'].forEach(function (s) {
+      seg(g, J['shoulder' + s], J['elbow' + s], 0.055, 0.048); seg(g, J['elbow' + s], J['wrist' + s], 0.046, 0.038); seg(g, J['wrist' + s], J['hand' + s], 0.038, 0.03);
+      seg(g, J['hipj' + s], J['knee' + s], 0.085, 0.065); seg(g, J['knee' + s], J['ankle' + s], 0.06, 0.045); seg(g, J['ankle' + s], J['toe' + s], 0.045, 0.035);
+      ['shoulder', 'elbow', 'wrist', 'hipj', 'knee', 'ankle'].forEach(function (k) { ball(g, J[k + s], k === 'hipj' ? 0.09 : k === 'knee' ? 0.066 : k === 'shoulder' ? 0.068 : 0.05); });
+    });
+    seg(g, J.neck, J.head, 0.05);
+    ball(g, J.head, 0.11);
+    return g;
+  }
+  // standing, facing +x
+  var STAND = {
+    head: [0, 1.62, 0], neck: [0, 1.46, 0], pelvis: [0, 0.96, 0],
+    shoulderL: [0, 1.42, 0.19], shoulderR: [0, 1.42, -0.19], elbowL: [0, 1.13, 0.22], elbowR: [0, 1.13, -0.22],
+    wristL: [0.03, 0.87, 0.21], wristR: [0.03, 0.87, -0.21], handL: [0.04, 0.79, 0.21], handR: [0.04, 0.79, -0.21],
+    hipjL: [0, 0.95, 0.1], hipjR: [0, 0.95, -0.1], kneeL: [0.01, 0.5, 0.1], kneeR: [0.01, 0.5, -0.1],
+    ankleL: [0, 0.08, 0.1], ankleR: [0, 0.08, -0.1], toeL: [0.17, 0.03, 0.1], toeR: [0.17, 0.03, -0.1]
+  };
+  // sujud, facing +x: forehead, hands, knees and toes on the ground, elbows raised and away from the sides
+  var SUJUD = {
+    head: [0.5, 0.12, 0], neck: [0.38, 0.29, 0], pelvis: [-0.08, 0.52, 0],
+    shoulderL: [0.35, 0.3, 0.19], shoulderR: [0.35, 0.3, -0.19], elbowL: [0.22, 0.15, 0.34], elbowR: [0.22, 0.15, -0.34],
+    wristL: [0.46, 0.03, 0.21], wristR: [0.46, 0.03, -0.21], handL: [0.58, 0.02, 0.2], handR: [0.58, 0.02, -0.2],
+    hipjL: [-0.08, 0.5, 0.1], hipjR: [-0.08, 0.5, -0.1], kneeL: [0.02, 0.065, 0.11], kneeR: [0.02, 0.065, -0.11],
+    ankleL: [-0.43, 0.15, 0.09], ankleR: [-0.43, 0.15, -0.09], toeL: [-0.46, 0.015, 0.09], toeR: [-0.46, 0.015, -0.09]
+  };
+
+  // ---------- MakeHuman figures (pse-figures.js), with the simple doll as a fallback ----------
+  function mhFigure(kind) {
+    var F = window.PSE_FIG; if (!F || !F[kind]) return null;
+    function buf(b64) { var bin = atob(b64), u = new Uint8Array(bin.length); for (var i = 0; i < bin.length; i++) u[i] = bin.charCodeAt(i); return u.buffer; }
+    if (!F._idx) F._idx = new Uint16Array(buf(F.idx));
+    var d = F[kind], q = new Uint16Array(buf(d.p)), pos = new Float32Array(q.length);
+    for (var k = 0; k < q.length; k++) { var a = k % 3; pos[k] = d.lo[a] + q[k] / 65535 * (d.hi[a] - d.lo[a]); }
+    var g = new T.BufferGeometry();
+    g.setAttribute('position', new T.BufferAttribute(pos, 3)); g.setIndex(new T.BufferAttribute(F._idx, 1));
+    var COL = { skin: 0xc69c7d, shirt: 0xd8cdb8, trousers: 0x6b5d4f, hair: 0x342822 };
+    var mats = F.groups.map(function (gr, k) {
+      g.addGroup(gr[1], gr[2], k);
+      return new T.MeshStandardMaterial({ color: COL[gr[0]] || 0xcccccc, roughness: gr[0] === 'skin' ? 0.62 : 0.9, metalness: 0, side: gr[0] === 'hair' ? T.DoubleSide : T.FrontSide });
+    });
+    g.computeVertexNormals(); g.computeBoundingBox();
+    var bb = g.boundingBox; g.translate(-(bb.min.x + bb.max.x) / 2, -bb.min.y, -(bb.min.z + bb.max.z) / 2);
+    return new T.Mesh(g, mats);
+  }
+
+  // ---------- scene 1: the human being ----------
+  var S1 = new T.Group(); scene.add(S1);
+  var ground1 = new T.Mesh(new T.CircleGeometry(1.4, 64), new T.MeshStandardMaterial({ color: 0x141b33, roughness: 1 }));
+  ground1.rotation.x = -Math.PI / 2; S1.add(ground1);
+  var rim1 = new T.Mesh(new T.RingGeometry(1.38, 1.42, 96), new T.MeshBasicMaterial({ color: GOLD, side: T.DoubleSide }));
+  rim1.rotation.x = -Math.PI / 2; rim1.position.y = 0.002; S1.add(rim1);
+  var person = mhFigure('stand') || figure(STAND); S1.add(person);
+
+  // ---------- scene 2: the path of life ----------
+  var S2 = new T.Group(); scene.add(S2);
+  var curve = new T.CatmullRomCurve3([
+    new T.Vector3(0.1, -1.7, 0.9), new T.Vector3(-0.8, -1.0, 0.5), new T.Vector3(0.7, -0.3, 0.0),
+    new T.Vector3(-0.7, 0.4, -0.5), new T.Vector3(0.6, 1.1, -1.0), new T.Vector3(0, 1.75, -1.4)
+  ]);
+  var pathMat = new T.ShaderMaterial({
+    uniforms: { p: { value: 0.35 } }, transparent: true,
+    vertexShader: 'varying vec2 vUv; void main(){ vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0); }',
+    fragmentShader: 'uniform float p; varying vec2 vUv; void main(){ float lit = 1.0 - smoothstep(p - 0.004, p + 0.004, vUv.x); vec3 dim = vec3(0.32,0.36,0.5); vec3 gold = vec3(0.95,0.8,0.42); gl_FragColor = vec4(mix(dim, gold, lit), mix(0.55, 1.0, lit)); }'
+  });
+  S2.add(new T.Mesh(new T.TubeGeometry(curve, 240, 0.035, 10, false), pathMat));
+  var startDot = new T.Mesh(new T.SphereGeometry(0.045, 16, 12), new T.MeshBasicMaterial({ color: 0xffffff }));
+  startDot.position.copy(curve.getPointAt(0)); S2.add(startDot);
+  var endDot = new T.Mesh(new T.SphereGeometry(0.07, 16, 12), new T.MeshBasicMaterial({ color: 0x8a90a8 }));
+  endDot.position.copy(curve.getPointAt(1)); S2.add(endDot);
+  for (var yy = 10; yy < 80; yy += 10) {
+    var tick = new T.Mesh(new T.SphereGeometry(yy % 20 ? 0.03 : 0.05, 12, 8), new T.MeshBasicMaterial({ color: 0xc9cde0 }));
+    tick.position.copy(curve.getPointAt(yy / 80)); S2.add(tick);
+  }
+  var orb = new T.Group(); S2.add(orb);
+  orb.add(new T.Mesh(new T.SphereGeometry(0.09, 20, 14), new T.MeshBasicMaterial({ color: 0xfff3cf })));
+  orb.add(glow(1.1, 'rgba(255,240,200,1)', 'rgba(217,180,90,.45)'));
+  var life = document.getElementById('pseLife');
+  function setLife() {
+    var yrs = life ? Math.max(0, Math.min(80, +life.value)) : 35, p = yrs / 80;
+    var a = document.getElementById('pseAge'), l = document.getElementById('pseLeft');
+    if (a) a.textContent = yrs; if (l) l.textContent = 80 - yrs;
+    pathMat.uniforms.p.value = p; orb.position.copy(curve.getPointAt(p)); requestRender();
+  }
+
+  // ---------- scene 3: sujud ----------
+  var S3 = new T.Group(); scene.add(S3);
+  var rug = new T.Mesh(new T.BoxGeometry(1.45, 0.012, 0.78), new T.MeshStandardMaterial({ color: 0x7e1420, roughness: 0.95 }));
+  rug.position.set(0.07, 0.006, 0); S3.add(rug);
+  var rugEdge = new T.LineSegments(new T.EdgesGeometry(new T.PlaneGeometry(1.33, 0.66)), new T.LineBasicMaterial({ color: GOLD }));
+  rugEdge.rotation.x = -Math.PI / 2; rugEdge.position.set(0.07, 0.014, 0); S3.add(rugEdge);
+  var floor3 = new T.Mesh(new T.CircleGeometry(2.4, 64), new T.MeshStandardMaterial({ color: 0x10162b, roughness: 1 }));
+  floor3.rotation.x = -Math.PI / 2; floor3.position.y = -0.001; S3.add(floor3);
+  var rings = [];
+  for (var ri = 0; ri < 3; ri++) {
+    var ring = new T.Mesh(new T.RingGeometry(1, 1.015, 128), new T.MeshBasicMaterial({ color: GOLD, transparent: true, opacity: 0.3, side: T.DoubleSide, depthWrite: false }));
+    ring.rotation.x = -Math.PI / 2; ring.position.y = 0.003; ring.userData.phase = ri / 3; S3.add(ring); rings.push(ring);
+  }
+  var prostrate = mhFigure('sujud'); if (prostrate) { prostrate.position.set(0.07, 0.012, 0); S3.add(prostrate); } else S3.add(figure(SUJUD));
+
+  // ---------- cameras per scene ----------
+  var GROUPS = [S0, S1, S2, S3];
+  var VIEWS = [
+    { pos: [0, 0.5, 5.6], at: [0, 0, 0], drag: S0 },
+    { pos: [2.6, 1.55, 3.3], at: [0, 0.92, 0], drag: S1 },
+    { pos: [0, 0.2, 5.6], at: [0, 0.02, -0.3], drag: S2 },
+    { pos: [0.25, 1.05, 2.75], at: [0.06, 0.26, 0], drag: S3 }
+  ];
+  var yearTags = Array.prototype.slice.call(stage.querySelectorAll('.pse-yr'));
+  var hint = document.getElementById('pseHint'), veil = document.getElementById('pseVeil');
+  var current = -1;
+  function show(i) {
+    GROUPS.forEach(function (g, k) { g.visible = k === i; });
+    fill.intensity = (i === 1 || i === 3) ? 0.75 : 0;
+    var v = VIEWS[i], wide = camera.aspect > 1 && i === 2;
+    camera.position.set(v.pos[0], v.pos[1], wide ? 6.6 : v.pos[2]); camera.lookAt(v.at[0], v.at[1], v.at[2]);
+    yearTags.forEach(function (t) { t.hidden = i !== 2; });
+    if (hint) hint.hidden = i === 2;
+    requestRender();
+  }
+  function go(i) {
+    if (i === current) return;
+    var first = current < 0; current = i;
+    if (first || reduce) { show(i); return; }
+    veil.classList.add('on');
+    setTimeout(function () { show(current); veil.classList.remove('on'); }, 360);
+  }
+
+  // ---------- drag to turn ----------
+  var dragging = false, lastX = 0, lastY = 0;
+  canvas.addEventListener('pointerdown', function (e) { dragging = true; lastX = e.clientX; lastY = e.clientY; if (hint) hint.style.opacity = '0'; });
+  window.addEventListener('pointerup', function () { dragging = false; });
+  canvas.addEventListener('pointermove', function (e) {
+    if (!dragging || current < 0) return;
+    var g = VIEWS[current].drag, dx = e.clientX - lastX, dy = e.clientY - lastY;
+    lastX = e.clientX; lastY = e.clientY;
+    g.rotation.y += dx * 0.008;
+    if (current === 0) g.rotation.x = Math.max(-0.5, Math.min(0.5, g.rotation.x + dy * 0.004));
+    requestRender();
+  });
+  if (life) life.addEventListener('input', setLife);
+
+  // ---------- which step is on screen ----------
+  function pick() {
+    var mid = window.innerHeight * (window.innerWidth >= 860 ? 0.5 : 0.72), best = 0, bestD = Infinity;
+    steps.forEach(function (s, k) {
+      var r = s.getBoundingClientRect();
+      var d = r.top > mid ? r.top - mid : r.bottom < mid ? mid - r.bottom : 0;
+      if (d < bestD) { bestD = d; best = k; }
+    });
+    go(+steps[best].getAttribute('data-scene'));
+  }
+  window.addEventListener('scroll', pick, { passive: true });
+
+  // ---------- size + render loop ----------
+  function resize() {
+    var w = stage.clientWidth, h = stage.clientHeight;
+    if (!w || !h) return;
+    renderer.setSize(w, h, false); camera.aspect = w / h;
+    camera.fov = w / h < 1 ? 52 : 40; camera.updateProjectionMatrix(); if (current >= 0) show(current); requestRender();
+  }
+  window.addEventListener('resize', resize);
+  var visible = true, pending = false, t0 = performance.now();
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (es) { visible = es[0].isIntersecting; if (visible) requestRender(); }).observe(stage);
+  }
+  function requestRender() { if (!pending) { pending = true; requestAnimationFrame(frame); } }
+  var proj = new T.Vector3();
+  function place(tag, p) {
+    camera.updateMatrixWorld(); proj.copy(p).applyMatrix4(S2.matrixWorld).project(camera);
+    tag.style.left = ((proj.x + 1) / 2 * 100) + '%'; tag.style.top = ((1 - proj.y) / 2 * 100) + '%';
+  }
+  function frame(now) {
+    pending = false;
+    var t = (now - t0) / 1000;
+    if (!reduce) {
+      if (current === 0) { earth.rotation.y = t * 0.12; moonOrbit.rotation.y = t * 0.05; }
+      if (current === 3) rings.forEach(function (r) { var k = (t * 0.09 + r.userData.phase) % 1; r.scale.setScalar(0.5 + k * 1.6); r.material.opacity = 0.35 * (1 - k); });
+    }
+    if (current === 2) { S2.updateMatrixWorld(); yearTags.forEach(function (t) { place(t, curve.getPointAt(+t.getAttribute('data-at') / 80)); }); }
+    renderer.render(scene, camera);
+    if (!reduce && visible && !document.hidden && (current === 0 || current === 3)) requestRender();
+  }
+  document.addEventListener('visibilitychange', function () { if (!document.hidden) requestRender(); });
+
+  setLife(); resize(); pick(); if (current < 0) go(0);
+})();
+
+</script>
+
+<script src="offline.js"></script>
+</body>
+</html>

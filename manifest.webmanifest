@@ -1,0 +1,25 @@
+{
+ "name": "Lexo Kuranin",
+ "short_name": "Lexo Kuranin",
+ "description": "Mëso të lexosh dhe të kuptosh Kuranin. Learn to read and understand the Quran.",
+ "start_url": "./index.html",
+ "scope": "./",
+ "display": "standalone",
+ "background_color": "#FBF2F0",
+ "theme_color": "#241A1A",
+ "lang": "sq",
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any maskable"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any maskable"
+  }
+ ]
+}

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="sq">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fjalorth · Lexo Kuranin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#241A1A">
+<link rel="apple-touch-icon" href="icon-192.png">
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="./">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1l2.4 5.2L20 4l-2.2 5.6L23 12l-5.2 2.4L20 20l-5.6-2.2L12 23l-2.4-5.2L4 20l2.2-5.6L1 12l5.2-2.4L4 4l5.6 2.2z" fill="none" stroke="#C8102E" stroke-width="1.3"/></svg>
+      Lexo Kuranin
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <div class="nav-dropdown" id="navLearnDropdown">
+        <button type="button" class="nav-dropdown-btn" aria-haspopup="true" aria-expanded="false">Mëso ▾</button>
+        <div class="nav-dropdown-menu" hidden>
+          <a href="meso.html#pergatitja">Para se të fillosh</a>
+          <a href="meso.html#fillo">Rruga hap pas hapi</a>
+          <a href="meso.html#alfabeti">1. Alfabeti arab</a>
+          <a href="meso.html#texhvid">2. Texhvidi</a>
+          <a href="meso.html#kurani">3. Lexo Kuranin</a>
+          <a href="hifz.html">4. Mbaj përmendësh</a>
+          <a href="namazi.html">5. Si falet namazi</a>
+        </div>
+      </div>
+      <a href="kurani.html">Kurani</a>
+      <a href="mrekullite.html">Mrekullitë</a>
+      <a href="zoti-yt.html">Zoti yt</a>
+      <a href="deshmi.html">Dëshmi</a>
+      <a href="kujt-lutesh.html">Kujt i lutesh?</a>
+      <a href="pyetje.html">Pyetje</a>
+    </nav>
+    <div class="lang-switch" id="langSwitch" role="group" aria-label="Zgjidh gjuhën">
+      <a class="lang-flag active" aria-current="true" data-lang="sq" href="fjalorth.html" hreflang="sq" lang="sq" aria-label="Shqip" title="Shqip">🇦🇱</a>
+      <a class="lang-flag" data-lang="en" href="en/fjalorth.html" hreflang="en" lang="en" aria-label="English" title="English">🇬🇧</a>
+      <a class="lang-flag" data-lang="nl" href="nl/fjalorth.html" hreflang="nl" lang="nl" aria-label="Nederlands" title="Nederlands">🇳🇱</a>
+      <a class="lang-flag" data-lang="de" href="de/fjalorth.html" hreflang="de" lang="de" aria-label="Deutsch" title="Deutsch">🇩🇪</a>
+    </div>
+    <a class="btn cta" href="meso.html#fillo">Fillo falas</a>
+    <button type="button" class="nav-menu-btn" id="navMenuBtn" aria-expanded="false" aria-controls="navLinks">☰ Menu</button>
+  </div>
+</header>
+<div class="lang-toast" id="langToast" role="status" aria-live="polite" hidden></div>
+
+<main>
+<section class="page-head"><div class="wrap"><h1>Fjalorth</h1><p class="lead">Fjalët islame që përdoren në këtë faqe, me kuptimin e tyre.</p></div></section>
+<section class="gl"><div class="wrap">
+  <div class="zn-tools"><label for="glFind">Kërko një fjalë</label><input type="search" id="glFind" autocomplete="off"></div>
+  <dl class="gl-list" id="glList">
+    <div class="gl-item" data-k="abdesi (wudu) wudu (ablution)"><dt>Abdesi (wudu)</dt><dd><p>Shtyllat e abdesit, pa të cilat ai nuk është i vlefshëm, janë larja e fytyrës (bashkë me gojën dhe hundën), larja e duarve deri në bërryla, mes&#x27;hi i kokës dhe larja e këmbëve deri te nyjet. Ato bëhen me radhë dhe pa ndërprerje të gjatë.</p><p class="gl-src">Burimi: <a href="https://islamqa.info/en/answers/226422" target="_blank" rel="noopener">IslamQA 226422</a>: What Are the Pillars of Wudu?</p></dd></div>
+    <div class="gl-item" data-k="allahu allah"><dt>Allahu</dt><dd><p>Allahu është Ai që adhurohet. Ai ka të gjitha cilësitë e hyjnisë dhe të gjitha krijesat e Tij janë robër të Tij.</p><p class="gl-src">Burimi: <a href="https://islamqa.info/en/answers/2594" target="_blank" rel="noopener">IslamQA 2594</a>: Some of the Names of Allah and their meanings</p></dd></div>
+    <div class="gl-item" data-k="besmeleja basmalah (bismillah)"><dt>Besmeleja</dt><dd><p>Të thuash &#x27;Bismilah&#x27; kur fillon diçka do të thotë: e filloj këtë punë me emrin e Allahut, duke kërkuar ndihmë dhe bereqet përmes emrit të Tij.</p><p class="gl-src">Burimi: <a href="https://islamqa.info/en/answers/21722" target="_blank" rel="noopener">IslamQA 21722</a>: What Is the Meaning of the Basmalah?</p></dd></div>
+    <div class="gl-item" data-k="dhikri (përmendja e allahut) dhikr (remembrance of allah)"><dt>Dhikri (përmendja e Allahut)</dt><dd><p>Dhikri (shumës: edhkar) është përmendja e Allahut. Ai është i pëlqyer dhe i kërkuar nga të gjithë, dhe një pjesë e tij është detyrë, si disa prej dhikreve të namazit.</p><p class="gl-src">Burimi: <a href="https://islamqa.info/en/answers/253005" target="_blank" rel="noopener">IslamQA 253005</a>: Virtues of Dhikr</p></dd></div>
+    <div class="gl-item" data-k="duaja du&#x27;a (supplication)"><dt>Duaja</dt><dd><p>Duaja ka dy kuptime. Duaja e kërkesës është kërkimi i asaj që sjell dobi ose i largimit të asaj që dëmton, ndërsa duaja e adhurimit është adhurimi i Allahut me çdo lloj adhurimi.</p><p class="gl-src">Burimi: <a href="https://islamqa.info/en/answers/113177" target="_blank" rel="noopener">IslamQA 113177</a>: The difference between du&#x27;aa&#x27; for asking and du`a for worship</p></dd></div>
+    <div class="gl-item" data-k="hadithi hadith (narration)"><dt>Hadithi</dt><dd><p>Hadithi është çdo ngjarje që i atribuohet Profetit ﷺ, edhe nëse e ka bërë vetëm një herë në jetë dhe edhe nëse e ka transmetuar prej tij vetëm një person.</p><p class="gl-src">Burimi: <a href="https://islamqa.info/en/answers/145520" target="_blank" rel="noopener">IslamQA 145520</a>: Difference between Hadith and Sunnah</p></dd></div>
+    <div class="gl-item" data-k="hatmeja khatm (completing the quran)"><dt>Hatmeja</dt><dd><p>Hatmeja është përfundimi i leximit të të gjithë Kuranit, ndaj përsëritja e vetëm një pjese nuk është hatme e vërtetë. Brezat e hershëm e përfundonin të gjithë Kuranin, pastaj ktheheshin në fillim dhe e nisnin përsëri.</p><p class="gl-src">Burimi: <a href="https://islamqa.info/en/answers/483142" target="_blank" rel="noopener">IslamQA 483142</a>: Can repeating a certain portion of the Quran for a time equivalent to completing the entire Quran be regarded as a khatm?</p></dd></div>
+    <div class="gl-item" data-k="haxhi hajj (pilgrimage)"><dt>Haxhi</dt><dd><p>Haxhi do të thotë udhëtimi për të vizituar Qaben, Shtëpinë e shenjtë të Allahut, për të kryer ritet (menasikun), pra veprat dhe fjalët e transmetuara nga Profeti ﷺ.</p><p class="gl-src">Burimi: <a href="https://islamqa.info/en/answers/2804" target="_blank" rel="noopener">IslamQA 2804</a>: What Is Hajj?</p></dd></div>
+    <div class="gl-item" data-k="hixhreti hijrah (emigration)"><dt>Hixhreti</dt><dd><p>Hixhreti (shpërngulja) për hir të Allahut do të thotë të shpërngulesh nga vendi i shirkut në vendin e Islamit.</p><p class="gl-src">Burimi: <a href="https://islamqa.info/en/answers/7191" target="_blank" rel="noopener">IslamQA 7191</a>: What Is Hijrah?</p></dd></div>
+    <div class="gl-item" data-k="ikre (lexo) iqra&#x27; (read)"><dt>Ikre (Lexo)</dt><dd><p>Shpallja e parë që iu zbrit Profetit Muhammed ﷺ ndodhi në shpellën Hira, kur erdhi meleku dhe tha: &#x27;Lexo!&#x27;</p><p class="gl-src">Burimi: <a href="https://islamqa.info/en/answers/13488" target="_blank" rel="noopener">IslamQA 13488</a>: What Was the First Revelation to Prophet Muhammad?</p></dd></div>
+    <div class="gl-item" data-k="imani (besimi) iman (faith)"><dt>Imani (besimi)</dt><dd><p>Ehli Sunneti janë të një mendimi se imani është fjalë dhe vepër. Ai është pohim me gjuhë, besim me zemër dhe veprim me gjymtyrë.</p><p class="gl-src">Burimi: <a href="https://islamqa.info/en/answers/358160" target="_blank" rel="noopener">IslamQA 358160</a>: Is Faith Just Verbal?</p></dd></div>
+    <div class="gl-item" data-k="islami islam (submission)"><dt>Islami</dt><dd><p>Fjala Islam do të thotë nënshtrim dhe përulje. Ajo është bërë emri i fesë që solli Profeti Muhammed ﷺ.</p><p class="gl-src">Burimi: <a href="https://islamqa.info/en/answers/10446" target="_blank" rel="noopener">IslamQA 10446</a>: What Is Islam?</p></dd></div>
+    <div class="gl-item" data-k="kurani quran"><dt>Kurani</dt><dd><p>Kurani është fjala e Zotit të botëve, të cilin Allahu ia shpalli të Dërguarit të Tij, Profetit Muhammed ﷺ, për t&#x27;i nxjerrë njerëzit nga errësira në dritë. Ai është Libri i Allahut për të gjithë njerëzimin.</p><p class="gl-src">Burimi: <a href="https://islamqa.info/en/answers/10197" target="_blank" rel="noopener">IslamQA 10197</a>: The Holy Quran</p></dd></div>
+    <div class="gl-item" data-k="namazi (salah) salah (prayer)"><dt>Namazi (salah)</dt><dd><p>Allahu i ka bërë detyrë çdo muslimani të rritur e me mend pesë namaze në ditë e natë, të falura me pastërti e përulësi, në këmbë para Zotit të tij. Namazi është kthim i sinqertë vetëm te Allahu në të gjitha çështjet.</p><p class="gl-src">Burimi: <a href="https://islamqa.info/en/answers/13569" target="_blank" rel="noopener">IslamQA 13569</a>: What Are the Pillars of Islam?</p></dd></div>
+    <div class="gl-item" data-k="nebiu dhe resuli nabi and rasul (prophet and messenger)"><dt>Nebiu dhe Resuli</dt><dd><p>Nebiu (pejgamberi) është ai të cilit Allahu i shpall diçka dhe ai e përcjell atë që i shpallet. Nëse dërgohet me të te ata që i kundërshtojnë urdhrat e Allahut, për t&#x27;u përcjellë një mesazh nga Allahu, ai është Resul (i Dërguar).</p><p class="gl-src">Burimi: <a href="https://islamqa.info/en/answers/5455" target="_blank" rel="noopener">IslamQA 5455</a>: What is the difference between a Prophet and a Messenger?</p></dd></div>
+    <div class="gl-item" data-k="ramazani dhe agjërimi ramadan and sawm (fasting)"><dt>Ramazani dhe agjërimi</dt><dd><p>Agjërimi është përmbajtja nga gjërat që e prishin agjërimin, si ushqimi, pija dhe marrëdhëniet bashkëshortore, nga agimi i vërtetë deri në perëndim të diellit, me nijetin e agjërimit. Ramazani është një muaj i madh, në të cilin Allahu e shpalli Kuranin.</p><p class="gl-src">Burimi: <a href="https://islamqa.info/en/answers/13569" target="_blank" rel="noopener">IslamQA 13569</a>: What Are the Pillars of Islam?</p></dd></div>
+    <div class="gl-item" data-k="sahabët sahabah (companions)"><dt>Sahabët</dt><dd><p>Sahabi (shok) është ai që e ka parë Profetin ﷺ, ka besuar në të dhe ka vdekur duke qenë besimtar.</p><p class="gl-src">Burimi: <a href="https://islamqa.info/en/answers/197269" target="_blank" rel="noopener">IslamQA 197269</a>: Are those Bedouin who became Muslim and some of them behaved badly towards the Prophet (blessings and peace of Allah be upon him) regarded as being among the Sahaabah?</p></dd></div>
+    <div class="gl-item" data-k="sexhdeja (suxhud) sujud (prostration)"><dt>Sexhdeja (suxhud)</dt><dd><p>Sexhdeja (suxhudi) është një formë përuljeje. Njeriu bën sexhde mbi shtatë pjesë të trupit, duke e vendosur ballin në tokë.</p><p class="gl-src">Burimi: <a href="https://islamqa.info/en/answers/27036" target="_blank" rel="noopener">IslamQA 27036</a>: The prostration of everything in the universe to Allaah</p></dd></div>
+    <div class="gl-item" data-k="sexhdeja e leximit (sexhdetu tilaveh) sujud at-tilawah (prostration of recitation)"><dt>Sexhdeja e leximit (sexhdetu tilaveh)</dt><dd><p>Në Kuran ka pesëmbëdhjetë vende ku është ligjësuar sexhdeja e leximit. Ajo është e pëlqyeshme (mustehab) për lexuesin dhe dëgjuesin, por nuk është detyrë.</p><p class="gl-src">Burimi: <a href="https://islamqa.info/en/answers/73402" target="_blank" rel="noopener">IslamQA 73402</a>: Is Sujud At-Tilawah Obligatory?</p></dd></div>
+    <div class="gl-item" data-k="shirku shirk (associating partners with allah)"><dt>Shirku</dt><dd><p>Shirku do të thotë t&#x27;i veshësh Allahut ortak ose të barabartë në zotërimin e Tij (rububijje), në adhurim, ose në emrat dhe cilësitë e Tij.</p><p class="gl-src">Burimi: <a href="https://islamqa.info/en/answers/34817" target="_blank" rel="noopener">IslamQA 34817</a>: What Is Shirk and its types?</p></dd></div>
+    <div class="gl-item" data-k="sunneti sunnah (prophetic way)"><dt>Sunneti</dt><dd><p>Sunneti është udhëzimi i Profetit ﷺ në të gjitha çështjet e tij, pra rruga, metoda dhe mënyra e tij.</p><p class="gl-src">Burimi: <a href="https://islamqa.info/en/answers/145520" target="_blank" rel="noopener">IslamQA 145520</a>: Difference between Hadith and Sunnah</p></dd></div>
+    <div class="gl-item" data-k="tefsiri tafsir (exegesis)"><dt>Tefsiri</dt><dd><p>Tefsiri është shpjegimi (komentimi) i fjalës së Allahut. Ai që merret me tefsir duhet të ndjekë parimet dhe rregullat e tij.</p><p class="gl-src">Burimi: <a href="https://islamqa.info/en/answers/287146" target="_blank" rel="noopener">IslamQA 287146</a>: The principles of tafseer (Quranic exegesis)</p></dd></div>
+    <div class="gl-item" data-k="teuhidi tawhid (oneness of allah)"><dt>Teuhidi</dt><dd><p>Në arabisht, teuhid do të thotë ta njohësh Allahun si Një dhe të Vetëm. Në Islam do të thotë të besosh vetëm Allahun si të Adhuruar dhe si Zot, dhe vetëm Atij t&#x27;ia përshkruash të gjitha cilësitë e zotërimit dhe të hyjnisë.</p><p class="gl-src">Burimi: <a href="https://islamqa.info/en/answers/49030" target="_blank" rel="noopener">IslamQA 49030</a>: What Is the Meaning of Tawhid?</p></dd></div>
+    <div class="gl-item" data-k="texhvidi tajweed (rules of recitation)"><dt>Texhvidi</dt><dd><p>Rregullat e texhvidit përputhen me mënyrën se si arabët i lexojnë dhe i shqiptojnë fjalët. Texhvidi është pjesë e të folurit bukur dhe me elokuencë në gjuhën arabe.</p><p class="gl-src">Burimi: <a href="https://islamqa.info/en/answers/148358" target="_blank" rel="noopener">IslamQA 148358</a>: Ruling on applying the rules of tajweed to words other than the Quran</p></dd></div>
+    <div class="gl-item" data-k="umeti ummah (community)"><dt>Umeti</dt><dd><p>Fjala umet ka disa kuptime në Kuran. Kuptimi i saj i zakonshëm është një grup njerëzish, një bashkësi ose një popull.</p><p class="gl-src">Burimi: <a href="https://islamqa.info/en/answers/10251" target="_blank" rel="noopener">IslamQA 10251</a>: Meanings of the word ummah in the Qur&#x27;aan</p></dd></div>
+    <div class="gl-item" data-k="xheneti jannah (paradise)"><dt>Xheneti</dt><dd><p>Xheneti është i krijuar dhe ekziston tani. Ai është përgatitur për të devotshmit (el-muttekun), ata që besojnë në Allahun dhe në të Dërguarit e Tij.</p><p class="gl-src">Burimi: <a href="https://islamqa.info/en/answers/14526" target="_blank" rel="noopener">IslamQA 14526</a>: Paradise and Hell exist and they will abide so long as Allah wills them to abide</p></dd></div>
+    <div class="gl-item" data-k="xhuzi juz&#x27; (part)"><dt>Xhuzi</dt><dd><p>Dijetarët e ndanë Kuranin në tridhjetë pjesë, secila prej të cilave quhet xhuz (shumës: exhza). Nuk dihet me siguri kush e bëri i pari këtë ndarje.</p><p class="gl-src">Burimi: <a href="https://islamqa.info/en/answers/109885" target="_blank" rel="noopener">IslamQA 109885</a>: The division of the Qur&#x27;an into parts and portions</p></dd></div>
+    <div class="gl-item" data-k="zekati zakah (obligatory charity)"><dt>Zekati</dt><dd><p>Në arabisht, zekat do të thotë rritje, bereqet dhe pastrim. Në Islam do të thotë adhurimi i Allahut duke dhënë llojet e zekatit që Ai i ka urdhëruar.</p><p class="gl-src">Burimi: <a href="https://islamqa.info/en/answers/9449" target="_blank" rel="noopener">IslamQA 9449</a>: Differences Between Zakah and Sadaqah</p></dd></div>
+  </dl>
+</div></section>
+</main>
+
+<footer>
+  <div class="wrap fgrid">
+    <div>
+      <h4>Lexo Kuranin</h4>
+      <p style="margin:0">Faqe falas për të mësuar leximin dhe kuptimin e Kuranit në gjuhën shqipe.</p>
+    </div>
+    <div>
+      <h4>Mëso</h4>
+      <ul>
+        <li><a href="meso.html#alfabeti">Alfabeti arab</a></li>
+        <li><a href="meso.html#texhvid">Texhvidi</a></li>
+        <li><a href="meso.html#kurani">Suret e shkurtra</a></li>
+        <li><a href="kurani.html">Kurani dhe progresi</a></li>
+        <li><a href="mrekullite.html">Mrekullitë e Kuranit</a></li>
+        <li><a href="zoti-yt.html">Kush është Zoti yt?</a></li>
+        <li><a href="fjalorth.html">Fjalorth</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Faqja</h4>
+      <ul>
+        <li><a href="pyetje.html">Pyetje të shpeshta</a></li>
+        <li><a href="rreth-nesh.html">Rreth nesh</a></li>
+        <li><a href="#">Kontakt</a></li>
+        <li><a href="privatesia.html">Privatësia</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap copy">© 2026 Lexo Kuranin. Materiali mund të përdoret lirisht për mësim.</div>
+</footer>
+
+<script src="site.js"></script>
+<script>(function(){var q=document.getElementById("glFind");if(!q)return;q.addEventListener("input",function(){var k=q.value.toLowerCase().trim();document.querySelectorAll(".gl-item").forEach(function(i){i.hidden=!!k&&i.dataset.k.indexOf(k)<0;});});})();</script>
+<script src="offline.js"></script>
+</body>
+</html>

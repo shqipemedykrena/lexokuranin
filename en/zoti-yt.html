@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Who is your Lord? · Read the Quran</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../site.css">
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="theme-color" content="#241A1A">
+<link rel="apple-touch-icon" href="../icon-192.png">
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1l2.4 5.2L20 4l-2.2 5.6L23 12l-5.2 2.4L20 20l-5.6-2.2L12 23l-2.4-5.2L4 20l2.2-5.6L1 12l5.2-2.4L4 4l5.6 2.2z" fill="none" stroke="#C8102E" stroke-width="1.3"/></svg>
+      Read the Quran
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <div class="nav-dropdown" id="navLearnDropdown">
+        <button type="button" class="nav-dropdown-btn" aria-haspopup="true" aria-expanded="false">Learn ▾</button>
+        <div class="nav-dropdown-menu" hidden>
+          <a href="meso.html#pergatitja">Before you start</a>
+          <a href="meso.html#fillo">The path, step by step</a>
+          <a href="meso.html#alfabeti">1. The Arabic alphabet</a>
+          <a href="meso.html#texhvid">2. Tajweed</a>
+          <a href="meso.html#kurani">3. Read the Quran</a>
+          <a href="hifz.html">4. Memorize</a>
+          <a href="namazi.html">5. How to pray</a>
+        </div>
+      </div>
+      <a href="kurani.html">Quran</a>
+      <a href="mrekullite.html">Miracles</a>
+      <a href="zoti-yt.html" aria-current="page">Your Lord</a>
+      <a href="deshmi.html">Evidence</a>
+      <a href="kujt-lutesh.html">Who do you pray to?</a>
+      <a href="pyetje.html">FAQ</a>
+    </nav>
+    <div class="lang-switch" id="langSwitch" role="group" aria-label="Choose language">
+      <a class="lang-flag" data-lang="sq" href="../zoti-yt.html" hreflang="sq" lang="sq" aria-label="Shqip" title="Shqip">🇦🇱</a>
+      <a class="lang-flag active" aria-current="true" data-lang="en" href="zoti-yt.html" hreflang="en" lang="en" aria-label="English" title="English">🇬🇧</a>
+      <a class="lang-flag" data-lang="nl" href="../nl/zoti-yt.html" hreflang="nl" lang="nl" aria-label="Nederlands" title="Nederlands">🇳🇱</a>
+      <a class="lang-flag" data-lang="de" href="../de/zoti-yt.html" hreflang="de" lang="de" aria-label="Deutsch" title="Deutsch">🇩🇪</a>
+    </div>
+    <a class="btn cta" href="meso.html#fillo">Start free</a>
+    <button type="button" class="nav-menu-btn" id="navMenuBtn" aria-expanded="false" aria-controls="navLinks">☰ Menu</button>
+  </div>
+</header>
+<div class="lang-toast" id="langToast" role="status" aria-live="polite" hidden></div>
+
+<main>
+<section class="page-head">
+  <div class="wrap">
+    <h1>Who is your Lord?</h1>
+    <p class="lead">Allah has beautiful names. When you know them, you love Him more, fear Him and hope in Him. Here are 86 of His names with their meanings.</p>
+  </div>
+</section>
+
+<section class="zn">
+  <div class="wrap">
+    <div class="zn-intro">
+      <div class="zn-box zn-had"><p class="zn-k">Ninety-nine names</p><p class="zn-q">The Prophet ﷺ said: &quot;Allah has ninety-nine names, one hundred less one. Whoever learns them will enter Paradise.&quot;</p><p class="zn-r">Bukhari 2736, Muslim 2677, from Abu Hurayrah · <a href="https://islamqa.info/en/answers/41003" target="_blank" rel="noopener">IslamQA 41003</a></p></div>
+      <div class="zn-box"><p class="zn-k">What does learning them mean?</p><ol><li>Memorising them.</li><li>Understanding their meanings.</li><li>Acting on them, for example believing that Allah is One and seeking provision only from Him.</li><li>Calling on Allah by them, for example: &quot;O Most Merciful, have mercy on me!&quot;</li></ol><p class="zn-r"><a href="https://islamqa.info/en/answers/121246" target="_blank" rel="noopener">IslamQA 121246</a>, <a href="https://islamqa.info/en/answers/188229" target="_blank" rel="noopener">188229</a></p></div>
+      <div class="zn-box"><p class="zn-k">Are there only 99?</p><p>No. Scholars agree that the names of Allah are not limited to 99. The hadith is about entering Paradise, not about a fixed number. The Prophet ﷺ said in a du&#x27;a: &quot;or that You have kept in the knowledge of the unseen with You&quot;, which means Allah has names that no created being knows.</p><p class="zn-r"><a href="https://islamqa.info/en/answers/41003" target="_blank" rel="noopener">IslamQA 41003</a></p></div>
+    </div>
+    <div class="zn-tools">
+      <label for="znFind">Search a name or a meaning</label>
+      <input type="search" id="znFind" autocomplete="off">
+      <p class="zn-count" id="znCount" aria-live="polite"></p>
+    </div>
+    <div class="zn-grid" id="znGrid" data-l="{&quot;ev&quot;: &quot;Evidence:&quot;, &quot;src&quot;: &quot;Source:&quot;, &quot;count&quot;: &quot;{n} names&quot;}"></div>
+    <div class="zn-box zn-ben"><p class="zn-k">How to benefit</p><ul><li>Knowing Allah through His names, attributes and deeds is the noblest knowledge, says Ibn al-Qayyim.</li><li>This knowledge brings love, fear, hope and sincerity towards Allah, and increases faith.</li><li>Call on Allah by His names, as the Quran says in 7:180: &quot;O Ghafoor, forgive me!&quot;, &quot;O Tawwaab, accept my repentance!&quot;</li><li>It is not enough just to repeat the names without understanding them and acting on them. And there is no basis for using a name as a cure for a disease.</li></ul><p class="zn-r"><a href="https://islamqa.info/en/answers/4043" target="_blank" rel="noopener">IslamQA 4043</a>, <a href="https://islamqa.info/en/answers/1392" target="_blank" rel="noopener">1392</a>, <a href="https://islamqa.info/en/answers/188229" target="_blank" rel="noopener">188229</a>, <a href="https://islamqa.info/en/answers/45559" target="_blank" rel="noopener">45559</a></p></div>
+    <h2 class="zn-srch">Sources</h2>
+    <ul class="pse-sources">
+      <li><a href="https://islamqa.info/en/answers/2594" target="_blank" rel="noopener">IslamQA 2594</a>: Some of the Names of Allah and their meanings</li>
+      <li><a href="https://islamqa.info/en/answers/41003" target="_blank" rel="noopener">IslamQA 41003</a>: How Many Names Does Allah Have?</li>
+      <li><a href="https://islamqa.info/en/answers/121246" target="_blank" rel="noopener">IslamQA 121246</a>: What is meant by learning by heart the beautiful names of Allah, may He be exalted</li>
+      <li><a href="https://islamqa.info/en/answers/188229" target="_blank" rel="noopener">IslamQA 188229</a>: Benefits of Reciting 99 Names of Allah Daily</li>
+      <li><a href="https://islamqa.info/en/answers/4043" target="_blank" rel="noopener">IslamQA 4043</a>: Importance of knowing the Beautiful Names of Allah</li>
+      <li><a href="https://islamqa.info/en/answers/1392" target="_blank" rel="noopener">IslamQA 1392</a>: Many of the Names of Allaah may be found at the end of numerous aayaat of the Qur&#x27;aan</li>
+      <li><a href="https://islamqa.info/en/answers/45559" target="_blank" rel="noopener">IslamQA 45559</a>: The Divine names as remedy</li>
+      <li><a href="https://islamqa.info/en/answers/104488" target="_blank" rel="noopener">IslamQA 104488</a>: Is al-&#x27;Adl (Justice) one of the names of Allah?</li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap fgrid">
+    <div>
+      <h4>Read the Quran</h4>
+      <p style="margin:0">A free site for learning to read and understand the Quran in English.</p>
+    </div>
+    <div>
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="meso.html#alfabeti">The Arabic alphabet</a></li>
+        <li><a href="meso.html#texhvid">Tajweed</a></li>
+        <li><a href="meso.html#kurani">Short surahs</a></li>
+        <li><a href="kurani.html">The Quran and progress</a></li>
+        <li><a href="mrekullite.html">Miracles of the Quran</a></li>
+        <li><a href="zoti-yt.html">Who is your Lord?</a></li>
+        <li><a href="fjalorth.html">Glossary</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Site</h4>
+      <ul>
+        <li><a href="pyetje.html">Frequently asked questions</a></li>
+        <li><a href="rreth-nesh.html">About us</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="privatesia.html">Privacy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap copy">© 2026 Read the Quran. The material may be used freely for learning.</div>
+</footer>
+
+<script>window.ZNAMES=[{"n":"Rabb","m":"Lord, Cherisher","x":"He cares for and guides all His slaves, and He reforms the hearts of His close friends.","ev":[],"src":2594},{"n":"Allah","m":"He is the One who is adored and worshipped, and He has the attributes of divinity and perfection.","x":"He is the One who is adored and worshipped, and He has the attributes of divinity and perfection.","ev":[],"src":2594},{"n":"Al-Malik","m":"the Sovereign","x":"He has absolute control over creation, and He commands, rewards and punishes.","ev":[],"src":2594},{"n":"Al-Maalik","m":"the Possessor","x":"He has absolute control over creation, and He commands, rewards and punishes.","ev":[],"src":2594},{"n":"Alladhi lahu'l-Mulk","m":"the One to Whom Dominion belongs","x":"He has absolute control over creation, and He commands, rewards and punishes.","ev":[],"src":2594},{"n":"Al-Waahid","m":"the One","x":"He is perfectly One with no partner, and His slaves must single Him out as the only One.","ev":[],"src":2594},{"n":"Al-Ahad","m":"the Unique","x":"He is perfectly One with no partner, and His slaves must single Him out as the only One.","ev":[],"src":2594},{"n":"Al-Samad","m":"The Self-Sufficient Master, Whom all creatures need, He neither eats nor drinks","x":"All creation turns to Him for its needs, and He is perfect in His names, attributes and deeds.","ev":[],"src":2594},{"n":"Al-'Aleem","m":"the All-Knowing","x":"His knowledge covers all things, the seen and the unseen, the past, the present and the future.","ev":[],"src":2594},{"n":"Al-Khabeer","m":"the Aware","x":"His knowledge covers all things, the seen and the unseen, the past, the present and the future.","ev":[],"src":2594},{"n":"Al-Hakeem","m":"the Wise","x":"He has the highest wisdom, so He creates nothing in vain and makes no law in jest.","ev":[["5:50","5:50"]],"src":2594},{"n":"Al-Rahman","m":"the Most Gracious","x":"This name shows Allah's mercy, goodness and generosity, and the believers receive the greater share of it.","ev":[["7:156","7:156"]],"src":2594},{"n":"Al-Raheem","m":"the Most Merciful","x":"This name shows Allah's mercy, goodness and generosity, and the believers receive the greater share of it.","ev":[["7:156","7:156"]],"src":2594},{"n":"Al-Barr","m":"the Source of Goodness","x":"This name shows Allah's mercy, goodness and generosity, and the believers receive the greater share of it.","ev":[["7:156","7:156"]],"src":2594},{"n":"Al-Kareem","m":"the Most Generous","x":"This name shows Allah's mercy, goodness and generosity, and the believers receive the greater share of it.","ev":[["7:156","7:156"]],"src":2594},{"n":"Al-Jawaad","m":"the Generous","x":"This name shows Allah's mercy, goodness and generosity, and the believers receive the greater share of it.","ev":[["7:156","7:156"]],"src":2594},{"n":"Al-Ra'oof","m":"the Compassionate","x":"This name shows Allah's mercy, goodness and generosity, with the greater share for the believers, and He consoles broken hearts and supports the weak and those who seek His help.","ev":[["7:156","7:156"]],"src":2594},{"n":"Al-Wahhaab","m":"the Bestower","x":"This name shows Allah's mercy, goodness and generosity, and the believers receive the greater share of it.","ev":[["7:156","7:156"]],"src":2594},{"n":"Al-Samee'","m":"the All-Hearing","x":"He hears all voices in every language when His creatures call on Him.","ev":[],"src":2594},{"n":"Al-Baseer","m":"the All-Seeing","x":"He sees into all things, however small, even in the darkest night.","ev":[],"src":2594},{"n":"Al-Hameed","m":"the Praiseworthy","x":"He deserves praise for His names, His attributes and His deeds.","ev":[],"src":2594},{"n":"Al-Majeed","m":"the Most Glorious","x":"He has glory, pride, greatness and majesty, and He is exalted above everything.","ev":[],"src":2594},{"n":"Al-Kabeer","m":"the Most Great","x":"He has glory, pride, greatness and majesty, and He is exalted above everything.","ev":[],"src":2594},{"n":"Al-'Azeem","m":"the Most Great","x":"He has glory, pride, greatness and majesty, and He is exalted above everything.","ev":[],"src":2594},{"n":"Al-Jaleel","m":"the Sublime One","x":"He has glory, pride, greatness and majesty, and He is exalted above everything.","ev":[],"src":2594},{"n":"Al-'Afuw","m":"the Pardoner","x":"He is known for pardon and forgiveness toward His slaves who follow the proper means.","ev":[["20:82","20:82"]],"src":2594},{"n":"Al-Ghafoor","m":"the Forgiver","x":"He is known for pardon and forgiveness toward His slaves who follow the proper means.","ev":[["20:82","20:82"]],"src":2594},{"n":"Al-Ghaffaar","m":"the All-Forgiving","x":"He is known for pardon and forgiveness toward His slaves who follow the proper means.","ev":[["20:82","20:82"]],"src":2594},{"n":"Al-Tawwaab","m":"the Acceptor of Repentance","x":"He accepts sincere repentance and helps hearts turn to Him.","ev":[],"src":2594},{"n":"Al-Quddoos","m":"the Holy","x":"He is far above every imperfection and above being compared to any of His creation.","ev":[["42:11","42:11"],["112:4","112:4"],["19:65","19:65"],["2:22","2:22"]],"src":2594},{"n":"Al-Salaam","m":"the One Free from all defects","x":"He is far above every imperfection and above being compared to any of His creation.","ev":[["42:11","42:11"],["112:4","112:4"],["19:65","19:65"],["2:22","2:22"]],"src":2594},{"n":"Al-'Aliyy","m":"the Exalted","x":"He is exalted in His essence, status, attributes and dominion, and He rose over the Throne.","ev":[],"src":2594},{"n":"Al-A'laa","m":"the Most High","x":"He is exalted in His essence, status, attributes and dominion, and He rose over the Throne.","ev":[],"src":2594},{"n":"Al-'Azeez","m":"the Almighty","x":"All might and power belong to Him, and no creature can harm Him.","ev":[],"src":2594},{"n":"Al-Qawiy","m":"the Most Strong","x":"This name has a meaning similar to Al-'Azeez, the Almighty.","ev":[],"src":2594},{"n":"Al-Mateen","m":"the Firm One","x":"This name has a meaning similar to Al-'Azeez, the Almighty.","ev":[],"src":2594},{"n":"Al-Jabbaar","m":"the Compeller","x":"This name includes the meanings of Al-'Aliyy, Al-A'laa and Al-Qahhaar.","ev":[],"src":2594},{"n":"Al-Mutakabbir","m":"the Majestic","x":"He is above all bad qualities, shortcomings and faults.","ev":[],"src":2594},{"n":"Al-Khaaliq","m":"the Creator","x":"He created everything from nothing and formed it with wisdom.","ev":[],"src":2594},{"n":"Al-Baari'","m":"the Inventor of all things","x":"He created everything from nothing and formed it with wisdom.","ev":[],"src":2594},{"n":"Al-Musawwir","m":"the Bestower of forms","x":"He created everything from nothing and formed it with wisdom.","ev":[],"src":2594},{"n":"Al-Mu'min","m":"the Guardian of Faith","x":"He is praised for His perfect attributes, and He sent Messengers whom He confirmed with signs and proofs.","ev":[],"src":2594},{"n":"Al-Muhaymin","m":"the Watcher over His creatures","x":"He is aware of everything that is hidden and concealed.","ev":[],"src":2594},{"n":"Al-Qadeer","m":"the Powerful","x":"He has perfect power, so He creates, controls, gives life and death, and raises the dead again.","ev":[],"src":2594},{"n":"Al-Lateef","m":"the Most Subtle and Courteous","x":"He knows hidden and subtle matters, and He cares for the believers in ways they cannot see.","ev":[],"src":2594},{"n":"Al-Haseeb","m":"the One Who takes account","x":"He knows all deeds, and He rewards or punishes according to His wisdom.","ev":[],"src":2594},{"n":"Al-Raqeeb","m":"the Watchful","x":"He watches what is hidden in the hearts.","ev":[["13:33","13:33"]],"src":2594},{"n":"Al-Hafeez","m":"the Preserver","x":"He protects His creation and His close friends from sin and destruction.","ev":[],"src":2594},{"n":"Al-Muheet","m":"the Encompasser","x":"He encompasses all things with His knowledge, power, mercy and dominion.","ev":[],"src":2594},{"n":"Al-Qahhaar","m":"the Subduer","x":"All creation submits to Him because of His power and might.","ev":[],"src":2594},{"n":"Al-Muqeet","m":"the Provider of sustenance","x":"He provides sustenance for everything that exists.","ev":[],"src":2594},{"n":"Al-Wakeel","m":"the Trustee","x":"He runs the affairs of creation, and He is enough for whoever trusts in Him.","ev":[["2:257","2:257"]],"src":2594},{"n":"Dhoo'l-Jalaali wa'l-Ikraam","m":"Possessor of Majesty and Honour","x":"He has might, pride, mercy and generosity, and He honours His devoted worshippers.","ev":[],"src":2594},{"n":"Al-Wudood","m":"the Loving","x":"He loves His Prophets, His Messengers and their followers, and they love Him in return.","ev":[],"src":2594},{"n":"Al-Fattaah","m":"the Opener","x":"He judges by His laws, and He opens hearts and the doors of mercy and provision.","ev":[["35:2","35:2"]],"src":2594},{"n":"Al-Razzaaq","m":"the Provider","x":"He provides for all, giving physical provision to everyone and provision for the heart to the believers.","ev":[],"src":2594},{"n":"Al-Hakam","m":"the Judge","x":"He judges with justice, so no one is wronged and no one carries another's sin.","ev":[["11:56","11:56"]],"src":2594},{"n":"Al-'Adl","m":"the Just","x":"He judges with justice, so no one is wronged and no one carries another's sin. Scholars differ on whether this is a name of Allah, while justice is a confirmed attribute of His (IslamQA 104488).","ev":[["11:56","11:56"]],"src":2594},{"n":"Jaami' al-Naas","m":"Gatherer of the People","x":"He will gather all mankind on the Day of Judgement.","ev":[],"src":2594},{"n":"Al-Hayy","m":"the Ever-Living","x":"He is completely alive.","ev":[],"src":2594},{"n":"Al-Qayyoom","m":"the Self-Sustaining","x":"He sustains and manages the affairs of the heavens and the earth.","ev":[],"src":2594},{"n":"Al-Noor","m":"the Light","x":"He is the Light of the heavens and the earth, and He lights up hearts with knowledge and guidance.","ev":[],"src":2594},{"n":"Badee' al-Samawaati wa'l-Ard","m":"Originator of the heavens and the earth","x":"He created the heavens and the earth with the greatest beauty and order.","ev":[],"src":2594},{"n":"Al-Qaabid","m":"the Constrictor","x":"He takes souls and expands hearts with provision, according to His wisdom and mercy.","ev":[],"src":2594},{"n":"Al-Baasit","m":"the Expander","x":"He takes souls and expands hearts with provision, according to His wisdom and mercy.","ev":[],"src":2594},{"n":"Al-Mu'ti","m":"the Giver","x":"He gives and withholds as He wills, and no one can give what He withholds.","ev":[],"src":2594},{"n":"Al-Maani'","m":"the Withholder","x":"He gives and withholds as He wills, and no one can give what He withholds.","ev":[],"src":2594},{"n":"Al-Shaheed","m":"the Witness","x":"He watches over all things and witnesses all deeds.","ev":[],"src":2594},{"n":"Al-Mubdi'","m":"the Originator","x":"He begins creation and will create it again.","ev":[["30:27","30:27"]],"src":2594},{"n":"Al-Mu'eed","m":"the Restorer","x":"He begins creation and will create it again.","ev":[["30:27","30:27"]],"src":2594},{"n":"Al-Fa''aal lima yureed","m":"the One Who does whatever He wants","x":"He does whatever He wills and nothing can stop Him, and He always acts with wisdom.","ev":[],"src":2594},{"n":"Al-Ghaniy","m":"the Self-Sufficient","x":"He is completely independent and needs no one.","ev":[],"src":2594},{"n":"Al-Mughni","m":"the Enricher","x":"He is completely independent and needs no one.","ev":[],"src":2594},{"n":"Al-Haleem","m":"the Forbearing One","x":"He delays punishment to give time for repentance.","ev":[],"src":2594},{"n":"Al-Shaakir","m":"the Grateful","x":"He values even the smallest deed and multiplies sincere deeds.","ev":[],"src":2594},{"n":"Al-Shakoor","m":"the Appreciative","x":"He values even the smallest deed and multiplies sincere deeds.","ev":[],"src":2594},{"n":"Al-Qareeb","m":"the Ever-Near","x":"He is near to all through His knowledge, and He is especially near to those who call on Him.","ev":[],"src":2594},{"n":"Al-Mujeeb","m":"the Responsive","x":"He is near to all through His knowledge, and He is especially near to those who call on Him.","ev":[],"src":2594},{"n":"Al-Kaafi","m":"the Sufficient","x":"He gives His slaves all that they need, and He is enough for those who trust Him.","ev":[],"src":2594},{"n":"Al-Awwal","m":"the First","x":"Nothing is before Him, after Him, above Him or beneath Him, as the Prophet explained.","ev":[["57:3","57:3"]],"src":2594},{"n":"Al-Aakhir","m":"the Last","x":"Nothing is before Him, after Him, above Him or beneath Him, as the Prophet explained.","ev":[["57:3","57:3"]],"src":2594},{"n":"Al-Zaahir","m":"the Manifest","x":"Nothing is before Him, after Him, above Him or beneath Him, as the Prophet explained.","ev":[["57:3","57:3"]],"src":2594},{"n":"Al-Baatin","m":"the Hidden","x":"Nothing is before Him, after Him, above Him or beneath Him, as the Prophet explained.","ev":[["57:3","57:3"]],"src":2594},{"n":"Al-Waasi'","m":"the All-Encompassing","x":"He is vast in His attributes, His grace and His generosity.","ev":[],"src":2594},{"n":"Al-Haadi","m":"the Guide","x":"He guides His slaves to what benefits them and protects them from harm.","ev":[],"src":2594},{"n":"Al-Haqq","m":"the Truth","x":"He is true in His essence and attributes, and His words, His religion and the worship of Him are the truth.","ev":[["10:32","10:32"],["17:81","17:81"]],"src":2594}];</script>
+<script src="../site.js"></script>
+<script src="../zoti.js"></script>
+<script src="../offline.js"></script>
+</body>
+</html>

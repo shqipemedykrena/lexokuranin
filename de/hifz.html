@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Auswendig lernen · Lies den Koran</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../site.css">
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="theme-color" content="#241A1A">
+<link rel="apple-touch-icon" href="../icon-192.png">
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1l2.4 5.2L20 4l-2.2 5.6L23 12l-5.2 2.4L20 20l-5.6-2.2L12 23l-2.4-5.2L4 20l2.2-5.6L1 12l5.2-2.4L4 4l5.6 2.2z" fill="none" stroke="#C8102E" stroke-width="1.3"/></svg>
+      Lies den Koran
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <div class="nav-dropdown" id="navLearnDropdown">
+        <button type="button" class="nav-dropdown-btn" aria-haspopup="true" aria-expanded="false">Lernen ▾</button>
+        <div class="nav-dropdown-menu" hidden>
+          <a href="meso.html#pergatitja">Bevor du beginnst</a>
+          <a href="meso.html#fillo">Der Weg Schritt für Schritt</a>
+          <a href="meso.html#alfabeti">1. Das arabische Alphabet</a>
+          <a href="meso.html#texhvid">2. Tadschwid</a>
+          <a href="meso.html#kurani">3. Den Koran lesen</a>
+          <a href="hifz.html">4. Auswendig lernen</a>
+          <a href="namazi.html">5. Wie man betet</a>
+        </div>
+      </div>
+      <a href="kurani.html">Koran</a>
+      <a href="mrekullite.html">Wunder</a>
+      <a href="zoti-yt.html">Dein Herr</a>
+      <a href="deshmi.html">Beweise</a>
+      <a href="kujt-lutesh.html">Zu wem betest du?</a>
+      <a href="pyetje.html">Fragen</a>
+    </nav>
+    <div class="lang-switch" id="langSwitch" role="group" aria-label="Sprache wählen">
+      <a class="lang-flag" data-lang="sq" href="../hifz.html" hreflang="sq" lang="sq" aria-label="Shqip" title="Shqip">🇦🇱</a>
+      <a class="lang-flag" data-lang="en" href="../en/hifz.html" hreflang="en" lang="en" aria-label="English" title="English">🇬🇧</a>
+      <a class="lang-flag" data-lang="nl" href="../nl/hifz.html" hreflang="nl" lang="nl" aria-label="Nederlands" title="Nederlands">🇳🇱</a>
+      <a class="lang-flag active" aria-current="true" data-lang="de" href="hifz.html" hreflang="de" lang="de" aria-label="Deutsch" title="Deutsch">🇩🇪</a>
+    </div>
+    <a class="btn cta" href="meso.html#fillo">Kostenlos starten</a>
+    <button type="button" class="nav-menu-btn" id="navMenuBtn" aria-expanded="false" aria-controls="navLinks">☰ Menü</button>
+  </div>
+</header>
+<div class="lang-toast" id="langToast" role="status" aria-live="polite" hidden></div>
+
+<main>
+<section class="page-head"><div class="wrap"><h1>Auswendig lernen</h1><p class="lead">Mach einen kleinen Plan für jeden Tag. Wähle die Suren und wie viele Verse du pro Tag lernst. Hake dann jeden Tag ab, den du gelernt hast.</p></div></section>
+<section class="hz"><div class="wrap">
+  <div id="hzPlan" hidden>
+    <div class="hz-today" id="hzToday" aria-live="polite"></div>
+    <div class="hz-stat"><p><b id="hzSum"></b> <span id="hzEnd"></span></p><div class="progress-bar"><div class="progress-fill" id="hzFill"></div></div><p class="hz-progt" id="hzProgT"></p></div>
+    <details class="hz-all" open><summary>Alle Tage</summary><ol class="hz-list" id="hzList"></ol></details>
+    <div class="hz-actions"><button type="button" class="btn btn-ghost" id="hzChange">Plan ändern</button><button type="button" class="btn btn-ghost" id="hzDel">Plan löschen</button>
+      <div class="hz-ask" id="hzAsk" hidden><p>Den Plan löschen? Verse, die du als gekonnt markiert hast, bleiben markiert.</p><button type="button" class="btn btn-primary" id="hzYes">Ja, löschen</button> <button type="button" class="btn btn-ghost" id="hzNo">Nein</button></div></div>
+  </div>
+  <div id="hzSetupBox">
+    <form class="hz-setup" id="hzSetup">
+      <h2>Mach deinen Plan</h2>
+      <fieldset><legend>Was willst du lernen?</legend><div class="hz-opts"><label class="hz-opt"><input type="radio" name="hzWhat" value="short"> <span>Die kurzen Suren (105 bis 114)</span></label><label class="hz-opt"><input type="radio" name="hzWhat" value="amma" checked> <span>Dschuz Amma (78 bis 114)</span></label><label class="hz-opt"><input type="radio" name="hzWhat" value="mulk"> <span>Al-Mulk (67)</span></label><label class="hz-opt"><input type="radio" name="hzWhat" value="yasin"> <span>Ya-Sin (36)</span></label><label class="hz-opt"><input type="radio" name="hzWhat" value="custom"> <span>Selbst wählen</span></label></div>
+        <div class="hz-custom" id="hzCustom" hidden><label>Von Sure <select id="hzFrom"></select></label><label>Bis Sure <select id="hzTo"></select></label></div></fieldset>
+      <fieldset><legend>Reihenfolge</legend><div class="hz-opts"><label class="hz-opt"><input type="radio" name="hzOrder" value="end" checked> <span>Vom Ende (An-Nas zuerst)</span></label><label class="hz-opt"><input type="radio" name="hzOrder" value="start"> <span>Der Reihe nach</span></label></div></fieldset>
+      <label class="hz-per">Verse pro Tag <select id="hzPer"><option value="1">1</option><option value="2">2</option><option value="3" selected>3</option><option value="5">5</option><option value="7">7</option><option value="10">10</option></select></label>
+      <div class="hz-btns"><button type="submit" class="btn btn-primary">Plan erstellen</button> <button type="button" class="btn btn-ghost" id="hzCancel" hidden>Abbrechen</button></div>
+    </form>
+  </div>
+  <p class="hz-tip">Tipp: Lies den Vers ein paar Mal laut, sag ihn dann, ohne hinzusehen. Wiederhole ihn am nächsten Tag, bevor du neue Verse lernst.</p>
+  <p class="hz-note">Wenn du einen Tag abhakst, werden seine Verse im Koran auch als „Kann ich auswendig“ markiert. Der Plan wird nur in diesem Browser gespeichert.</p>
+</div></section>
+</main>
+
+<footer>
+  <div class="wrap fgrid">
+    <div>
+      <h4>Lies den Koran</h4>
+      <p style="margin:0">Eine kostenlose Seite, um den Koran lesen und verstehen zu lernen, auf Deutsch.</p>
+    </div>
+    <div>
+      <h4>Lernen</h4>
+      <ul>
+        <li><a href="meso.html#alfabeti">Das arabische Alphabet</a></li>
+        <li><a href="meso.html#texhvid">Tadschwid</a></li>
+        <li><a href="meso.html#kurani">Die kurzen Suren</a></li>
+        <li><a href="kurani.html">Koran und Fortschritt</a></li>
+        <li><a href="mrekullite.html">Die Wunder des Korans</a></li>
+        <li><a href="zoti-yt.html">Wer ist dein Herr?</a></li>
+        <li><a href="fjalorth.html">Glossar</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Die Seite</h4>
+      <ul>
+        <li><a href="pyetje.html">Häufige Fragen</a></li>
+        <li><a href="rreth-nesh.html">Über uns</a></li>
+        <li><a href="#">Kontakt</a></li>
+        <li><a href="privatesia.html">Datenschutz</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap copy">© 2026 Lies den Koran. Das Material darf frei zum Lernen verwendet werden.</div>
+</footer>
+
+<script src="../site.js"></script>
+<script>window.HZ_L={"title": "Auswendig lernen", "lead": "Mach einen kleinen Plan für jeden Tag. Wähle die Suren und wie viele Verse du pro Tag lernst. Hake dann jeden Tag ab, den du gelernt hast.", "setT": "Mach deinen Plan", "what": "Was willst du lernen?", "p_short": "Die kurzen Suren (105 bis 114)", "p_amma": "Dschuz Amma (78 bis 114)", "p_mulk": "Al-Mulk (67)", "p_yasin": "Ya-Sin (36)", "p_custom": "Selbst wählen", "from_": "Von Sure", "to": "Bis Sure", "order": "Reihenfolge", "o_end": "Vom Ende (An-Nas zuerst)", "o_start": "Der Reihe nach", "per": "Verse pro Tag", "make": "Plan erstellen", "cancel": "Abbrechen", "today": "Heutige Aufgabe", "day": "Tag", "verses": "Verse", "open": "Im Koran öffnen →", "review": "Wiederhole auch:", "done": "Gelernt ✓", "undo": "Haken entfernen", "allDone": "Masha Allah! Du hast den Plan geschafft.", "sum": "{d} Tage · {v} Verse", "end": "Fertig etwa am", "prog": "{a} von {b} Tagen", "list": "Alle Tage", "change": "Plan ändern", "rm": "Plan löschen", "delQ": "Den Plan löschen? Verse, die du als gekonnt markiert hast, bleiben markiert.", "yes": "Ja, löschen", "no": "Nein", "note": "Wenn du einen Tag abhakst, werden seine Verse im Koran auch als „Kann ich auswendig“ markiert. Der Plan wird nur in diesem Browser gespeichert.", "tip": "Tipp: Lies den Vers ein paar Mal laut, sag ihn dann, ohne hinzusehen. Wiederhole ihn am nächsten Tag, bevor du neue Verse lernst.", "empty": "Du hast noch keinen Plan."};window.HZ_N=["Al-Fatiha", "Al-Baqarah", "Al Imran", "An-Nisa", "Al-Ma'idah", "Al-An'am", "Al-A'raf", "Al-Anfal", "At-Tawbah", "Yunus", "Hud", "Yusuf", "Ar-Ra'd", "Ibrahim", "Al-Hijr", "An-Nahl", "Al-Isra", "Al-Kahf", "Maryam", "Ta Ha", "Al-Anbiya", "Al-Hajj", "Al-Mu'minun", "An-Nur", "Al-Furqan", "Ash-Shu'ara", "An-Naml", "Al-Qasas", "Al-Ankabut", "Ar-Rum", "Luqman", "As-Sajdah", "Al-Ahzab", "Saba", "Fatir", "Ya Sin", "As-Saffat", "Sad", "Az-Zumar", "Ghafir", "Fussilat", "Ash-Shura", "Az-Zukhruf", "Ad-Dukhan", "Al-Jathiyah", "Al-Ahqaf", "Muhammad", "Al-Fath", "Al-Hujurat", "Qaf", "Adh-Dhariyat", "At-Tur", "An-Najm", "Al-Qamar", "Ar-Rahman", "Al-Waqi'ah", "Al-Hadid", "Al-Mujadilah", "Al-Hashr", "Al-Mumtahanah", "As-Saff", "Al-Jumu'ah", "Al-Munafiqun", "At-Taghabun", "At-Talaq", "At-Tahrim", "Al-Mulk", "Al-Qalam", "Al-Haqqah", "Al-Ma'arij", "Nuh", "Al-Jinn", "Al-Muzzammil", "Al-Muddaththir", "Al-Qiyamah", "Al-Insan", "Al-Mursalat", "An-Naba", "An-Nazi'at", "Abasa", "At-Takwir", "Al-Infitar", "Al-Mutaffifin", "Al-Inshiqaq", "Al-Buruj", "At-Tariq", "Al-A'la", "Al-Ghashiyah", "Al-Fajr", "Al-Balad", "Ash-Shams", "Al-Layl", "Ad-Duha", "Ash-Sharh", "At-Tin", "Al-Alaq", "Al-Qadr", "Al-Bayyinah", "Az-Zalzalah", "Al-Adiyat", "Al-Qari'ah", "At-Takathur", "Al-Asr", "Al-Humazah", "Al-Fil", "Quraisch", "Al-Ma'un", "Al-Kauthar", "Al-Kafirun", "An-Nasr", "Al-Masad", "Al-Ikhlas", "Al-Falaq", "An-Nas"];window.HZ_C=[7, 286, 200, 176, 120, 165, 206, 75, 129, 109, 123, 111, 43, 52, 99, 128, 111, 110, 98, 135, 112, 78, 118, 64, 77, 227, 93, 88, 69, 60, 34, 30, 73, 54, 45, 83, 182, 88, 75, 85, 54, 53, 89, 59, 37, 35, 38, 29, 18, 45, 60, 49, 62, 55, 78, 96, 29, 22, 24, 13, 14, 11, 11, 18, 12, 12, 30, 52, 52, 44, 28, 28, 20, 56, 40, 31, 50, 40, 46, 42, 29, 19, 36, 25, 22, 17, 19, 26, 30, 20, 15, 21, 11, 8, 8, 19, 5, 8, 8, 11, 11, 8, 3, 9, 5, 4, 7, 3, 6, 3, 5, 4, 5, 6];</script>
+<script>
+(function(){
+  var L=window.HZ_L, N=window.HZ_N, C=window.HZ_C, LANG=document.documentElement.lang||"sq";
+  var READY={1:"el-fatiha",105:"el-fil",106:"kurejsh",107:"el-maun",108:"el-kevther",109:"el-kafirun",110:"en-nasr",111:"el-mesed",112:"el-ihlas",113:"el-felek",114:"en-nas"};
+  function slug(s){ return READY[s]||("sure-"+s); }
+  function load(k,d){ try{ var v=JSON.parse(localStorage.getItem(k)); return v==null?d:v; }catch(e){ return d; } }
+  function save(k,v){ try{ localStorage.setItem(k,JSON.stringify(v)); }catch(e){} }
+  function $(i){ return document.getElementById(i); }
+  function el(t,c,x){ var e=document.createElement(t); if(c) e.className=c; if(x!=null) e.textContent=x; return e; }
+  function f(t,o){ return t.replace(/\{(\w)\}/g,function(m,k){ return o[k]; }); }
+  var PRE={short:[105,114],amma:[78,114],mulk:[67,67],yasin:[36,36]};
+  function surahs(p){ var a=p.from, b=p.to; if(a>b){ var t=a; a=b; b=t; } var o=[]; for(var s=a;s<=b;s++) o.push(s); if(p.order==="end") o.reverse(); return o; }
+  function days(p){ var o=[]; surahs(p).forEach(function(s){ for(var v=1; v<=C[s-1]; v+=p.per) o.push([s,v,Math.min(C[s-1],v+p.per-1)]); }); return o; }
+  function label(d){ return d[0]+". "+N[d[0]-1]+", "+L.verses+" "+(d[1]===d[2]?d[1]:d[1]+"–"+d[2]); }
+  var plan=load("ikreHifz",null);
+  /* ---------- setup ---------- */
+  var fs=$("hzFrom"), ts=$("hzTo");
+  for(var s=1;s<=114;s++){ fs.appendChild(new Option(s+". "+N[s-1],s)); ts.appendChild(new Option(s+". "+N[s-1],s)); }
+  fs.value=78; ts.value=114;
+  function preset(){ var v=document.querySelector('input[name="hzWhat"]:checked').value; $("hzCustom").hidden=v!=="custom"; }
+  document.querySelectorAll('input[name="hzWhat"]').forEach(function(r){ r.addEventListener("change",preset); });
+  $("hzSetup").addEventListener("submit",function(ev){
+    ev.preventDefault();
+    var w=document.querySelector('input[name="hzWhat"]:checked').value, r=w==="custom"?[+fs.value,+ts.value]:PRE[w];
+    plan={what:w,from:r[0],to:r[1],order:document.querySelector('input[name="hzOrder"]:checked').value,per:+$("hzPer").value,done:{},start:Date.now()};
+    save("ikreHifz",plan); show();
+  });
+  $("hzCancel").addEventListener("click",function(){ show(); });
+  /* ---------- plan ---------- */
+  function markKnown(d){ var m=load("ikreMastery",{}), k=slug(d[0]); m[k]=m[k]||{}; for(var v=d[1];v<=d[2];v++) m[k][v]="yes"; save("ikreMastery",m); }
+  function toggle(i,ds){ if(plan.done[i]) delete plan.done[i]; else { plan.done[i]=Date.now(); markKnown(ds[i]); } save("ikreHifz",plan); render(); }
+  function render(){
+    var ds=days(plan), n=ds.length, nd=0, vt=0, next=-1;
+    ds.forEach(function(d,i){ vt+=d[2]-d[1]+1; if(plan.done[i]) nd++; else if(next<0) next=i; });
+    $("hzSum").textContent=f(L.sum,{d:n,v:vt});
+    var left=n-nd, end=new Date(); end.setDate(end.getDate()+Math.max(0,left-1));
+    try{ $("hzEnd").textContent=left?L.end+" "+end.toLocaleDateString(LANG,{day:"numeric",month:"long",year:"numeric"}):""; }catch(e){ $("hzEnd").textContent=""; }
+    $("hzProgT").textContent=f(L.prog,{a:nd,b:n}); $("hzFill").style.width=(n?nd/n*100:0)+"%";
+    var t=$("hzToday"); t.innerHTML="";
+    if(next<0){ t.appendChild(el("p","hz-alldone",L.allDone)); }
+    else {
+      var d=ds[next];
+      t.appendChild(el("p","hz-k",L.today+" · "+L.day+" "+(next+1)));
+      t.appendChild(el("p","hz-task",label(d)));
+      var a=el("a","btn btn-primary hz-open",L.open); a.href="kurani.html#"+d[0]+":"+d[1]; t.appendChild(a);
+      var b=el("button","btn btn-ghost hz-done",L.done); b.type="button"; b.addEventListener("click",function(){ toggle(next,ds); }); t.appendChild(b);
+      var prev=-1; for(var i=next-1;i>=0;i--){ if(plan.done[i]){ prev=i; break; } }
+      if(prev>-1){ var rv=el("p","hz-rev"); rv.appendChild(document.createTextNode(L.review+" ")); var ra=el("a",null,label(ds[prev])); ra.href="kurani.html#"+ds[prev][0]+":"+ds[prev][1]; rv.appendChild(ra); t.appendChild(rv); }
+    }
+    var ul=$("hzList"); ul.innerHTML="";
+    ds.forEach(function(d,i){
+      var li=el("li","hz-day"+(plan.done[i]?" on":"")+(i===next?" now":""));
+      var cb=el("button","hz-tick"); cb.type="button"; cb.setAttribute("aria-pressed",String(!!plan.done[i])); cb.setAttribute("aria-label",(plan.done[i]?L.undo:L.done)+": "+L.day+" "+(i+1)); cb.textContent=plan.done[i]?"✓":"";
+      cb.addEventListener("click",function(){ toggle(i,ds); });
+      li.appendChild(cb); li.appendChild(el("span","hz-dn",L.day+" "+(i+1)));
+      var a=el("a",null,label(d)); a.href="kurani.html#"+d[0]+":"+d[1]; li.appendChild(a);
+      ul.appendChild(li);
+    });
+  }
+  function show(){
+    var has=!!plan;
+    $("hzPlan").hidden=!has; $("hzSetupBox").hidden=has; $("hzCancel").hidden=!has;
+    if(has) render();
+  }
+  $("hzChange").addEventListener("click",function(){
+    $("hzPlan").hidden=true; $("hzSetupBox").hidden=false; $("hzCancel").hidden=false;
+    var r=document.querySelector('input[name="hzWhat"][value="'+plan.what+'"]'); if(r) r.checked=true;
+    var o=document.querySelector('input[name="hzOrder"][value="'+plan.order+'"]'); if(o) o.checked=true;
+    $("hzPer").value=plan.per; fs.value=plan.from; ts.value=plan.to; preset();
+  });
+  $("hzDel").addEventListener("click",function(){ $("hzAsk").hidden=false; $("hzDel").hidden=true; });
+  $("hzNo").addEventListener("click",function(){ $("hzAsk").hidden=true; $("hzDel").hidden=false; });
+  $("hzYes").addEventListener("click",function(){ try{ localStorage.removeItem("ikreHifz"); }catch(e){} plan=null; $("hzAsk").hidden=true; $("hzDel").hidden=false; show(); });
+  preset(); show();
+})();
+</script>
+<script src="../offline.js"></script>
+</body>
+</html>

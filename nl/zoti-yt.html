@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wie is je Heer? · Lees de Koran</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../site.css">
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="theme-color" content="#241A1A">
+<link rel="apple-touch-icon" href="../icon-192.png">
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1l2.4 5.2L20 4l-2.2 5.6L23 12l-5.2 2.4L20 20l-5.6-2.2L12 23l-2.4-5.2L4 20l2.2-5.6L1 12l5.2-2.4L4 4l5.6 2.2z" fill="none" stroke="#C8102E" stroke-width="1.3"/></svg>
+      Lees de Koran
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <div class="nav-dropdown" id="navLearnDropdown">
+        <button type="button" class="nav-dropdown-btn" aria-haspopup="true" aria-expanded="false">Leren ▾</button>
+        <div class="nav-dropdown-menu" hidden>
+          <a href="meso.html#pergatitja">Voordat je begint</a>
+          <a href="meso.html#fillo">Stap voor stap</a>
+          <a href="meso.html#alfabeti">1. Het Arabische alfabet</a>
+          <a href="meso.html#texhvid">2. Tajwied</a>
+          <a href="meso.html#kurani">3. Lees de Koran</a>
+          <a href="hifz.html">4. Uit het hoofd leren</a>
+          <a href="namazi.html">5. Hoe bid je</a>
+        </div>
+      </div>
+      <a href="kurani.html">Koran</a>
+      <a href="mrekullite.html">Wonderen</a>
+      <a href="zoti-yt.html" aria-current="page">Je Heer</a>
+      <a href="deshmi.html">Bewijzen</a>
+      <a href="kujt-lutesh.html">Tot wie bid je?</a>
+      <a href="pyetje.html">Vragen</a>
+    </nav>
+    <div class="lang-switch" id="langSwitch" role="group" aria-label="Kies je taal">
+      <a class="lang-flag" data-lang="sq" href="../zoti-yt.html" hreflang="sq" lang="sq" aria-label="Shqip" title="Shqip">🇦🇱</a>
+      <a class="lang-flag" data-lang="en" href="../en/zoti-yt.html" hreflang="en" lang="en" aria-label="English" title="English">🇬🇧</a>
+      <a class="lang-flag active" aria-current="true" data-lang="nl" href="zoti-yt.html" hreflang="nl" lang="nl" aria-label="Nederlands" title="Nederlands">🇳🇱</a>
+      <a class="lang-flag" data-lang="de" href="../de/zoti-yt.html" hreflang="de" lang="de" aria-label="Deutsch" title="Deutsch">🇩🇪</a>
+    </div>
+    <a class="btn cta" href="meso.html#fillo">Gratis beginnen</a>
+    <button type="button" class="nav-menu-btn" id="navMenuBtn" aria-expanded="false" aria-controls="navLinks">☰ Menu</button>
+  </div>
+</header>
+<div class="lang-toast" id="langToast" role="status" aria-live="polite" hidden></div>
+
+<main>
+<section class="page-head">
+  <div class="wrap">
+    <h1>Wie is jouw Heer?</h1>
+    <p class="lead">Allah heeft mooie namen. Als je ze kent, hou je meer van Hem, vrees je Hem en hoop je op Hem. Hier zijn 86 van Zijn namen met hun betekenis.</p>
+  </div>
+</section>
+
+<section class="zn">
+  <div class="wrap">
+    <div class="zn-intro">
+      <div class="zn-box zn-had"><p class="zn-k">Negenennegentig namen</p><p class="zn-q">De Profeet ﷺ zei: „Allah heeft negenennegentig namen, honderd min één. Wie ze leert, gaat het Paradijs binnen.”</p><p class="zn-r">Bukhari 2736, Muslim 2677, van Abu Hurayra · <a href="https://islamqa.info/en/answers/41003" target="_blank" rel="noopener">IslamQA 41003</a></p></div>
+      <div class="zn-box"><p class="zn-k">Wat betekent het om ze te leren?</p><ol><li>Ze uit je hoofd leren.</li><li>Hun betekenis begrijpen.</li><li>Ernaar handelen, bijvoorbeeld geloven dat Allah Eén is en voorziening alleen bij Hem zoeken.</li><li>Allah ermee aanroepen, bijvoorbeeld: „O Meest Barmhartige, wees mij genadig!”</li></ol><p class="zn-r"><a href="https://islamqa.info/en/answers/121246" target="_blank" rel="noopener">IslamQA 121246</a>, <a href="https://islamqa.info/en/answers/188229" target="_blank" rel="noopener">188229</a></p></div>
+      <div class="zn-box"><p class="zn-k">Zijn het er maar 99?</p><p>Nee. De geleerden zijn het erover eens dat de namen van Allah niet beperkt zijn tot 99. De hadith gaat over het binnengaan van het Paradijs, niet over een vast aantal. De Profeet ﷺ zei in een smeekbede: „of die U bij U hebt bewaard in de kennis van het verborgene”, wat betekent dat Allah namen heeft die geen enkel schepsel kent.</p><p class="zn-r"><a href="https://islamqa.info/en/answers/41003" target="_blank" rel="noopener">IslamQA 41003</a></p></div>
+    </div>
+    <div class="zn-tools">
+      <label for="znFind">Zoek een naam of een betekenis</label>
+      <input type="search" id="znFind" autocomplete="off">
+      <p class="zn-count" id="znCount" aria-live="polite"></p>
+    </div>
+    <div class="zn-grid" id="znGrid" data-l="{&quot;ev&quot;: &quot;Bewijs:&quot;, &quot;src&quot;: &quot;Bron:&quot;, &quot;count&quot;: &quot;{n} namen&quot;}"></div>
+    <div class="zn-box zn-ben"><p class="zn-k">Hoe je er baat bij hebt</p><ul><li>Allah kennen via Zijn namen, eigenschappen en daden is de edelste kennis, zegt Ibn al-Qayyim.</li><li>Deze kennis brengt liefde, vrees, hoop en oprechtheid tegenover Allah, en versterkt het geloof.</li><li>Roep Allah aan met Zijn namen, zoals de Koran zegt in 7:180: „O Ghafoer, vergeef mij!”, „O Tawwaab, aanvaard mijn berouw!”</li><li>Het is niet genoeg om de namen alleen te herhalen zonder ze te begrijpen en ernaar te handelen. En er is geen basis om een naam als medicijn voor een ziekte te gebruiken.</li></ul><p class="zn-r"><a href="https://islamqa.info/en/answers/4043" target="_blank" rel="noopener">IslamQA 4043</a>, <a href="https://islamqa.info/en/answers/1392" target="_blank" rel="noopener">1392</a>, <a href="https://islamqa.info/en/answers/188229" target="_blank" rel="noopener">188229</a>, <a href="https://islamqa.info/en/answers/45559" target="_blank" rel="noopener">45559</a></p></div>
+    <h2 class="zn-srch">Bronnen</h2>
+    <ul class="pse-sources">
+      <li><a href="https://islamqa.info/en/answers/2594" target="_blank" rel="noopener">IslamQA 2594</a>: Some of the Names of Allah and their meanings</li>
+      <li><a href="https://islamqa.info/en/answers/41003" target="_blank" rel="noopener">IslamQA 41003</a>: How Many Names Does Allah Have?</li>
+      <li><a href="https://islamqa.info/en/answers/121246" target="_blank" rel="noopener">IslamQA 121246</a>: What is meant by learning by heart the beautiful names of Allah, may He be exalted</li>
+      <li><a href="https://islamqa.info/en/answers/188229" target="_blank" rel="noopener">IslamQA 188229</a>: Benefits of Reciting 99 Names of Allah Daily</li>
+      <li><a href="https://islamqa.info/en/answers/4043" target="_blank" rel="noopener">IslamQA 4043</a>: Importance of knowing the Beautiful Names of Allah</li>
+      <li><a href="https://islamqa.info/en/answers/1392" target="_blank" rel="noopener">IslamQA 1392</a>: Many of the Names of Allaah may be found at the end of numerous aayaat of the Qur&#x27;aan</li>
+      <li><a href="https://islamqa.info/en/answers/45559" target="_blank" rel="noopener">IslamQA 45559</a>: The Divine names as remedy</li>
+      <li><a href="https://islamqa.info/en/answers/104488" target="_blank" rel="noopener">IslamQA 104488</a>: Is al-&#x27;Adl (Justice) one of the names of Allah?</li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap fgrid">
+    <div>
+      <h4>Lees de Koran</h4>
+      <p style="margin:0">Gratis website om de Koran te leren lezen en begrijpen, in het Nederlands.</p>
+    </div>
+    <div>
+      <h4>Leren</h4>
+      <ul>
+        <li><a href="meso.html#alfabeti">Arabisch alfabet</a></li>
+        <li><a href="meso.html#texhvid">Tajwied</a></li>
+        <li><a href="meso.html#kurani">Korte soera's</a></li>
+        <li><a href="kurani.html">Koran en voortgang</a></li>
+        <li><a href="mrekullite.html">Wonderen van de Koran</a></li>
+        <li><a href="zoti-yt.html">Wie is je Heer?</a></li>
+        <li><a href="fjalorth.html">Woordenlijst</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Website</h4>
+      <ul>
+        <li><a href="pyetje.html">Veelgestelde vragen</a></li>
+        <li><a href="rreth-nesh.html">Over ons</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="privatesia.html">Privacy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap copy">© 2026 Lees de Koran. Het materiaal mag vrij worden gebruikt om te leren.</div>
+</footer>
+
+<script>window.ZNAMES=[{"n":"Rabb","m":"Heer, Verzorger","x":"Hij zorgt voor al Zijn dienaren en leidt hen, en Hij verbetert de harten van Zijn naaste vrienden.","ev":[],"src":2594},{"n":"Allah","m":"Degene die aanbeden wordt","x":"Allah is Degene die bemind en aanbeden wordt, en Hij heeft de eigenschappen van goddelijkheid en volmaaktheid.","ev":[],"src":2594},{"n":"Al-Malik","m":"de Heerser","x":"Hij heeft volledige controle over de schepping, en Hij beveelt, beloont en bestraft.","ev":[],"src":2594},{"n":"Al-Maalik","m":"de Bezitter","x":"Hij heeft volledige controle over de schepping, en Hij beveelt, beloont en bestraft.","ev":[],"src":2594},{"n":"Alladhi lahu'l-Mulk","m":"Degene aan Wie de heerschappij toebehoort","x":"Hij heeft volledige controle over de schepping, en Hij beveelt, beloont en bestraft.","ev":[],"src":2594},{"n":"Al-Waahid","m":"de Ene","x":"Hij is volmaakt Eén zonder partner, en Zijn dienaren moeten Hem erkennen als de Enige.","ev":[],"src":2594},{"n":"Al-Ahad","m":"de Unieke","x":"Hij is volmaakt Eén zonder partner, en Zijn dienaren moeten Hem erkennen als de Enige.","ev":[],"src":2594},{"n":"Al-Samad","m":"De Onafhankelijke Meester, Die alle schepselen nodig hebben; Hij eet niet en drinkt niet","x":"De hele schepping wendt zich tot Hem voor haar behoeften, en Hij is volmaakt in Zijn namen, eigenschappen en daden.","ev":[],"src":2594},{"n":"Al-'Aleem","m":"de Alwetende","x":"Zijn kennis omvat alle dingen, het zichtbare en het onzichtbare, het verleden, het heden en de toekomst.","ev":[],"src":2594},{"n":"Al-Khabeer","m":"de Welingelichte","x":"Zijn kennis omvat alle dingen, het zichtbare en het onzichtbare, het verleden, het heden en de toekomst.","ev":[],"src":2594},{"n":"Al-Hakeem","m":"de Wijze","x":"Hij heeft de hoogste wijsheid, daarom schept Hij niets tevergeefs en geeft Hij geen enkele wet voor de grap.","ev":[["5:50","5:50"]],"src":2594},{"n":"Al-Rahman","m":"de Meest Genadevolle","x":"Deze naam toont de barmhartigheid, goedheid en vrijgevigheid van Allah, en de gelovigen krijgen daarvan het grotere deel.","ev":[["7:156","7:156"]],"src":2594},{"n":"Al-Raheem","m":"de Meest Barmhartige","x":"Deze naam toont de barmhartigheid, goedheid en vrijgevigheid van Allah, en de gelovigen krijgen daarvan het grotere deel.","ev":[["7:156","7:156"]],"src":2594},{"n":"Al-Barr","m":"de Bron van goedheid","x":"Deze naam toont de barmhartigheid, goedheid en vrijgevigheid van Allah, en de gelovigen krijgen daarvan het grotere deel.","ev":[["7:156","7:156"]],"src":2594},{"n":"Al-Kareem","m":"de Meest Vrijgevige","x":"Deze naam toont de barmhartigheid, goedheid en vrijgevigheid van Allah, en de gelovigen krijgen daarvan het grotere deel.","ev":[["7:156","7:156"]],"src":2594},{"n":"Al-Jawaad","m":"de Vrijgevige","x":"Deze naam toont de barmhartigheid, goedheid en vrijgevigheid van Allah, en de gelovigen krijgen daarvan het grotere deel.","ev":[["7:156","7:156"]],"src":2594},{"n":"Al-Ra'oof","m":"de Medelevende","x":"Deze naam toont de barmhartigheid, goedheid en vrijgevigheid van Allah, met het grotere deel voor de gelovigen, en Hij troost gebroken harten en steunt de zwakken en wie Zijn hulp zoekt.","ev":[["7:156","7:156"]],"src":2594},{"n":"Al-Wahhaab","m":"de Schenker","x":"Deze naam toont de barmhartigheid, goedheid en vrijgevigheid van Allah, en de gelovigen krijgen daarvan het grotere deel.","ev":[["7:156","7:156"]],"src":2594},{"n":"Al-Samee'","m":"de Alhorende","x":"Hij hoort alle stemmen in elke taal wanneer Zijn schepselen Hem aanroepen.","ev":[],"src":2594},{"n":"Al-Baseer","m":"de Alziende","x":"Hij doorziet alle dingen, hoe klein ook, zelfs in de donkerste nacht.","ev":[],"src":2594},{"n":"Al-Hameed","m":"de Prijzenswaardige","x":"Hij verdient lof om Zijn namen, Zijn eigenschappen en Zijn daden.","ev":[],"src":2594},{"n":"Al-Majeed","m":"de Meest Glorierijke","x":"Hij bezit glorie, trots, grootheid en majesteit, en Hij is verheven boven alles.","ev":[],"src":2594},{"n":"Al-Kabeer","m":"de Allergrootste","x":"Hij bezit glorie, trots, grootheid en majesteit, en Hij is verheven boven alles.","ev":[],"src":2594},{"n":"Al-'Azeem","m":"de Allergrootste","x":"Hij bezit glorie, trots, grootheid en majesteit, en Hij is verheven boven alles.","ev":[],"src":2594},{"n":"Al-Jaleel","m":"de Verhevene","x":"Hij bezit glorie, trots, grootheid en majesteit, en Hij is verheven boven alles.","ev":[],"src":2594},{"n":"Al-'Afuw","m":"de Kwijtschelder","x":"Hij staat bekend om kwijtschelding en vergeving voor Zijn dienaren die de juiste middelen volgen.","ev":[["20:82","20:82"]],"src":2594},{"n":"Al-Ghafoor","m":"de Vergever","x":"Hij staat bekend om kwijtschelding en vergeving voor Zijn dienaren die de juiste middelen volgen.","ev":[["20:82","20:82"]],"src":2594},{"n":"Al-Ghaffaar","m":"de Alvergevende","x":"Hij staat bekend om kwijtschelding en vergeving voor Zijn dienaren die de juiste middelen volgen.","ev":[["20:82","20:82"]],"src":2594},{"n":"Al-Tawwaab","m":"de Aanvaarder van berouw","x":"Hij aanvaardt oprecht berouw en helpt harten om zich tot Hem te keren.","ev":[],"src":2594},{"n":"Al-Quddoos","m":"de Heilige","x":"Hij is ver verheven boven elke onvolkomenheid en boven elke vergelijking met de schepping.","ev":[["42:11","42:11"],["112:4","112:4"],["19:65","19:65"],["2:22","2:22"]],"src":2594},{"n":"Al-Salaam","m":"Degene die vrij is van alle gebreken","x":"Hij is ver verheven boven elke onvolkomenheid en boven elke vergelijking met de schepping.","ev":[["42:11","42:11"],["112:4","112:4"],["19:65","19:65"],["2:22","2:22"]],"src":2594},{"n":"Al-'Aliyy","m":"de Hoge","x":"Hij is verheven in Zijn wezen, Zijn rang, Zijn eigenschappen en Zijn heerschappij, en Hij verhief Zich boven de Troon.","ev":[],"src":2594},{"n":"Al-A'laa","m":"de Allerhoogste","x":"Hij is verheven in Zijn wezen, Zijn rang, Zijn eigenschappen en Zijn heerschappij, en Hij verhief Zich boven de Troon.","ev":[],"src":2594},{"n":"Al-'Azeez","m":"de Almachtige","x":"Alle kracht en macht behoren aan Hem, en geen schepsel kan Hem schaden.","ev":[],"src":2594},{"n":"Al-Qawiy","m":"de Sterkste","x":"Deze naam heeft een betekenis die lijkt op Al-'Azeez, de Almachtige.","ev":[],"src":2594},{"n":"Al-Mateen","m":"de Standvastige","x":"Deze naam heeft een betekenis die lijkt op Al-'Azeez, de Almachtige.","ev":[],"src":2594},{"n":"Al-Jabbaar","m":"de Dwingende","x":"Deze naam omvat de betekenissen van Al-'Aliyy, Al-A'laa en Al-Qahhaar.","ev":[],"src":2594},{"n":"Al-Mutakabbir","m":"de Majesteitelijke","x":"Hij staat boven alle slechte eigenschappen, tekortkomingen en gebreken.","ev":[],"src":2594},{"n":"Al-Khaaliq","m":"de Schepper","x":"Hij schiep alles uit het niets en vormde het met wijsheid.","ev":[],"src":2594},{"n":"Al-Baari'","m":"de Voortbrenger van alle dingen","x":"Hij schiep alles uit het niets en vormde het met wijsheid.","ev":[],"src":2594},{"n":"Al-Musawwir","m":"de Vormgever","x":"Hij schiep alles uit het niets en vormde het met wijsheid.","ev":[],"src":2594},{"n":"Al-Mu'min","m":"de Beschermer van het geloof","x":"Hij wordt geprezen om Zijn volmaakte eigenschappen, en Hij zond Boodschappers die Hij bevestigde met tekenen en bewijzen.","ev":[],"src":2594},{"n":"Al-Muhaymin","m":"de Waker over Zijn schepselen","x":"Hij is op de hoogte van alles wat verborgen en bedekt is.","ev":[],"src":2594},{"n":"Al-Qadeer","m":"de Machtige","x":"Hij heeft volmaakte macht, daarom schept en bestuurt Hij, geeft Hij leven en dood, en wekt Hij de doden weer op.","ev":[],"src":2594},{"n":"Al-Lateef","m":"de Fijngevoelige en Vriendelijke","x":"Hij kent verborgen en fijne zaken, en Hij zorgt voor de gelovigen op manieren die zij niet zien.","ev":[],"src":2594},{"n":"Al-Haseeb","m":"Degene die rekenschap vraagt","x":"Hij kent alle daden, en Hij beloont of bestraft volgens Zijn wijsheid.","ev":[],"src":2594},{"n":"Al-Raqeeb","m":"de Waakzame","x":"Hij houdt toezicht op wat verborgen is in de harten.","ev":[["13:33","13:33"]],"src":2594},{"n":"Al-Hafeez","m":"de Behoeder","x":"Hij beschermt Zijn schepping en Zijn naaste vrienden tegen zonde en ondergang.","ev":[],"src":2594},{"n":"Al-Muheet","m":"de Omvattende","x":"Hij omvat alle dingen met Zijn kennis, macht, barmhartigheid en heerschappij.","ev":[],"src":2594},{"n":"Al-Qahhaar","m":"de Overweldiger","x":"De hele schepping onderwerpt zich aan Hem vanwege Zijn macht en kracht.","ev":[],"src":2594},{"n":"Al-Muqeet","m":"de Voorziener van levensonderhoud","x":"Hij voorziet in het levensonderhoud van alles wat bestaat.","ev":[],"src":2594},{"n":"Al-Wakeel","m":"de Vertrouwde","x":"Hij bestuurt de zaken van de schepping, en Hij is genoeg voor wie op Hem vertrouwt.","ev":[["2:257","2:257"]],"src":2594},{"n":"Dhoo'l-Jalaali wa'l-Ikraam","m":"Bezitter van Majesteit en Eer","x":"Hij bezit kracht, trots, barmhartigheid en vrijgevigheid, en Hij eert Zijn toegewijde aanbidders.","ev":[],"src":2594},{"n":"Al-Wudood","m":"de Liefhebbende","x":"Hij houdt van Zijn Profeten, Zijn Boodschappers en hun volgelingen, en zij houden ook van Hem.","ev":[],"src":2594},{"n":"Al-Fattaah","m":"de Opener","x":"Hij oordeelt volgens Zijn wetten, en Hij opent harten en de deuren van barmhartigheid en levensonderhoud.","ev":[["35:2","35:2"]],"src":2594},{"n":"Al-Razzaaq","m":"de Voorziener","x":"Hij voorziet in ieders behoefte, met lichamelijke voorziening voor iedereen en voorziening voor het hart voor de gelovigen.","ev":[],"src":2594},{"n":"Al-Hakam","m":"de Rechter","x":"Hij oordeelt met rechtvaardigheid, zodat niemand onrecht wordt aangedaan en niemand de zonde van een ander draagt.","ev":[["11:56","11:56"]],"src":2594},{"n":"Al-'Adl","m":"de Rechtvaardige","x":"Hij oordeelt met rechtvaardigheid, zodat niemand onrecht wordt aangedaan en niemand de zonde van een ander draagt. Geleerden verschillen erover of dit een naam van Allah is, terwijl rechtvaardigheid een bevestigde eigenschap van Hem is (IslamQA 104488).","ev":[["11:56","11:56"]],"src":2594},{"n":"Jaami' al-Naas","m":"Verzamelaar van de mensen","x":"Hij zal de hele mensheid verzamelen op de Dag des Oordeels.","ev":[],"src":2594},{"n":"Al-Hayy","m":"de Eeuwig Levende","x":"Hij is volkomen levend.","ev":[],"src":2594},{"n":"Al-Qayyoom","m":"de Zelfbestaande","x":"Hij onderhoudt en bestuurt de zaken van de hemelen en de aarde.","ev":[],"src":2594},{"n":"Al-Noor","m":"het Licht","x":"Hij is het Licht van de hemelen en de aarde, en Hij verlicht de harten met kennis en leiding.","ev":[],"src":2594},{"n":"Badee' al-Samawaati wa'l-Ard","m":"Schepper van de hemelen en de aarde","x":"Hij schiep de hemelen en de aarde met de grootste schoonheid en orde.","ev":[],"src":2594},{"n":"Al-Qaabid","m":"de Inperker","x":"Hij neemt de zielen en verruimt de harten met voorziening, volgens Zijn wijsheid en barmhartigheid.","ev":[],"src":2594},{"n":"Al-Baasit","m":"de Verruimer","x":"Hij neemt de zielen en verruimt de harten met voorziening, volgens Zijn wijsheid en barmhartigheid.","ev":[],"src":2594},{"n":"Al-Mu'ti","m":"de Gever","x":"Hij geeft en onthoudt zoals Hij wil, en niemand kan geven wat Hij onthoudt.","ev":[],"src":2594},{"n":"Al-Maani'","m":"de Onthouder","x":"Hij geeft en onthoudt zoals Hij wil, en niemand kan geven wat Hij onthoudt.","ev":[],"src":2594},{"n":"Al-Shaheed","m":"de Getuige","x":"Hij waakt over alle dingen en is getuige van alle daden.","ev":[],"src":2594},{"n":"Al-Mubdi'","m":"de Beginner van de schepping","x":"Hij begint de schepping en zal haar opnieuw scheppen.","ev":[["30:27","30:27"]],"src":2594},{"n":"Al-Mu'eed","m":"de Hersteller","x":"Hij begint de schepping en zal haar opnieuw scheppen.","ev":[["30:27","30:27"]],"src":2594},{"n":"Al-Fa''aal lima yureed","m":"Degene die doet wat Hij wil","x":"Hij doet wat Hij wil en niets kan Hem tegenhouden, en Hij handelt altijd met wijsheid.","ev":[],"src":2594},{"n":"Al-Ghaniy","m":"de Behoefteloze","x":"Hij is volledig onafhankelijk en heeft niemand nodig.","ev":[],"src":2594},{"n":"Al-Mughni","m":"de Verrijker","x":"Hij is volledig onafhankelijk en heeft niemand nodig.","ev":[],"src":2594},{"n":"Al-Haleem","m":"de Verdraagzame","x":"Hij stelt de straf uit om ruimte te geven voor berouw.","ev":[],"src":2594},{"n":"Al-Shaakir","m":"de Dankbare","x":"Hij waardeert zelfs de kleinste daad en vermenigvuldigt oprechte daden.","ev":[],"src":2594},{"n":"Al-Shakoor","m":"de Waarderende","x":"Hij waardeert zelfs de kleinste daad en vermenigvuldigt oprechte daden.","ev":[],"src":2594},{"n":"Al-Qareeb","m":"de Altijd Nabije","x":"Hij is iedereen nabij door Zijn kennis, en Hij is in het bijzonder nabij aan wie Hem aanroepen.","ev":[],"src":2594},{"n":"Al-Mujeeb","m":"de Verhoorder","x":"Hij is iedereen nabij door Zijn kennis, en Hij is in het bijzonder nabij aan wie Hem aanroepen.","ev":[],"src":2594},{"n":"Al-Kaafi","m":"de Toereikende","x":"Hij geeft Zijn dienaren alles wat zij nodig hebben, en Hij is genoeg voor wie op Hem vertrouwen.","ev":[],"src":2594},{"n":"Al-Awwal","m":"de Eerste","x":"Niets is vóór Hem, na Hem, boven Hem of onder Hem, zoals de Profeet uitlegde.","ev":[["57:3","57:3"]],"src":2594},{"n":"Al-Aakhir","m":"de Laatste","x":"Niets is vóór Hem, na Hem, boven Hem of onder Hem, zoals de Profeet uitlegde.","ev":[["57:3","57:3"]],"src":2594},{"n":"Al-Zaahir","m":"de Openbare","x":"Niets is vóór Hem, na Hem, boven Hem of onder Hem, zoals de Profeet uitlegde.","ev":[["57:3","57:3"]],"src":2594},{"n":"Al-Baatin","m":"de Verborgene","x":"Niets is vóór Hem, na Hem, boven Hem of onder Hem, zoals de Profeet uitlegde.","ev":[["57:3","57:3"]],"src":2594},{"n":"Al-Waasi'","m":"de Alomvattende","x":"Hij is onmetelijk in Zijn eigenschappen, Zijn genade en Zijn vrijgevigheid.","ev":[],"src":2594},{"n":"Al-Haadi","m":"de Gids","x":"Hij leidt Zijn dienaren naar wat hun goed doet en beschermt hen tegen schade.","ev":[],"src":2594},{"n":"Al-Haqq","m":"de Waarheid","x":"Hij is waar in Zijn wezen en eigenschappen, en Zijn woorden, Zijn religie en de aanbidding van Hem zijn de waarheid.","ev":[["10:32","10:32"],["17:81","17:81"]],"src":2594}];</script>
+<script src="../site.js"></script>
+<script src="../zoti.js"></script>
+<script src="../offline.js"></script>
+</body>
+</html>
