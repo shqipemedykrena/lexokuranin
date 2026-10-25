@@ -1479,6 +1479,9 @@ body.qr-night .qr-ar .qw.sel{background:rgba(255,143,155,.2)}
 /* meso.html tajweed cards: what the Arabic rule name means */
 .tajweed-card .tj-mean{margin:-.2rem 0 .5rem;font-size:.92rem;color:var(--ink);background:var(--how-bg,#e9f8f0);border:1px solid var(--how-line,#bfe7d2);border-radius:.4rem;padding:.3rem .6rem;display:inline-block}
 .tajweed-card .tj-mean span{font-weight:700;color:var(--how-num,#159a68)}
+.tj-why{max-width:44rem;margin:1rem 0 1.4rem}
+.tj-why h3{font-size:1.05rem;margin:0 0 .35rem}
+.tj-why p{margin:0 0 .5rem}
 /* bigger text across the whole site (owner, 25 Oct): root 16px -> 18px, so every size given in rem grows with it,
    and body text 17px -> 19px. Percent keeps the visitor's own browser text-size setting working. */
 html{font-size:112.5%}
