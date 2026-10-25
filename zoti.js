@@ -15,8 +15,9 @@
       d.ev.forEach(function(e, k){ if(k) p.appendChild(document.createTextNode(", ")); var a = el("a", null, e[1]); a.href = "kurani.html#" + e[0]; p.appendChild(a); });
       det.appendChild(p);
     }
-    var s = el("p", "zn-src"); var a2 = el("a", null, "IslamQA " + d.src); a2.href = "https://islamqa.info/en/answers/" + d.src; a2.target = "_blank"; a2.rel = "noopener";
-    s.appendChild(el("span", null, L.src + " ")); s.appendChild(a2); det.appendChild(s);
+    /* the source is a footnote number that points to the list at the bottom of the page (owner, 25 Oct) */
+    var li = null; document.querySelectorAll(".fn-list li").forEach(function(x){ var a = x.querySelector('a[href*="/answers/' + d.src + '"]'); if(a && !li) li = x; });
+    if(li){ var sp = el("sup", "fn"); var a2 = el("a", null, li.id.replace("fn-", "")); a2.href = "#" + li.id; a2.setAttribute("aria-label", L.src.replace(":", "") + " " + a2.textContent); sp.appendChild(a2); det.firstChild.appendChild(sp); }
     var w = el("div", "zn-item"); w.appendChild(b); w.appendChild(det); w.dataset.k = norm(d.n + " " + d.m);
     b.addEventListener("click", function(){ var o = det.hidden; det.hidden = !o; b.setAttribute("aria-expanded", String(o)); w.classList.toggle("open", o); });
     grid.appendChild(w);

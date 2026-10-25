@@ -923,6 +923,12 @@ sup.fn a:hover,sup.fn a:focus-visible{text-decoration:underline}
 .fn-back{text-decoration:none;color:var(--ink-soft);margin-left:.2rem}
 sup.fn:target{background:var(--how-bg,#e9f8f0);border-radius:.2rem}
 [id^="fnr-"]{scroll-margin-top:6rem}
+.fn-sec{padding-block:1rem 2.5rem}
+.fn-sec h2{font-size:1.2rem}
+.fn-sec .fn-list,.fn-list.fn-long{font-size:.85rem;color:var(--ink-soft)}
+.fn-sec .fn-list a{color:inherit}
+@media(min-width:900px){.fn-list.fn-long{columns:2;column-gap:2.5rem}.fn-list.fn-long li{break-inside:avoid}}
+.fn-flash{background:var(--how-bg,#e9f8f0);border-radius:.3rem;transition:background .4s}
 /* final test on meso.html: choose how many questions (10 / 25 / 50) */
 .ft-len{display:flex;flex-wrap:wrap;gap:.5rem;margin:.2rem 0 1rem}
 .ft-len button{font:inherit;font-weight:600;min-width:3.4rem;padding:.45rem .9rem;border-radius:999px;border:1px solid var(--line);background:var(--paper-lift);color:var(--ink);cursor:pointer}
