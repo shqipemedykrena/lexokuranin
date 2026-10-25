@@ -1012,6 +1012,13 @@ ol.prep-need>li::before{content:counter(need);position:absolute;left:0;top:.08re
 /* the advice is numbered too, in green circles, matching its mistake (owner, 25 Oct) */
 .prep-table tbody td:nth-child(2){position:relative;padding-left:2.6rem}
 .prep-table tbody td:nth-child(2)::before{content:counter(pit);position:absolute;left:.7rem;top:.7rem;width:1.45rem;height:1.45rem;border-radius:50%;background:var(--how-num);color:#fff;font-size:.8rem;font-weight:700;display:flex;align-items:center;justify-content:center}
+/* kurani.html: what a juz is, and its sources at the bottom */
+.qr-juz-about{max-width:44rem;margin:.4rem 0 1.4rem}
+.qr-juz-about h3{font-size:1.05rem;margin:1rem 0 .35rem}
+.qr-juz-about p{margin:0 0 .6rem}
+.qr-fn{max-width:44rem;margin-top:1.4rem;font-size:.85rem;color:var(--ink-soft)}
+.qr-fn h3{font-size:.95rem;margin:0 0 .3rem;color:var(--ink)}
+.qr-fn .fn-list a{color:inherit}
 /* ===== Miracles page (mrekullite.html) ===== */
 .mk-nav{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem}
 .mk-chip{font-size:.85rem;padding:.35rem .8rem;border:1px solid var(--line);border-radius:999px;background:var(--paper-lift);color:var(--ink);text-decoration:none}
