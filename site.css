@@ -1396,3 +1396,29 @@ body.qr-night .qr-ar .qw.sel{background:rgba(255,143,155,.2)}
 .gj-cine .pse-hint{bottom:calc(9% + .5rem);z-index:4}
 @media (prefers-reduced-motion:reduce){.gj-grain,.gj-tc::before{animation:none}.gj-chap.on{animation:none;opacity:1}.gj-cine .gj-bar{transition:none}}
 .gj-norec::before{display:none}
+/* bigger text across the whole site (owner, 25 Oct): root 16px -> 18px, so every size given in rem grows with it,
+   and body text 17px -> 19px. Percent keeps the visitor's own browser text-size setting working. */
+html{font-size:112.5%}
+body{font-size:1.0556rem}
+/* the header keeps its earlier size on wide screens, so the menu still fits on one row */
+@media(min-width:1000px){
+  header .brand{font-size:1.02rem}
+  header .nav{gap:.75rem}
+  header .nav-links{gap:1.2rem}
+  header .nav-links a,header .nav-dropdown-btn{font-size:.84rem}
+  header .nav .cta{font-size:.84rem;margin-left:1.2rem}
+  header .lang-flag{font-size:.9rem}
+}
+@media(min-width:1241px) and (max-width:1440px){header .nav-links{gap:.85rem}header .nav-links a,header .nav-dropdown-btn{font-size:.8rem}}
+@media(min-width:1000px) and (max-width:1240px){
+  header .brand{font-size:.93rem}
+  header .nav-links{gap:.7rem}
+  header .nav-links a,header .nav-dropdown-btn{font-size:.74rem}
+  header .nav .cta{margin-left:.7rem;padding-left:.8rem;padding-right:.8rem;font-size:.76rem}
+  header .lang-flag{padding:.15rem .15rem;font-size:.82rem}
+}
+/* with the bigger text the Quran page's search panel must still shrink on phones */
+.qr-two{grid-template-columns:minmax(0,1fr)}
+@media(min-width:820px){.qr-two{grid-template-columns:minmax(0,3fr) minmax(0,2fr)}}
+.qr-panel{min-width:0}
+.qr-panel input,.qr-panel select{max-width:100%}
