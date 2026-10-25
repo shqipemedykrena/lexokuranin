@@ -975,6 +975,10 @@ ol.how-box>li{counter-increment:how;position:relative;padding-left:2.1rem;min-he
 ol.how-box>li::before{content:counter(how);position:absolute;left:0;top:.05rem;width:1.45rem;height:1.45rem;border-radius:50%;background:var(--how-num);color:#fff;font-size:.8rem;font-weight:700;display:flex;align-items:center;justify-content:center}
 ol.how-box b{color:var(--ink)}
 @media (forced-colors:active){.how-box,.wb-tip,.we-hint,.join-explain-hint,.hz-tip{border-color:CanvasText}}
+/* "Mjetet": the three things you need, numbered */
+ol.prep-need{list-style:none;counter-reset:need;margin:.2rem 0 1rem;padding:0;display:flex;flex-direction:column;gap:.55rem}
+ol.prep-need>li{counter-increment:need;position:relative;padding-left:2.2rem;line-height:1.55}
+ol.prep-need>li::before{content:counter(need);position:absolute;left:0;top:.08rem;width:1.5rem;height:1.5rem;border-radius:50%;background:var(--how-num);color:#fff;font-size:.82rem;font-weight:700;display:flex;align-items:center;justify-content:center}
 /* ===== Miracles page (mrekullite.html) ===== */
 .mk-nav{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem}
 .mk-chip{font-size:.85rem;padding:.35rem .8rem;border:1px solid var(--line);border-radius:999px;background:var(--paper-lift);color:var(--ink);text-decoration:none}
