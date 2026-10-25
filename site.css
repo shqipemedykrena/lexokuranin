@@ -1255,6 +1255,10 @@ ol.prep-need>li::before{content:counter(need);position:absolute;left:0;top:.08re
 .nz-src ul{margin:0;padding-left:1.2rem;font-size:.92rem}
 .nz-src h2{font-size:1.1rem}
 @media (max-width:480px){.nz-rks{grid-template-columns:repeat(3,minmax(0,1fr))}.nz-steps{padding-left:1.7rem}}
+/* meso.html Mjetet: the night picture of writing by hand (Blender still), framed like the notebook */
+.night-desk{margin:.6rem 0 1.1rem;display:flex;flex-direction:column;gap:.6rem}
+.night-desk img{display:block;width:100%;height:auto;border-radius:.45rem;box-shadow:0 0 0 2px #d9ac3a,0 0 0 4px rgba(255,221,128,.45),0 12px 28px rgba(20,14,40,.35)}
+.night-desk figcaption{font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;color:#7d5e08;font-weight:600;text-align:center}
 /* ===== Quran reader (kurani.html) ===== */
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .qr{padding-block:.5rem 3rem}
