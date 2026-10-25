@@ -1019,6 +1019,8 @@ ol.prep-need>li::before{content:counter(need);position:absolute;left:0;top:.08re
 .qr-fn{max-width:44rem;margin-top:1.4rem;font-size:.85rem;color:var(--ink-soft)}
 .qr-fn h3{font-size:.95rem;margin:0 0 .3rem;color:var(--ink)}
 .qr-fn .fn-list a{color:inherit}
+.qr-chips-about{flex-basis:100%;width:100%;max-width:44rem;font-size:.92rem;margin-top:.6rem}
+.qr-chips-about p{margin:0 0 .45rem}.qr-chips-about p:last-child{margin:0}
 /* ===== Miracles page (mrekullite.html) ===== */
 .mk-nav{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem}
 .mk-chip{font-size:.85rem;padding:.35rem .8rem;border:1px solid var(--line);border-radius:999px;background:var(--paper-lift);color:var(--ink);text-decoration:none}
