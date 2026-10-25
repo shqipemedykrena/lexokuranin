@@ -913,6 +913,13 @@ a.lang-flag{text-decoration:none;display:inline-block}
 .cn-jump::before{content:"";width:0;height:0;border-left:.5rem solid currentColor;border-top:.3rem solid transparent;border-bottom:.3rem solid transparent}
 .cn-jump:hover{border-color:var(--accent)}
 .nz-film{margin:0 0 2rem}
+/* final test on meso.html: choose how many questions (10 / 25 / 50) */
+.ft-len{display:flex;flex-wrap:wrap;gap:.5rem;margin:.2rem 0 1rem}
+.ft-len button{font:inherit;font-weight:600;min-width:3.4rem;padding:.45rem .9rem;border-radius:999px;border:1px solid var(--line);background:var(--paper-lift);color:var(--ink);cursor:pointer}
+.ft-len button:hover{border-color:var(--how-num,#159a68)}
+.ft-len button:focus-visible{outline:2px solid var(--how-num,#159a68);outline-offset:2px}
+.ft-len button.is-on{background:var(--how-num,#159a68);border-color:var(--how-num,#159a68);color:#fff}
+.ft-ref{color:var(--ink-soft);font-weight:400}
 /* ---------- hifz planner ---------- */
 .hz{padding:1rem 0 4rem}
 .hz .wrap{display:grid;gap:1.4rem;max-width:44rem}

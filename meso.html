@@ -135,7 +135,7 @@
           <li><a href="#letterJoinIntro"><span class="sub-num">1.6</span><span class="sub-body"><strong>Si formojnë shkronjat një fjalë</strong><span>Si lidhen shkronjat dhe cilat nuk lidhen me atë që vjen pas.</span></span><span class="sub-tag">Hapi 3</span></a></li>
           <li class="is-test"><a href="#jqBox"><span class="sub-num">1.7</span><span class="sub-body"><strong>Ndërto fjalën me test</strong><span>Zgjidh shkronjat me radhë për të ndërtuar fjalën, mes blloqeve që ngjajnë.</span></span><span class="sub-tag"><svg class="test-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="5" y="4" width="14" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="9" y="2.5" width="6" height="3.5" rx="1" fill="currentColor"/><path d="M8.5 13.2l2.4 2.4 4.6-4.9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Test · Hapi 3</span></a></li>
           <li><a href="#wordQuiz"><span class="sub-num">1.8</span><span class="sub-body"><strong>Lexo fjalë të thjeshta</strong><span>Fjalë nga Surja El-Fatiha, të shpjeguara shkronjë për shkronjë.</span></span><span class="sub-tag">Hapi 4</span></a></li>
-          <li class="is-test"><a href="#ftBox"><span class="sub-num">1.9</span><span class="sub-body"><strong>Test përfundimtar: lexo vetë</strong><span>10 pyetje të përziera: shqiptimi, dëgjimi dhe zanoret. Rezultat nga 10.</span></span><span class="sub-tag"><svg class="test-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="5" y="4" width="14" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="9" y="2.5" width="6" height="3.5" rx="1" fill="currentColor"/><path d="M8.5 13.2l2.4 2.4 4.6-4.9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Test · Hapi 4</span></a></li>
+          <li class="is-test"><a href="#ftBox"><span class="sub-num">1.9</span><span class="sub-body"><strong>Test përfundimtar: lexo vetë</strong><span>Çdo test merr fjalë të reja nga mbi 1800 fjalë të Kuranit. Zgjidh 10, 25 ose 50 pyetje.</span></span><span class="sub-tag"><svg class="test-ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="5" y="4" width="14" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="9" y="2.5" width="6" height="3.5" rx="1" fill="currentColor"/><path d="M8.5 13.2l2.4 2.4 4.6-4.9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Test · Hapi 4</span></a></li>
         </ol>
       </li>
       <li class="path-step">
@@ -693,7 +693,8 @@
 
       <div class="forms-practice" id="ftBox">
         <h4>Test përfundimtar: lexo vetë</h4>
-        <p class="quiz-intro">10 pyetje, pa ndihmë. Tre lloje pyetjesh të përziera: gjej fjalën arabe nga shqiptimi, gjej fjalën që dëgjove, dhe thuaj cila zanore është mbi një shkronjë. Në fund merr një rezultat nga 10.</p>
+        <p class="quiz-intro">Pa ndihmë. Tre lloje pyetjesh të përziera: gjej fjalën arabe nga shqiptimi, gjej fjalën që dëgjove, dhe thuaj cila zanore është mbi një shkronjë. Fjalët vijnë nga mbi 1800 fjalë të ndryshme të Kuranit (suret 67 deri 114). Çdo test merr fjalë të reja. Zgjidh sa pyetje do:</p>
+        <div class="ft-len" id="ftLen" role="group" aria-label="Sa pyetje?"><button type="button" data-n="10" class="is-on" aria-pressed="true">10</button><button type="button" data-n="25" aria-pressed="false">25</button><button type="button" data-n="50" aria-pressed="false">50</button></div>
         <div class="ft-card" id="ftCard">
           <div class="ft-top">
             <span class="ft-progress" id="ftProgress">Pyetja 1 nga 10</span>
@@ -712,7 +713,7 @@
           <p class="ft-result-score" id="ftResultScore"></p>
           <p class="ft-result-msg" id="ftResultMsg"></p>
           <div class="ft-review" id="ftReview"></div>
-          <button type="button" class="btn" id="ftRestart">Bëje testin përsëri</button>
+          <button type="button" class="btn" id="ftRestart">Test i ri me fjalë të reja</button>
         </div>
       </div>
     </div>
@@ -3892,6 +3893,7 @@ window.addEventListener("hashchange", ()=>{ const id = surahFromHash(); if(id) s
   newQuestion();
 })();
 </script>
+<script src="ft-bank.js"></script>
 <script>
 (function(){
   var box = document.getElementById("ftBox");
@@ -3924,17 +3926,20 @@ window.addEventListener("hashchange", ()=>{ const id = surahFromHash(); if(id) s
   function lookalikes(b){ for(var i = 0; i < LOOKALIKE.length; i++) if(LOOKALIKE[i].indexOf(b) >= 0) return LOOKALIKE[i].filter(function(x){ return x !== b; }); return []; }
   function vowelOf(l){ for(var i = 0; i < VOWELS.length; i++) if(l.d.indexOf(VOWELS[i].m) >= 0) return VOWELS[i]; return null; }
 
-  var bank = [];
+  var bank = [], seenAr = {};
+  function addWord(ar, tr, sq, ref){
+    if(!ar || seenAr[ar] || !ALLOWED.test(ar)) return;
+    var ls = split(ar);
+    if(ls.length < 2 || ls.length > 7) return;
+    seenAr[ar] = 1; bank.push({ ar: ar, tr: tr, sq: sq || "", ref: ref || "", letters: ls });
+  }
   SURAH.ayahs.forEach(function(ay){
-    ay.words.forEach(function(w){
-      var ar = w.seg.map(function(sg){ return sg[0]; }).join("");
-      if(!ALLOWED.test(ar) || bank.some(function(x){ return x.ar === ar; })) return;
-      var ls = split(ar);
-      if(ls.length < 2 || ls.length > 7) return;
-      bank.push({ ar: ar, tr: w.tr, sq: w.sq || "", letters: ls });
-    });
+    ay.words.forEach(function(w){ addWord(w.seg.map(function(sg){ return sg[0]; }).join(""), w.tr, w.sq); });
   });
+  (window.FT_BANK || []).forEach(function(r){ addWord(r[0], r[1], false ? r[2] : "", r[3]); });
   if(bank.length < 4) return;
+  /* one shuffled deck for all tests: a word comes again only after all the others were used */
+  var deck = shuffle(bank), di = 0, LEN = 10;
 
   /* three look-alike words: one dot changed on one letter, or one vowel mark changed */
   function variants(word){
@@ -3961,10 +3966,12 @@ window.addEventListener("hashchange", ()=>{ const id = surahFromHash(); if(id) s
     return !v.length || v.some(function(x){ return x.lang && x.lang.toLowerCase().indexOf("ar") === 0; });
   }
 
-  function buildQuestions(){
-    var qs = [], words = shuffle(bank), wi = 0;
-    function nextWord(){ var w = words[wi % words.length]; wi++; return w; }
-    var kinds = shuffle(["read","read","read","read","listen","listen","listen","vowel","vowel","vowel"]);
+  function buildQuestions(n){
+    var qs = [];
+    function nextWord(){ if(di >= deck.length){ deck = shuffle(bank); di = 0; } return deck[di++]; }
+    var kinds = [];
+    for(var c = 0; c < n; c++) kinds.push(c < Math.round(n * 0.4) ? "read" : c < Math.round(n * 0.7) ? "listen" : "vowel");
+    kinds = shuffle(kinds);
     kinds.forEach(function(k){
       if(k === "listen" && !voiceOk()) k = "read";
       if(k === "vowel"){
@@ -4049,6 +4056,7 @@ window.addEventListener("hashchange", ()=>{ const id = surahFromHash(); if(id) s
       else if(b === btn) b.classList.add("quiz-wrong");
     });
     var right = q.kind === "vowel" ? q.answer.label + " (" + q.answer.name + ")" : q.word.ar + " · " + q.word.tr;
+    if(q.word.ref) right += " (Kurani " + q.word.ref + ")";
     feedback.textContent = ok ? "Saktë!" : "Jo. Përgjigja e saktë: " + right + ".";
     feedback.className = "quiz-feedback " + (ok ? "quiz-feedback-ok" : "quiz-feedback-bad");
     nextBtn.textContent = qi === qs.length - 1 ? "Shiko rezultatin →" : "Pyetja tjetër →";
@@ -4059,21 +4067,28 @@ window.addEventListener("hashchange", ()=>{ const id = surahFromHash(); if(id) s
   function finish(){
     card.hidden = true; resultEl.hidden = false;
     $("ftResultScore").textContent = score + " / " + qs.length;
-    $("ftResultMsg").textContent = score >= 9 ? "Shkëlqyeshëm! Je gati për texhvidin dhe për leximin e Sures El-Fatiha." :
-      score >= 7 ? "Shumë mirë. Edhe pak praktikë me fjalët më sipër dhe je gati." :
-      score >= 5 ? "Në rrugë të mbarë. Kthehu te fjalët e thjeshta dhe provo përsëri." :
+    $("ftResultMsg").textContent = score >= qs.length * 0.9 ? "Shkëlqyeshëm! Je gati për texhvidin dhe për leximin e Sures El-Fatiha." :
+      score >= qs.length * 0.7 ? "Shumë mirë. Edhe pak praktikë me fjalët më sipër dhe je gati." :
+      score >= qs.length * 0.5 ? "Në rrugë të mbarë. Kthehu te fjalët e thjeshta dhe provo përsëri." :
       "Mos u dorëzo. Përsërit hapat më sipër, pastaj bëje testin sërish.";
     var rv = $("ftReview"); rv.innerHTML = "";
     results.forEach(function(r, i){ var sp = document.createElement("span"); sp.className = r ? "ok" : "bad"; sp.textContent = i + 1; sp.title = "Pyetja " + (i + 1) + ": " + (r ? "saktë" : "gabim"); rv.appendChild(sp); });
   }
 
   function start(){
-    qs = buildQuestions(); qi = 0; score = 0; results = [];
+    qs = buildQuestions(LEN); qi = 0; score = 0; results = [];
     card.hidden = false; resultEl.hidden = true;
     show();
   }
   nextBtn.addEventListener("click", function(){ if(qi < qs.length - 1){ qi++; show(); } else finish(); });
   $("ftRestart").addEventListener("click", start);
+  Array.prototype.forEach.call($("ftLen").querySelectorAll("button"), function(b){
+    b.addEventListener("click", function(){
+      LEN = +b.dataset.n;
+      Array.prototype.forEach.call($("ftLen").children, function(x){ x.classList.toggle("is-on", x === b); x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
+      start();
+    });
+  });
   start();
 })();
 </script>
