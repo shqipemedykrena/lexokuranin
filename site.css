@@ -979,6 +979,8 @@ ol.how-box b{color:var(--ink)}
 ol.prep-need{list-style:none;counter-reset:need;margin:.2rem 0 1rem;padding:0;display:flex;flex-direction:column;gap:.55rem}
 ol.prep-need>li{counter-increment:need;position:relative;padding-left:2.2rem;line-height:1.55}
 ol.prep-need>li::before{content:counter(need);position:absolute;left:0;top:.08rem;width:1.5rem;height:1.5rem;border-radius:50%;background:var(--how-num);color:#fff;font-size:.82rem;font-weight:700;display:flex;align-items:center;justify-content:center}
+/* the writing scene beside "Mjetet": a little space above and below */
+.prep-tools-text .cn-shkrimi{margin:.6rem 0 1.1rem}
 /* ===== Miracles page (mrekullite.html) ===== */
 .mk-nav{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem}
 .mk-chip{font-size:.85rem;padding:.35rem .8rem;border:1px solid var(--line);border-radius:999px;background:var(--paper-lift);color:var(--ink);text-decoration:none}
