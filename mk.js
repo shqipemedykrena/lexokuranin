@@ -428,7 +428,7 @@
     function show(c, btn){
       grid.querySelectorAll(".nm-card").forEach(function(b){ b.setAttribute("aria-expanded", String(b === btn)); });
       det.innerHTML = ""; det.hidden = false;
-      var head = el("div", "nm-dh"); head.appendChild(el("h4", null, c.t)); var badge = el("span", "nm-badge " + VC[c.v], L[c.v]); head.appendChild(badge);
+      var head = el("div", "nm-dh"); head.appendChild(el("h4", null, c.t));
       var x = el("button", "mk-btn", L.close); x.type = "button"; x.addEventListener("click", function(){ det.hidden = true; btn.setAttribute("aria-expanded", "false"); btn.focus(); }); head.appendChild(x);
       det.appendChild(head);
       var p1 = el("p", "nm-claim"); p1.appendChild(el("b", null, L.claim + " ")); p1.appendChild(document.createTextNode(c.claim)); det.appendChild(p1);
@@ -454,7 +454,7 @@
     }
     L.claims.forEach(function(c){
       var b = el("button", "nm-card"); b.type = "button"; b.setAttribute("aria-expanded", "false");
-      b.appendChild(el("span", "nm-badge " + VC[c.v], L[c.v]));
+      /* no verdict label on the cards (owner 25 Oct: "remove this nuk përputhet / përputhet") */
       b.appendChild(el("span", "nm-t", c.t));
       var big = c.fixed ? String(c.fixed) : (c.b ? total(c.a) + " · " + total(c.b) : String(total(c.a)));
       b.appendChild(el("span", "nm-n", big));
