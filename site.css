@@ -1431,6 +1431,10 @@ body.qr-night .qr-ar .qw.sel{background:rgba(255,143,155,.2)}
 .gj-cine .pse-hint{bottom:calc(9% + .5rem);z-index:4}
 @media (prefers-reduced-motion:reduce){.gj-grain,.gj-tc::before{animation:none}.gj-chap.on{animation:none;opacity:1}.gj-cine .gj-bar{transition:none}}
 .gj-norec::before{display:none}
+/* meso.html alphabet: every row of letters gets a number (owner 25 Oct: "number the rows") */
+.letters.letters-rows{counter-reset:lrow}
+.letters-rows .letter-row{counter-increment:lrow;position:relative;padding-left:2.7rem}
+.letters-rows .letter-row::before{content:counter(lrow);position:absolute;left:.5rem;top:1rem;width:1.7rem;height:1.7rem;border-radius:50%;display:grid;place-items:center;font-size:.85rem;font-weight:700;color:#fff;background:var(--accent,#c8102e)}
 /* meso.html tajweed cards: what the Arabic rule name means */
 .tajweed-card .tj-mean{margin:-.2rem 0 .5rem;font-size:.92rem;color:var(--ink);background:var(--how-bg,#e9f8f0);border:1px solid var(--how-line,#bfe7d2);border-radius:.4rem;padding:.3rem .6rem;display:inline-block}
 .tajweed-card .tj-mean span{font-weight:700;color:var(--how-num,#159a68)}
