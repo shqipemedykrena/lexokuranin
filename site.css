@@ -987,6 +987,11 @@ ol.prep-need>li::before{content:counter(need);position:absolute;left:0;top:.08re
 /* ... and the "what to do instead" column on a very light tropical green (owner, 25 Oct) */
 .prep-table tbody td:nth-child(2),.prep-table thead th.prep-th-do{background:var(--how-bg)}
 .prep-table tbody td:nth-child(2){border-bottom-color:var(--how-line);color:var(--ink)}
+/* the common mistakes are numbered, in red circles (owner, 25 Oct) */
+.prep-table tbody{counter-reset:pit}
+.prep-table tbody tr{counter-increment:pit}
+.prep-table tbody td:first-child{position:relative;padding-left:2.6rem}
+.prep-table tbody td:first-child::before{content:counter(pit);position:absolute;left:.7rem;top:.7rem;width:1.45rem;height:1.45rem;border-radius:50%;background:var(--accent);color:#fff;font-size:.8rem;font-weight:700;display:flex;align-items:center;justify-content:center}
 /* ===== Miracles page (mrekullite.html) ===== */
 .mk-nav{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem}
 .mk-chip{font-size:.85rem;padding:.35rem .8rem;border:1px solid var(--line);border-radius:999px;background:var(--paper-lift);color:var(--ink);text-decoration:none}
