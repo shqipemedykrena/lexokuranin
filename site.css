@@ -1524,6 +1524,12 @@ body.qr-night .qr-ar .qw.sel{background:rgba(255,143,155,.2)}
 /* step 4 in the path */
 .path-step-4 .path-note{display:block;margin-top:.35rem;color:var(--how-num,#159a68);font-weight:600}
 .path-step-4 .path-go{margin:.7rem 0 0}
+/* owner 26 Oct ("apply the colour change also elsewhere"): the tests' gold is lighter too, in the same way as the lessons' blue */
+.substeps li.is-test a{background:rgba(201,162,39,.05);box-shadow:inset 3px 0 0 #dcc06a}
+.substeps li.is-test a:hover,.substeps li.is-test a:focus-visible{background:rgba(201,162,39,.11)}
+.substeps li.is-test .sub-tag{border-color:#dcc06a;background:rgba(201,162,39,.09)}
+.alpha-quiz.step-test,.forms-practice.step-test{background:rgba(201,162,39,.045);border-color:rgba(201,162,39,.3);border-left-color:#dcc06a}
+.quiz-step-badge.is-test{background:rgba(201,162,39,.1);border-color:#dcc06a}
 /* meso.html tajweed cards: what the Arabic rule name means */
 .tajweed-card .tj-mean{margin:-.2rem 0 .5rem;font-size:.92rem;color:var(--ink);background:var(--how-bg,#e9f8f0);border:1px solid var(--how-line,#bfe7d2);border-radius:.4rem;padding:.3rem .6rem;display:inline-block}
 .tajweed-card .tj-mean span{font-weight:700;color:var(--how-num,#159a68)}
