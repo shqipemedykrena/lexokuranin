@@ -157,9 +157,52 @@
       }).catch(function (e) { wait.classList.add('cn-gone'); if (window.console) console.error(e); });
       return eng;
     }
+    /* rendered stills (Blender Cycles), one per chapter. Each still holds or moves gently (a slow push or pull
+       toward a point), and changes with a soft cross-fade. Optional light on top: "flicker" (a lamp) or "dust"
+       (motes in a sunbeam). C.st = [{f:[x,y] focus, m:[s0,s1] scale from/to, fx:'flicker'|'dust', at:[x,y]}] */
+    function stills() {
+      box.classList.add('cn-stills');
+      var S = C.st || [], base = C.stbase || '', layers = [], fxs = [];
+      S.forEach(function (s, i) {
+        var d = el('div', 'cn-st', null, stage), im = el('img', null, null, d);
+        im.alt = ''; im.decoding = 'async'; im.setAttribute('aria-hidden', 'true');
+        im.srcset = base + i + '-1280.webp 1280w, ' + base + i + '-1920.webp 1920w';
+        im.sizes = '(max-width: 700px) 100vw, 1100px'; im.src = base + i + '-1280.webp';
+        var f = s.f || [0.5, 0.5]; d.style.transformOrigin = (f[0] * 100) + '% ' + (f[1] * 100) + '%';
+        var fx = null;
+        if (s.fx === 'flicker') { fx = el('div', 'cn-fx-flicker', null, d); var a = s.at || f; fx.style.left = (a[0] * 100) + '%'; fx.style.top = (a[1] * 100) + '%'; }
+        if (s.fx === 'dust') { fx = el('canvas', 'cn-fx-dust', null, d); fx.width = 480; fx.height = 270; fx.motes = []; for (var q = 0; q < 70; q++) fx.motes.push([Math.random(), Math.random(), 0.4 + Math.random() * 1.4, Math.random() * 6.3]); }
+        layers.push(d); fxs.push(fx);
+      });
+      var on = -1, ph = 0;
+      function pose(k, p) {
+        var s = S[k] || {}, m = s.m || [1, 1.05], e = p < .5 ? 2 * p * p : 1 - Math.pow(-2 * p + 2, 2) / 2;
+        if (RM) e = 0.5;
+        layers[k].style.transform = 'scale(' + (m[0] + (m[1] - m[0]) * e).toFixed(4) + ')';
+      }
+      return {
+        chapter: function (k, instant) {
+          if (!layers[k]) return;
+          layers.forEach(function (d, j) { d.classList.toggle('cn-st-on', j === k); d.classList.toggle('cn-st-cut', !!instant || RM); });
+          on = k; pose(k, 0);
+        },
+        render: function (dt, now, k, p) {
+          if (k !== on || !layers[k]) return; pose(k, p); ph += dt;
+          var fx = fxs[k]; if (!fx || RM) return;
+          if (fx.motes) {
+            var x = fx.getContext('2d'), W = fx.width, H = fx.height; x.clearRect(0, 0, W, H);
+            fx.motes.forEach(function (o) {
+              o[0] += dt * 0.004 * o[2]; o[1] += Math.sin(ph * 0.6 + o[3]) * dt * 0.003; if (o[0] > 1) o[0] -= 1;
+              var a = 0.25 + 0.35 * Math.sin(ph * 0.9 + o[3]) * Math.sin(ph * 0.9 + o[3]);
+              x.fillStyle = 'rgba(255,236,200,' + a.toFixed(3) + ')'; x.beginPath(); x.arc(o[0] * W, o[1] * H, o[2] * 0.7, 0, 6.3); x.fill();
+            });
+          } else fx.style.opacity = (0.55 + 0.25 * Math.sin(ph * 7.1) * Math.sin(ph * 3.3) + 0.1 * Math.sin(ph * 17)).toFixed(3);
+        }
+      };
+    }
     function start() {
       if (engine) return;
-      engine = C.kind === 'scene' ? scene() : video();
+      engine = C.kind === 'scene' ? scene() : C.kind === 'stills' ? stills() : video();
       if (cur > -1 && engine.chapter) engine.chapter(cur, true);
     }
     box.cnGo = function (k) { go(k, true); };

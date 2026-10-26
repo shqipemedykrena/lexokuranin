@@ -932,6 +932,17 @@ a.lang-flag{text-decoration:none;display:inline-block}
 .cn-jump::before{content:"";width:0;height:0;border-left:.5rem solid currentColor;border-top:.3rem solid transparent;border-bottom:.3rem solid transparent}
 .cn-jump:hover{border-color:var(--accent)}
 .nz-film{margin:0 0 2rem}
+/* rendered stills (kind "stills"): soft cross-fade, gentle push, light grain and vignette (expert feedback) */
+.cn-stills .cn-stage{overflow:hidden}
+.cn-st{position:absolute;inset:0;opacity:0;transition:opacity 1.4s ease;will-change:transform,opacity}
+.cn-st img{width:100%;height:100%;object-fit:cover;display:block}
+.cn-st.cn-st-on{opacity:1}
+.cn-st.cn-st-cut{transition:none}
+.cn-fx-flicker{position:absolute;width:34%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;pointer-events:none;mix-blend-mode:screen;background:radial-gradient(circle,rgba(255,176,96,.32),rgba(255,140,60,.1) 42%,rgba(255,120,40,0) 70%)}
+.cn-fx-dust{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;mix-blend-mode:screen;-webkit-mask-image:linear-gradient(100deg,transparent 5%,#000 30%,#000 60%,transparent 85%);mask-image:linear-gradient(100deg,transparent 5%,#000 30%,#000 60%,transparent 85%)}
+.cn-stills .cn-grain{opacity:.03}
+.cn-stills .cn-vig{background:radial-gradient(ellipse at 50% 50%,rgba(0,0,0,0) 70%,rgba(0,0,0,.28) 100%)}
+@media (prefers-reduced-motion:reduce){.cn-st{transition:none}}
 /* footnotes (mrekullite.html): small numbers in the text, numbered sources at the bottom */
 sup.fn{font-size:.68em;line-height:0;margin-left:.15em;white-space:nowrap}
 sup.fn a{color:var(--accent,#c8102e);text-decoration:none;font-weight:700;padding:0 .1em}
