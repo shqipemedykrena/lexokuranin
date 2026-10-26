@@ -1046,7 +1046,8 @@ ol.prep-need>li::before{content:counter(need);position:absolute;left:0;top:.08re
 /* Mjetet: the tools text on its own, then "Bëje të bukur ..." with the notebook to its right */
 .prep-tools.prep-tools-one{grid-template-columns:minmax(0,1fr)}
 .prep-pretty{display:grid;grid-template-columns:minmax(0,1fr);gap:1.2rem;align-items:center}
-@media(min-width:700px){.prep-pretty{grid-template-columns:minmax(0,1fr) 13rem;gap:1.8rem}}
+/* (owner 26 Oct: the notebook goes below the text, above "Gabime të zakonshme") */
+.prep-pretty .nb-wrap{justify-self:center;margin:.4rem auto 0}
 /* kurani.html: what a juz is, and its sources at the bottom */
 .qr-juz-about{max-width:44rem;margin:.4rem 0 1.4rem}
 .qr-juz-about h3{font-size:1.05rem;margin:1rem 0 .35rem}
