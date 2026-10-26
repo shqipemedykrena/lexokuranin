@@ -860,6 +860,12 @@ a.lang-flag{text-decoration:none;display:inline-block}
 @media(max-width:520px){.nav{gap:.6rem}.brand{font-size:1.02rem;gap:.45rem}.brand svg{width:20px;height:20px}.nav .cta{padding:.45rem .75rem;font-size:.85rem}}
 @media(max-width:430px){.nav .cta{display:none}.nav-menu-btn{margin-left:auto}}
 @media(min-width:1000px) and (max-width:1340px){.nav{gap:.8rem}.nav-links{gap:.65rem}.nav-links a,.nav-dropdown-btn{font-size:.82rem}.brand{font-size:1.04rem}.nav .cta{margin-left:.8rem;padding-left:.9rem;padding-right:.9rem}}
+/* canvas sky inside the dark cards and the start block (site/cardsky.js) */
+.card-sky{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
+.journey-card.has-sky::after{display:none}
+.journey-card.has-sky>*:not(.card-sky){position:relative;z-index:1}
+.intake.has-sky>.card-sky{z-index:1}
+.intake.has-sky>.wrap{position:relative;z-index:2}
 
 /* ---------- Ikre cinema player (cinema.js) ---------- */
 .cn{margin:0 0 1.4rem;border-radius:.6rem;overflow:hidden;background:#07080b;color:#f1e7e2;max-width:100%}
