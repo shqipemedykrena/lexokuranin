@@ -1541,6 +1541,8 @@ body.qr-night .qr-ar .qw.sel{background:rgba(255,143,155,.2)}
 .substeps li.is-test .sub-tag{border-color:#dcc06a;background:rgba(201,162,39,.09)}
 .alpha-quiz.step-test,.forms-practice.step-test{background:rgba(201,162,39,.045);border-color:rgba(201,162,39,.3);border-left-color:#dcc06a}
 .quiz-step-badge.is-test{background:rgba(201,162,39,.1);border-color:#dcc06a}
+/* a test that now stands on its own after a lesson box */
+.forms-practice.step-test{margin-top:2.5rem;border-top:1px solid rgba(201,162,39,.3)}
 /* meso.html tajweed cards: what the Arabic rule name means */
 .tajweed-card .tj-mean{margin:-.2rem 0 .5rem;font-size:.92rem;color:var(--ink);background:var(--how-bg,#e9f8f0);border:1px solid var(--how-line,#bfe7d2);border-radius:.4rem;padding:.3rem .6rem;display:inline-block}
 .tajweed-card .tj-mean span{font-weight:700;color:var(--how-num,#159a68)}
