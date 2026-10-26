@@ -1048,6 +1048,15 @@ ol.prep-need>li::before{content:counter(need);position:absolute;left:0;top:.08re
 .prep-pretty{display:grid;grid-template-columns:minmax(0,1fr);gap:1.2rem;align-items:center}
 /* (owner 26 Oct: the notebook goes below the text, above "Gabime të zakonshme") */
 .prep-pretty .nb-wrap{justify-self:center;margin:.4rem auto 0}
+/* the notebook and the pen side by side, both glowing */
+.prep-pretty .nb-pair{display:flex;justify-content:center;align-items:flex-start;gap:2.2rem;margin-top:.4rem}
+.prep-pretty .nb-pair .nb-wrap{margin:0;justify-self:auto}
+.pen-wrap{position:relative;margin:0;width:5rem;display:flex;flex-direction:column;align-items:center;gap:.9rem}
+.pen-wrap img{position:relative;display:block;width:100%;height:auto;filter:drop-shadow(0 0 2px rgba(255,221,128,.9)) drop-shadow(0 10px 18px rgba(80,50,0,.35));animation:nbFloat 6s ease-in-out infinite;animation-delay:-3s}
+.pen-wrap .nb-glow{width:260%;height:110%}
+.pen-wrap figcaption{font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;color:#7d5e08;font-weight:600;text-align:center;width:8rem}
+@media (prefers-reduced-motion:reduce){.pen-wrap img{animation:none}}
+@media(max-width:600px){.prep-pretty .nb-pair{gap:1rem}.prep-pretty .nb-pair .nb-wrap{width:9.5rem;max-width:none}.pen-wrap{width:3.6rem}.pen-wrap figcaption{width:6rem}}
 /* kurani.html: what a juz is, and its sources at the bottom */
 .qr-juz-about{max-width:44rem;margin:.4rem 0 1.4rem}
 .qr-juz-about h3{font-size:1.05rem;margin:1rem 0 .35rem}
