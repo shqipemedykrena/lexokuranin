@@ -993,6 +993,9 @@ sup.fn:target{background:var(--how-bg,#e9f8f0);border-radius:.2rem}
 /* the name of Allah on the start card, in the place of the icon */
 .kush-card .kush-allah{display:block;font-family:Amiri,'Times New Roman',serif;font-weight:700;font-size:2.5rem;line-height:1;height:2.6rem;color:var(--accent);direction:rtl;text-align:left}
 @media(max-width:600px){.kush-card .kush-allah{font-size:2.1rem;height:2.2rem}}
+/* numbers on the "Ku do të shkosh?" groups and cards */
+#ku .ku-num{color:var(--accent);font-variant-numeric:tabular-nums;margin-right:.15rem}
+#ku .journey-title .ku-num{font-weight:600}
 /* instructions: a very light tropical green box; steps are numbered in green circles (owner, 25 Oct) */
 :root{--how-bg:#e9f8f0;--how-line:#bfe7d2;--how-num:#159a68}
 .how-box,.wb-tip,.we-hint,.join-explain-hint,.hz-tip{background:var(--how-bg);border:1px solid var(--how-line);border-radius:.7rem;padding:.8rem 1rem;color:var(--ink)}
