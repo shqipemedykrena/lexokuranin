@@ -1024,6 +1024,10 @@ ol.prep-need>li::before{content:counter(need);position:absolute;left:0;top:.08re
 /* the advice is numbered too, in green circles, matching its mistake (owner, 25 Oct) */
 .prep-table tbody td:nth-child(2){position:relative;padding-left:2.6rem}
 .prep-table tbody td:nth-child(2)::before{content:counter(pit);position:absolute;left:.7rem;top:.7rem;width:1.45rem;height:1.45rem;border-radius:50%;background:var(--how-num);color:#fff;font-size:.8rem;font-weight:700;display:flex;align-items:center;justify-content:center}
+/* Mjetet: the tools text on its own, then "Bëje të bukur ..." with the notebook to its right */
+.prep-tools.prep-tools-one{grid-template-columns:minmax(0,1fr)}
+.prep-pretty{display:grid;grid-template-columns:minmax(0,1fr);gap:1.2rem;align-items:center}
+@media(min-width:700px){.prep-pretty{grid-template-columns:minmax(0,1fr) 13rem;gap:1.8rem}}
 /* kurani.html: what a juz is, and its sources at the bottom */
 .qr-juz-about{max-width:44rem;margin:.4rem 0 1.4rem}
 .qr-juz-about h3{font-size:1.05rem;margin:1rem 0 .35rem}
