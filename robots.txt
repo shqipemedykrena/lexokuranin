@@ -37,4 +37,4 @@ Disallow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://lexokuranin.com/sitemap.xml
+Sitemap: https://followthequran.com/sitemap.xml
