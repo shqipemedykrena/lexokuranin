@@ -1591,3 +1591,10 @@ html.no-notice .site-notice{display:none}
 .site-notice svg{width:1.1rem;height:1.1rem;flex:none;color:#E3B45C}
 .site-notice button{background:none;border:0;color:inherit;font-size:1.2rem;line-height:1;cursor:pointer;padding:.1rem .35rem;margin-left:.3rem;border-radius:.3rem;opacity:.8}
 .site-notice button:hover,.site-notice button:focus-visible{opacity:1;outline:1px solid rgba(246,227,176,.5)}
+/* "Gabime te zakonshme" keeps its light tropical red in both looks (owner, 27 Oct: red means "mistake") */
+.prep-table tbody td:first-child,.prep-table thead th.prep-th-pitfall{background:#ffe3df}
+.prep-table thead th.prep-th-pitfall{color:#C8102E;border-bottom-color:#C8102E}
+.prep-table tbody td:first-child::before{background:#C8102E}
+html[data-theme="night"] .prep-table tbody td:first-child::before{background:#e0525a}
+html[data-theme="night"] .prep-table tbody td:first-child,html[data-theme="night"] .prep-table thead th.prep-th-pitfall{background:#3d1a1c}
+html[data-theme="night"] .prep-table thead th.prep-th-pitfall{color:#ff8f86;border-bottom-color:#ff8f86}
