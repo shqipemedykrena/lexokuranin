@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="nl">
 <head>
+<script src="../theme.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Lees de Koran</title>
@@ -21,6 +22,7 @@
 </head>
 <body>
 
+<div class="site-notice" id="siteNotice" role="note"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 20.5h20L12 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 9.5v5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="17.4" r="1.2" fill="currentColor"/></svg><span>Deze site is nog in aanbouw. Sommige delen kunnen nog veranderen of nog niet werken.</span><button type="button" id="siteNoticeX" aria-label="Sluiten" title="Sluiten">×</button></div>
 <header>
   <div class="wrap nav">
     <a class="brand" href="index.html">
@@ -30,7 +32,7 @@
     <nav class="nav-links" id="navLinks">
       <div class="nav-dropdown nav-pages" id="navLearnDropdown">
         <button type="button" class="nav-dropdown-btn" aria-haspopup="true" aria-expanded="false">Pagina's ▾</button>
-        <div class="nav-dropdown-menu" hidden aria-label="Alle pagina's"><div class="np-group"><p class="np-h"><span class="ku-num">1.</span> De Koran leren</p><a href="meso.html"><span class="ku-num">1.1</span> Leer de Koran lezen</a><a href="kurani.html"><span class="ku-num">1.2</span> Lees de Koran</a></div><div class="np-group"><p class="np-h"><span class="ku-num">2.</span> Wonderen van de Koran</p><a href="mrekullite.html"><span class="ku-num">2.1</span> Wonderen van de Koran</a></div><div class="np-group"><p class="np-h"><span class="ku-num">3.</span> Bezinning</p><a href="deshmi.html"><span class="ku-num">3.1</span> Bewijzen voor de Schepper</a><a href="kujt-lutesh.html"><span class="ku-num">3.2</span> Tot wie bid je?</a><a href="pse-jemi-ketu.html"><span class="ku-num">3.3</span> Waarom zijn we hier?</a><a href="shenjat.html"><span class="ku-num">3.4</span> Tekenen in de hemelen en op aarde</a><a href="gjumi.html"><span class="ku-num">3.5</span> Slaap, een teken van Allah</a><a href="shiu.html"><span class="ku-num">3.6</span> Regen en water, tekenen van Allah</a><a href="xheneti.html"><span class="ku-num">3.7</span> Het Paradijs, de beloning van de gelovigen</a></div><div class="np-group"><p class="np-h"><span class="ku-num">4.</span> Leer de islam kennen</p><a href="profeti-muhamed.html"><span class="ku-num">4.1</span> Wie was de Profeet Mohammed <span class="saw" lang="ar">ﷺ</span>?</a><a href="si-filloi-islami.html"><span class="ku-num">4.2</span> Hoe begon de islam?</a><a href="zoti-yt.html"><span class="ku-num">4.3</span> Wie is je Heer?</a><a href="pyetje.html"><span class="ku-num">4.4</span> Veelgestelde vragen</a></div><div class="np-group"><p class="np-h">Meer</p><a href="hifz.html">Uit het hoofd leren</a><a href="namazi.html">Hoe bid je</a><a href="fjalorth.html">Woordenlijst</a></div></div>
+        <div class="nav-dropdown-menu" hidden aria-label="Alle pagina's"><div class="np-group"><p class="np-h"><span class="ku-num">1.</span> De Koran leren</p><a href="meso.html"><span class="ku-num">1.1</span> Leer de Koran lezen</a><a href="kurani.html"><span class="ku-num">1.2</span> Lees de Koran</a></div><div class="np-group"><p class="np-h"><span class="ku-num">2.</span> Wonderen van de Koran</p></div><div class="np-group"><p class="np-h"><span class="ku-num">3.</span> Bezinning</p><a href="deshmi.html"><span class="ku-num">3.1</span> Bewijzen voor de Schepper</a><a href="kujt-lutesh.html"><span class="ku-num">3.2</span> Tot wie bid je?</a><a href="pse-jemi-ketu.html"><span class="ku-num">3.3</span> Waarom zijn we hier?</a><a href="shenjat.html"><span class="ku-num">3.4</span> Tekenen in de hemelen en op aarde</a><a href="gjumi.html"><span class="ku-num">3.5</span> Slaap, een teken van Allah</a><a href="shiu.html"><span class="ku-num">3.6</span> Regen en water, tekenen van Allah</a><a href="xheneti.html"><span class="ku-num">3.7</span> Het Paradijs, de beloning van de gelovigen</a></div><div class="np-group"><p class="np-h"><span class="ku-num">4.</span> Leer de islam kennen</p><a href="zoti-yt.html"><span class="ku-num">4.1</span> Wie is je Heer?</a><a href="profeti-muhamed.html"><span class="ku-num">4.2</span> Wie was de Profeet Mohammed <span class="saw" lang="ar">ﷺ</span>?</a><a href="si-filloi-islami.html"><span class="ku-num">4.3</span> Hoe begon de islam?</a><a href="pyetje.html"><span class="ku-num">4.4</span> Veelgestelde vragen</a></div><div class="np-group"><p class="np-h">Meer</p><a href="hifz.html">Uit het hoofd leren</a><a href="namazi.html">Hoe bid je</a><a href="mrekullite.html">Wonderen</a><a href="fjalorth.html">Woordenlijst</a></div></div>
       </div>
       <a href="rreth-nesh.html">Over ons</a>
     </nav>
@@ -40,6 +42,7 @@
       <a class="lang-flag active" aria-current="true" data-lang="nl" href="index.html" hreflang="nl" lang="nl" aria-label="Nederlands" title="Nederlands">🇳🇱</a>
       <a class="lang-flag" data-lang="de" href="../de/index.html" hreflang="de" lang="de" aria-label="Deutsch" title="Deutsch">🇩🇪</a>
     </div>
+    <button type="button" class="theme-btn" id="themeBtn" aria-label="Wissel de weergave: dag of nacht" title="Wissel de weergave: dag of nacht"><svg class="tb-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="currentColor"/></svg><svg class="tb-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="currentColor"/><g stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M5.3 18.7 7 17M17 7l1.7-1.7"/></g></svg></button>
     <button type="button" class="nav-menu-btn" id="navMenuBtn" aria-expanded="false" aria-controls="navLinks">☰ Menu</button>
   </div>
 </header>
@@ -177,12 +180,117 @@
         <span class="ku-ar" lang="ar" dir="rtl" aria-hidden="true">آيَات</span>
       </div>
       <div class="home-grid ku-thin">
-        <a class="journey-card" href="mrekullite.html">
-          <span class="ku-pic" aria-hidden="true"><picture><source media="(max-width:699px)" srcset="../img/bars/bar-2-1-s.webp"><img src="../img/bars/bar-2-1.webp" alt="" width="1200" height="360" loading="lazy"></picture></span>
-          <span class="journey-kicker">Tekenen die je aan het denken zetten</span>
-          <span class="journey-title"><span class="ku-num">2.1</span> Wonderen van de Koran</span>
-          <span class="journey-sub">Tekenen van de Koran en wonderen van de Profeet ﷺ, met beelden die je zelf beweegt: het bewaarde Boek, de uitdaging, het bericht over de Romeinen, het splijten van de maan en tekenen in de schepping.</span>
-          <span class="journey-cta">Bekijk de wonderen →</span>
+        <a class="journey-card ku-mk" href="mrekullite.html#ruajtja">
+          <span class="ku-pic" aria-hidden="true"><img src="../img/films/ruajtja/0-1280.webp" alt="" width="1280" height="720" loading="lazy"></span>
+          <span class="journey-kicker">Het Boek zelf</span>
+          <span class="journey-title"><span class="ku-num">2.1</span> Een Boek dat niet veranderd is</span>
+          <span class="journey-sub">Allah beloofde dat Hij Zelf de Koran zou beschermen, zowel de woorden als de betekenis, zodat er niets aan wordt…</span>
+          <span class="journey-cta">Bekijk de film →</span>
+        </a>
+        <a class="journey-card ku-mk" href="mrekullite.html#sfida">
+          <span class="ku-pic" aria-hidden="true"><img src="../films/sfida.jpg" alt="" width="1280" height="720" loading="lazy"></span>
+          <span class="journey-kicker">Het Boek zelf</span>
+          <span class="journey-title"><span class="ku-num">2.2</span> De uitdaging die niemand won</span>
+          <span class="journey-sub">Allah daagde mensen en djinn in stappen uit: een boek zoals de Koran te brengen, dan tien soera&amp;#x27;s, dan maar één…</span>
+          <span class="journey-cta">Bekijk de film →</span>
+        </a>
+        <a class="journey-card ku-mk" href="mrekullite.html#pa-kundershtim">
+          <span class="ku-pic" aria-hidden="true"><img src="../films/pa-kundershtim.jpg" alt="" width="1280" height="720" loading="lazy"></span>
+          <span class="journey-kicker">Het Boek zelf</span>
+          <span class="journey-title"><span class="ku-num">2.3</span> Een Boek zonder tegenstrijdigheden</span>
+          <span class="journey-sub">Allah zegt dat als de Koran van iemand anders dan Hem was gekomen, de mensen er veel tegenstrijdigheden in zouden…</span>
+          <span class="journey-cta">Bekijk de film →</span>
+        </a>
+        <a class="journey-card ku-mk" href="mrekullite.html#ummi">
+          <span class="ku-pic" aria-hidden="true"><img src="../films/ummi.jpg" alt="" width="1280" height="720" loading="lazy"></span>
+          <span class="journey-kicker">Het Boek zelf</span>
+          <span class="journey-title"><span class="ku-num">2.4</span> Een Profeet die niet kon lezen of schrijven</span>
+          <span class="journey-sub">De Koran noemt Mohammed ﷺ de Profeet die niet kan lezen of schrijven, zoals hij beschreven werd in de Thora en het…</span>
+          <span class="journey-cta">Bekijk de film →</span>
+        </a>
+        <a class="journey-card ku-mk" href="mrekullite.html#gajbi">
+          <span class="ku-pic" aria-hidden="true"><img src="../films/gajbi.jpg" alt="" width="1280" height="720" loading="lazy"></span>
+          <span class="journey-kicker">Het Boek zelf</span>
+          <span class="journey-title"><span class="ku-num">2.5</span> Berichten uit het verborgene</span>
+          <span class="journey-sub">De Koran bewijst zijn goddelijke oorsprong door de verhalen van de profeten en eerdere volken te vertellen.</span>
+          <span class="journey-cta">Bekijk de film →</span>
+        </a>
+        <a class="journey-card ku-mk" href="mrekullite.html#romaket">
+          <span class="ku-pic" aria-hidden="true"><img src="../films/romaket.jpg" alt="" width="1280" height="720" loading="lazy"></span>
+          <span class="journey-kicker">Berichten die uitkwamen</span>
+          <span class="journey-title"><span class="ku-num">2.6</span> Het bericht over de Romeinen</span>
+          <span class="journey-sub">De Perzen versloegen de Romeinen „in het nabije land”.</span>
+          <span class="journey-cta">Bekijk de film →</span>
+        </a>
+        <a class="journey-card ku-mk" href="mrekullite.html#parashikimet">
+          <span class="ku-pic" aria-hidden="true"><img src="../films/parashikimet.jpg" alt="" width="1280" height="720" loading="lazy"></span>
+          <span class="journey-kicker">Berichten die uitkwamen</span>
+          <span class="journey-title"><span class="ku-num">2.7</span> Berichten van de Profeet ﷺ die uitkwamen</span>
+          <span class="journey-sub">De Profeet ﷺ voorspelde nooit iets over de toekomst zonder dat het precies zo gebeurde als hij zei.</span>
+          <span class="journey-cta">Bekijk de film →</span>
+        </a>
+        <a class="journey-card ku-mk" href="mrekullite.html#hena">
+          <span class="ku-pic" aria-hidden="true"><img src="../films/hena.jpg" alt="" width="1280" height="720" loading="lazy"></span>
+          <span class="journey-kicker">Wonderen van de Profeet ﷺ</span>
+          <span class="journey-title"><span class="ku-num">2.8</span> Het splijten van de maan</span>
+          <span class="journey-sub">De mensen van Mekka vroegen om een teken, en hun werd de maan getoond, gespleten in twee delen.</span>
+          <span class="journey-cta">Bekijk de film →</span>
+        </a>
+        <a class="journey-card ku-mk" href="mrekullite.html#uji">
+          <span class="ku-pic" aria-hidden="true"><img src="../films/uji.jpg" alt="" width="1280" height="720" loading="lazy"></span>
+          <span class="journey-kicker">Wonderen van de Profeet ﷺ</span>
+          <span class="journey-title"><span class="ku-num">2.9</span> Water dat uit zijn ﷺ vingers stroomde</span>
+          <span class="journey-sub">Tot de wonderen van de Profeet ﷺ behoort het water dat tussen zijn vingers opwelde.</span>
+          <span class="journey-cta">Bekijk de film →</span>
+        </a>
+        <a class="journey-card ku-mk" href="mrekullite.html#trungu">
+          <span class="ku-pic" aria-hidden="true"><img src="../films/trungu.jpg" alt="" width="1280" height="720" loading="lazy"></span>
+          <span class="journey-kicker">Wonderen van de Profeet ﷺ</span>
+          <span class="journey-title"><span class="ku-num">2.10</span> De palmstam die huilde</span>
+          <span class="journey-sub">Op vrijdag hield de Profeet ﷺ de preek terwijl hij leunde op een palmstam.</span>
+          <span class="journey-cta">Bekijk de film →</span>
+        </a>
+        <a class="journey-card ku-mk" href="mrekullite.html#ushqimi">
+          <span class="ku-pic" aria-hidden="true"><img src="../films/ushqimi.jpg" alt="" width="1280" height="720" loading="lazy"></span>
+          <span class="journey-kicker">Wonderen van de Profeet ﷺ</span>
+          <span class="journey-title"><span class="ku-num">2.11</span> Het eten dat toenam</span>
+          <span class="journey-sub">Tot de wonderen van de Profeet ﷺ behoort dat kleine hoeveelheden eten in zijn handen toenamen, zodat het hele leger at…</span>
+          <span class="journey-cta">Bekijk de film →</span>
+        </a>
+        <a class="journey-card ku-mk" href="mrekullite.html#guri">
+          <span class="ku-pic" aria-hidden="true"><img src="../films/guri.jpg" alt="" width="1280" height="720" loading="lazy"></span>
+          <span class="journey-kicker">Wonderen van de Profeet ﷺ</span>
+          <span class="journey-title"><span class="ku-num">2.12</span> De steen die hem groette</span>
+          <span class="journey-sub">De Profeet ﷺ zei dat er in Mekka een steen was die hem met salaam groette voordat zijn missie begon (Muslim 2277, van…</span>
+          <span class="journey-cta">Bekijk de film →</span>
+        </a>
+        <a class="journey-card ku-mk" href="mrekullite.html#embrioni">
+          <span class="ku-pic" aria-hidden="true"><img src="../img/films/embrioni/nutfah-1280.webp" alt="" width="1280" height="720" loading="lazy"></span>
+          <span class="journey-kicker">Tekenen in de schepping</span>
+          <span class="journey-title"><span class="ku-num">2.13</span> De schepping van de mens, fase na fase</span>
+          <span class="journey-sub">De Koran beschrijft dat de mens niet in één keer geschapen wordt, maar in fasen.</span>
+          <span class="journey-cta">Bekijk de film →</span>
+        </a>
+        <a class="journey-card ku-mk" href="mrekullite.html#detet">
+          <span class="ku-pic" aria-hidden="true"><img src="../films/detet.jpg" alt="" width="1280" height="720" loading="lazy"></span>
+          <span class="journey-kicker">Tekenen in de schepping</span>
+          <span class="journey-title"><span class="ku-num">2.14</span> De barrière tussen twee wateren</span>
+          <span class="journey-sub">Allah liet de twee wateren stromen: het ene zoet en aangenaam, het andere zout en bitter, en plaatste een barrière…</span>
+          <span class="journey-cta">Bekijk de film →</span>
+        </a>
+        <a class="journey-card ku-mk" href="mrekullite.html#erresira">
+          <span class="ku-pic" aria-hidden="true"><img src="../films/erresira.jpg" alt="" width="1280" height="720" loading="lazy"></span>
+          <span class="journey-kicker">Tekenen in de schepping</span>
+          <span class="journey-title"><span class="ku-num">2.15</span> Duisternis in de diepe zee</span>
+          <span class="journey-sub">De Koran beschrijft duisternis in een diepe zee, bedekt door golven boven golven, duisternis boven duisternis.</span>
+          <span class="journey-cta">Bekijk de film →</span>
+        </a>
+        <a class="journey-card ku-mk" href="mrekullite.html#malet">
+          <span class="ku-pic" aria-hidden="true"><img src="../films/malet.jpg" alt="" width="1280" height="720" loading="lazy"></span>
+          <span class="journey-kicker">Tekenen in de schepping</span>
+          <span class="journey-title"><span class="ku-num">2.16</span> Bergen als pinnen</span>
+          <span class="journey-sub">Allah zette de bergen stevig vast, zodat ze de aarde stabiliseren en haar niet laten schudden.</span>
+          <span class="journey-cta">Bekijk de film →</span>
         </a>
       </div>
     </div>
@@ -251,25 +359,25 @@
         <span class="ku-ar" lang="ar" dir="rtl" aria-hidden="true">ٱلْإِسْلَام</span>
       </div>
       <div class="home-grid ku-thin">
+        <a class="journey-card" href="zoti-yt.html">
+          <span class="ku-pic" aria-hidden="true"><picture><source media="(max-width:699px)" srcset="../img/bars/bar-4-3-s.webp"><img src="../img/bars/bar-4-3.webp" alt="" width="1200" height="360" loading="lazy"></picture></span>
+          <span class="journey-kicker">De namen van Allah</span>
+          <span class="journey-title"><span class="ku-num">4.1</span> Wie is je Heer?</span>
+          <span class="journey-sub">86 van de namen van Allah met hun betekenis.</span>
+          <span class="journey-cta">Lees meer →</span>
+        </a>
         <a class="journey-card" href="profeti-muhamed.html">
           <span class="ku-pic" aria-hidden="true"><picture><source media="(max-width:699px)" srcset="../img/bars/bar-4-1-s.webp"><img src="../img/bars/bar-4-1.webp" alt="" width="1200" height="360" loading="lazy"></picture></span>
           <span class="journey-kicker">Zijn leven</span>
-          <span class="journey-title"><span class="ku-num">4.1</span> Wie was de Profeet Mohammed <span class="saw" lang="ar">ﷺ</span>?</span>
+          <span class="journey-title"><span class="ku-num">4.2</span> Wie was de Profeet Mohammed <span class="saw" lang="ar">ﷺ</span>?</span>
           <span class="journey-sub">Zijn leven, van Mekka tot Medina.</span>
           <span class="journey-cta">Lees meer →</span>
         </a>
         <a class="journey-card" href="si-filloi-islami.html">
           <span class="ku-pic" aria-hidden="true"><picture><source media="(max-width:699px)" srcset="../img/bars/bar-4-2-s.webp"><img src="../img/bars/bar-4-2.webp" alt="" width="1200" height="360" loading="lazy"></picture></span>
           <span class="journey-kicker">Geschiedenis</span>
-          <span class="journey-title"><span class="ku-num">4.2</span> Hoe begon de islam?</span>
+          <span class="journey-title"><span class="ku-num">4.3</span> Hoe begon de islam?</span>
           <span class="journey-sub">Van de eerste openbaring tot de verspreiding over de wereld.</span>
-          <span class="journey-cta">Lees meer →</span>
-        </a>
-        <a class="journey-card" href="zoti-yt.html">
-          <span class="ku-pic" aria-hidden="true"><picture><source media="(max-width:699px)" srcset="../img/bars/bar-4-3-s.webp"><img src="../img/bars/bar-4-3.webp" alt="" width="1200" height="360" loading="lazy"></picture></span>
-          <span class="journey-kicker">De namen van Allah</span>
-          <span class="journey-title"><span class="ku-num">4.3</span> Wie is je Heer?</span>
-          <span class="journey-sub">86 van de namen van Allah met hun betekenis.</span>
           <span class="journey-cta">Lees meer →</span>
         </a>
         <a class="journey-card" href="pyetje.html">

@@ -162,17 +162,24 @@
        (motes in a sunbeam). C.st = [{f:[x,y] focus, m:[s0,s1] scale from/to, fx:'flicker'|'dust', at:[x,y]}] */
     function stills() {
       box.classList.add('cn-stills');
-      var S = C.st || [], base = C.stbase || '', layers = [], fxs = [];
+      var S = C.st || [], base = C.stbase || '', layers = [], fxs = [], nts = [];
       S.forEach(function (s, i) {
         var d = el('div', 'cn-st', null, stage), im = el('img', null, null, d);
         im.alt = ''; im.decoding = 'async'; im.setAttribute('aria-hidden', 'true');
-        im.srcset = base + i + '-1280.webp 1280w, ' + base + i + '-1920.webp 1920w';
-        im.sizes = '(max-width: 700px) 100vw, 1100px'; im.src = base + i + '-1280.webp';
+        var pl = s.p != null ? s.p : i;
+        im.srcset = base + pl + '-1280.webp 1280w, ' + base + pl + '-1920.webp 1920w';
+        im.sizes = '(max-width: 700px) 100vw, 1100px'; im.src = base + pl + '-1280.webp';
         var f = s.f || [0.5, 0.5]; d.style.transformOrigin = (f[0] * 100) + '% ' + (f[1] * 100) + '%';
         var fx = null;
         if (s.fx === 'flicker') { fx = el('div', 'cn-fx-flicker', null, d); var a = s.at || f; fx.style.left = (a[0] * 100) + '%'; fx.style.top = (a[1] * 100) + '%'; }
+        if (s.fx === 'rings' || s.fx === 'glow') { fx = el('div', 'cn-fx-' + s.fx, null, d); var a2 = s.at || f; fx.style.left = (a2[0] * 100) + '%'; fx.style.top = (a2[1] * 100) + '%'; if (s.fx === 'rings') for (var q2 = 0; q2 < 3; q2++) el('i', null, null, fx).style.animationDelay = (q2 * 0.9) + 's'; }
         if (s.fx === 'dust') { fx = el('canvas', 'cn-fx-dust', null, d); fx.width = 480; fx.height = 270; fx.motes = []; for (var q = 0; q < 70; q++) fx.motes.push([Math.random(), Math.random(), 0.4 + Math.random() * 1.4, Math.random() * 6.3]); }
         layers.push(d); fxs.push(fx);
+        /* notes pinned on the picture: [x, y, text] in frame fractions */
+        nts.push((s.n || []).map(function (m) {
+          var e = el('div', 'cn-note', null, notes); el('span', 'cn-dot', null, e); el('span', 'cn-note-t', m[2], e);
+          e.style.left = (m[0] * 100) + '%'; e.style.top = (m[1] * 100) + '%'; e.classList.toggle('cn-left', m[0] > 0.6); return e;
+        }));
       });
       var on = -1, ph = 0;
       function pose(k, p) {
@@ -184,6 +191,7 @@
         chapter: function (k, instant) {
           if (!layers[k]) return;
           layers.forEach(function (d, j) { d.classList.toggle('cn-st-on', j === k); d.classList.toggle('cn-st-cut', !!instant || RM); });
+          nts.forEach(function (L, j) { L.forEach(function (e) { e.classList.toggle('cn-show', j === k); }); });
           on = k; pose(k, 0);
         },
         render: function (dt, now, k, p) {
@@ -196,7 +204,9 @@
               var a = 0.25 + 0.35 * Math.sin(ph * 0.9 + o[3]) * Math.sin(ph * 0.9 + o[3]);
               x.fillStyle = 'rgba(255,236,200,' + a.toFixed(3) + ')'; x.beginPath(); x.arc(o[0] * W, o[1] * H, o[2] * 0.7, 0, 6.3); x.fill();
             });
-          } else fx.style.opacity = (0.55 + 0.25 * Math.sin(ph * 7.1) * Math.sin(ph * 3.3) + 0.1 * Math.sin(ph * 17)).toFixed(3);
+          } else if (fx.className === 'cn-fx-rings') { return; }
+          else if (fx.className === 'cn-fx-glow') fx.style.opacity = (0.65 + 0.35 * Math.sin(ph * 1.4)).toFixed(3);
+          else fx.style.opacity = (0.55 + 0.25 * Math.sin(ph * 7.1) * Math.sin(ph * 3.3) + 0.1 * Math.sin(ph * 17)).toFixed(3);
         }
       };
     }

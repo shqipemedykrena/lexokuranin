@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="de">
 <head>
+<script src="../theme.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Lies den Koran</title>
@@ -21,6 +22,7 @@
 </head>
 <body>
 
+<div class="site-notice" id="siteNotice" role="note"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 20.5h20L12 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 9.5v5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="17.4" r="1.2" fill="currentColor"/></svg><span>Diese Seite ist noch im Aufbau. Manche Teile können sich noch ändern oder funktionieren noch nicht.</span><button type="button" id="siteNoticeX" aria-label="Schließen" title="Schließen">×</button></div>
 <header>
   <div class="wrap nav">
     <a class="brand" href="index.html">
@@ -30,7 +32,7 @@
     <nav class="nav-links" id="navLinks">
       <div class="nav-dropdown nav-pages" id="navLearnDropdown">
         <button type="button" class="nav-dropdown-btn" aria-haspopup="true" aria-expanded="false">Seiten ▾</button>
-        <div class="nav-dropdown-menu" hidden aria-label="Alle Seiten"><div class="np-group"><p class="np-h"><span class="ku-num">1.</span> Den Koran lernen</p><a href="meso.html"><span class="ku-num">1.1</span> Lerne, den Koran zu lesen</a><a href="kurani.html"><span class="ku-num">1.2</span> Lies den Koran</a></div><div class="np-group"><p class="np-h"><span class="ku-num">2.</span> Die Wunder des Korans</p><a href="mrekullite.html"><span class="ku-num">2.1</span> Die Wunder des Korans</a></div><div class="np-group"><p class="np-h"><span class="ku-num">3.</span> Nachdenken</p><a href="deshmi.html"><span class="ku-num">3.1</span> Beweise für den Schöpfer</a><a href="kujt-lutesh.html"><span class="ku-num">3.2</span> Zu wem betest du?</a><a href="pse-jemi-ketu.html"><span class="ku-num">3.3</span> Warum sind wir hier?</a><a href="shenjat.html"><span class="ku-num">3.4</span> Zeichen in den Himmeln und auf der Erde</a><a href="gjumi.html"><span class="ku-num">3.5</span> Der Schlaf, ein Zeichen Allahs</a><a href="shiu.html"><span class="ku-num">3.6</span> Regen und Wasser, Zeichen Allahs</a><a href="xheneti.html"><span class="ku-num">3.7</span> Das Paradies, der Lohn der Gläubigen</a></div><div class="np-group"><p class="np-h"><span class="ku-num">4.</span> Den Islam kennenlernen</p><a href="profeti-muhamed.html"><span class="ku-num">4.1</span> Wer war der Prophet Muhammad <span class="saw" lang="ar">ﷺ</span>?</a><a href="si-filloi-islami.html"><span class="ku-num">4.2</span> Wie begann der Islam?</a><a href="zoti-yt.html"><span class="ku-num">4.3</span> Wer ist dein Herr?</a><a href="pyetje.html"><span class="ku-num">4.4</span> Häufige Fragen</a></div><div class="np-group"><p class="np-h">Mehr</p><a href="hifz.html">Auswendig lernen</a><a href="namazi.html">Wie man betet</a><a href="fjalorth.html">Glossar</a></div></div>
+        <div class="nav-dropdown-menu" hidden aria-label="Alle Seiten"><div class="np-group"><p class="np-h"><span class="ku-num">1.</span> Den Koran lernen</p><a href="meso.html"><span class="ku-num">1.1</span> Lerne, den Koran zu lesen</a><a href="kurani.html"><span class="ku-num">1.2</span> Lies den Koran</a></div><div class="np-group"><p class="np-h"><span class="ku-num">2.</span> Die Wunder des Korans</p></div><div class="np-group"><p class="np-h"><span class="ku-num">3.</span> Nachdenken</p><a href="deshmi.html"><span class="ku-num">3.1</span> Beweise für den Schöpfer</a><a href="kujt-lutesh.html"><span class="ku-num">3.2</span> Zu wem betest du?</a><a href="pse-jemi-ketu.html"><span class="ku-num">3.3</span> Warum sind wir hier?</a><a href="shenjat.html"><span class="ku-num">3.4</span> Zeichen in den Himmeln und auf der Erde</a><a href="gjumi.html"><span class="ku-num">3.5</span> Der Schlaf, ein Zeichen Allahs</a><a href="shiu.html"><span class="ku-num">3.6</span> Regen und Wasser, Zeichen Allahs</a><a href="xheneti.html"><span class="ku-num">3.7</span> Das Paradies, der Lohn der Gläubigen</a></div><div class="np-group"><p class="np-h"><span class="ku-num">4.</span> Den Islam kennenlernen</p><a href="zoti-yt.html"><span class="ku-num">4.1</span> Wer ist dein Herr?</a><a href="profeti-muhamed.html"><span class="ku-num">4.2</span> Wer war der Prophet Muhammad <span class="saw" lang="ar">ﷺ</span>?</a><a href="si-filloi-islami.html"><span class="ku-num">4.3</span> Wie begann der Islam?</a><a href="pyetje.html"><span class="ku-num">4.4</span> Häufige Fragen</a></div><div class="np-group"><p class="np-h">Mehr</p><a href="hifz.html">Auswendig lernen</a><a href="namazi.html">Wie man betet</a><a href="mrekullite.html">Wunder</a><a href="fjalorth.html">Glossar</a></div></div>
       </div>
       <a href="rreth-nesh.html">Über uns</a>
     </nav>
@@ -40,6 +42,7 @@
       <a class="lang-flag" data-lang="nl" href="../nl/index.html" hreflang="nl" lang="nl" aria-label="Nederlands" title="Nederlands">🇳🇱</a>
       <a class="lang-flag active" aria-current="true" data-lang="de" href="index.html" hreflang="de" lang="de" aria-label="Deutsch" title="Deutsch">🇩🇪</a>
     </div>
+    <button type="button" class="theme-btn" id="themeBtn" aria-label="Ansicht wechseln: Tag oder Nacht" title="Ansicht wechseln: Tag oder Nacht"><svg class="tb-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="currentColor"/></svg><svg class="tb-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="currentColor"/><g stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M5.3 18.7 7 17M17 7l1.7-1.7"/></g></svg></button>
     <button type="button" class="nav-menu-btn" id="navMenuBtn" aria-expanded="false" aria-controls="navLinks">☰ Menü</button>
   </div>
 </header>
@@ -177,12 +180,117 @@
         <span class="ku-ar" lang="ar" dir="rtl" aria-hidden="true">آيَات</span>
       </div>
       <div class="home-grid ku-thin">
-        <a class="journey-card" href="mrekullite.html">
-          <span class="ku-pic" aria-hidden="true"><picture><source media="(max-width:699px)" srcset="../img/bars/bar-2-1-s.webp"><img src="../img/bars/bar-2-1.webp" alt="" width="1200" height="360" loading="lazy"></picture></span>
-          <span class="journey-kicker">Zeichen, die zum Nachdenken bringen</span>
-          <span class="journey-title"><span class="ku-num">2.1</span> Die Wunder des Korans</span>
-          <span class="journey-sub">Zeichen des Korans und Wunder des Propheten ﷺ, mit Bildern, die du selbst bewegst: das bewahrte Buch, die Herausforderung, die Nachricht über die Römer, die Spaltung des Mondes und Zeichen in der Schöpfung.</span>
-          <span class="journey-cta">Die Wunder ansehen →</span>
+        <a class="journey-card ku-mk" href="mrekullite.html#ruajtja">
+          <span class="ku-pic" aria-hidden="true"><img src="../img/films/ruajtja/0-1280.webp" alt="" width="1280" height="720" loading="lazy"></span>
+          <span class="journey-kicker">Das Buch selbst</span>
+          <span class="journey-title"><span class="ku-num">2.1</span> Ein Buch, das sich nicht verändert hat</span>
+          <span class="journey-sub">Allah versprach, dass Er Selbst den Koran bewahren würde, seine Worte und seine Bedeutung, damit nichts hinzugefügt…</span>
+          <span class="journey-cta">Film ansehen →</span>
+        </a>
+        <a class="journey-card ku-mk" href="mrekullite.html#sfida">
+          <span class="ku-pic" aria-hidden="true"><img src="../films/sfida.jpg" alt="" width="1280" height="720" loading="lazy"></span>
+          <span class="journey-kicker">Das Buch selbst</span>
+          <span class="journey-title"><span class="ku-num">2.2</span> Die Herausforderung, die niemand gewann</span>
+          <span class="journey-sub">Allah forderte Menschen und Dschinn in Stufen heraus: ein Buch wie den Koran zu bringen, dann zehn Suren, dann nur eine…</span>
+          <span class="journey-cta">Film ansehen →</span>
+        </a>
+        <a class="journey-card ku-mk" href="mrekullite.html#pa-kundershtim">
+          <span class="ku-pic" aria-hidden="true"><img src="../films/pa-kundershtim.jpg" alt="" width="1280" height="720" loading="lazy"></span>
+          <span class="journey-kicker">Das Buch selbst</span>
+          <span class="journey-title"><span class="ku-num">2.3</span> Ein Buch ohne Widersprüche</span>
+          <span class="journey-sub">Allah sagt: Wäre der Koran von jemand anderem als Ihm, würden die Menschen darin viele Widersprüche finden.</span>
+          <span class="journey-cta">Film ansehen →</span>
+        </a>
+        <a class="journey-card ku-mk" href="mrekullite.html#ummi">
+          <span class="ku-pic" aria-hidden="true"><img src="../films/ummi.jpg" alt="" width="1280" height="720" loading="lazy"></span>
+          <span class="journey-kicker">Das Buch selbst</span>
+          <span class="journey-title"><span class="ku-num">2.4</span> Ein Prophet, der nicht lesen und schreiben konnte</span>
+          <span class="journey-sub">Der Koran nennt Muhammad ﷺ den Propheten, der weder lesen noch schreiben kann, so wie er in der Tora und im Evangelium…</span>
+          <span class="journey-cta">Film ansehen →</span>
+        </a>
+        <a class="journey-card ku-mk" href="mrekullite.html#gajbi">
+          <span class="ku-pic" aria-hidden="true"><img src="../films/gajbi.jpg" alt="" width="1280" height="720" loading="lazy"></span>
+          <span class="journey-kicker">Das Buch selbst</span>
+          <span class="journey-title"><span class="ku-num">2.5</span> Nachrichten aus dem Verborgenen</span>
+          <span class="journey-sub">Der Koran beweist seinen göttlichen Ursprung, indem er die Geschichten der Propheten und früherer Völker erzählt.</span>
+          <span class="journey-cta">Film ansehen →</span>
+        </a>
+        <a class="journey-card ku-mk" href="mrekullite.html#romaket">
+          <span class="ku-pic" aria-hidden="true"><img src="../films/romaket.jpg" alt="" width="1280" height="720" loading="lazy"></span>
+          <span class="journey-kicker">Nachrichten, die eintrafen</span>
+          <span class="journey-title"><span class="ku-num">2.6</span> Die Nachricht über die Römer</span>
+          <span class="journey-sub">Die Perser besiegten die Römer „im nächstgelegenen Land“.</span>
+          <span class="journey-cta">Film ansehen →</span>
+        </a>
+        <a class="journey-card ku-mk" href="mrekullite.html#parashikimet">
+          <span class="ku-pic" aria-hidden="true"><img src="../films/parashikimet.jpg" alt="" width="1280" height="720" loading="lazy"></span>
+          <span class="journey-kicker">Nachrichten, die eintrafen</span>
+          <span class="journey-title"><span class="ku-num">2.7</span> Nachrichten des Propheten ﷺ, die eintrafen</span>
+          <span class="journey-sub">Der Prophet ﷺ sagte nie etwas über die Zukunft voraus, ohne dass es genau so geschah, wie er sagte.</span>
+          <span class="journey-cta">Film ansehen →</span>
+        </a>
+        <a class="journey-card ku-mk" href="mrekullite.html#hena">
+          <span class="ku-pic" aria-hidden="true"><img src="../films/hena.jpg" alt="" width="1280" height="720" loading="lazy"></span>
+          <span class="journey-kicker">Wunder des Propheten ﷺ</span>
+          <span class="journey-title"><span class="ku-num">2.8</span> Die Spaltung des Mondes</span>
+          <span class="journey-sub">Die Leute von Mekka verlangten ein Zeichen, und ihnen wurde der Mond in zwei Teile gespalten gezeigt.</span>
+          <span class="journey-cta">Film ansehen →</span>
+        </a>
+        <a class="journey-card ku-mk" href="mrekullite.html#uji">
+          <span class="ku-pic" aria-hidden="true"><img src="../films/uji.jpg" alt="" width="1280" height="720" loading="lazy"></span>
+          <span class="journey-kicker">Wunder des Propheten ﷺ</span>
+          <span class="journey-title"><span class="ku-num">2.9</span> Wasser, das aus seinen ﷺ Fingern floss</span>
+          <span class="journey-sub">Zu den Wundern des Propheten ﷺ gehört das Wasser, das zwischen seinen Fingern hervorquoll.</span>
+          <span class="journey-cta">Film ansehen →</span>
+        </a>
+        <a class="journey-card ku-mk" href="mrekullite.html#trungu">
+          <span class="ku-pic" aria-hidden="true"><img src="../films/trungu.jpg" alt="" width="1280" height="720" loading="lazy"></span>
+          <span class="journey-kicker">Wunder des Propheten ﷺ</span>
+          <span class="journey-title"><span class="ku-num">2.10</span> Der Palmstamm, der weinte</span>
+          <span class="journey-sub">Freitags hielt der Prophet ﷺ die Predigt an einen Palmstamm gelehnt.</span>
+          <span class="journey-cta">Film ansehen →</span>
+        </a>
+        <a class="journey-card ku-mk" href="mrekullite.html#ushqimi">
+          <span class="ku-pic" aria-hidden="true"><img src="../films/ushqimi.jpg" alt="" width="1280" height="720" loading="lazy"></span>
+          <span class="journey-kicker">Wunder des Propheten ﷺ</span>
+          <span class="journey-title"><span class="ku-num">2.11</span> Das Essen, das sich vermehrte</span>
+          <span class="journey-sub">Zu den Wundern des Propheten ﷺ gehört die Vermehrung kleiner Mengen Essen in seinen Händen, sodass das ganze Heer aß…</span>
+          <span class="journey-cta">Film ansehen →</span>
+        </a>
+        <a class="journey-card ku-mk" href="mrekullite.html#guri">
+          <span class="ku-pic" aria-hidden="true"><img src="../films/guri.jpg" alt="" width="1280" height="720" loading="lazy"></span>
+          <span class="journey-kicker">Wunder des Propheten ﷺ</span>
+          <span class="journey-title"><span class="ku-num">2.12</span> Der Stein, der ihn grüßte</span>
+          <span class="journey-sub">Der Prophet ﷺ sagte, dass es in Mekka einen Stein gab, der ihn mit Salam grüßte, bevor seine Sendung begann (Muslim…</span>
+          <span class="journey-cta">Film ansehen →</span>
+        </a>
+        <a class="journey-card ku-mk" href="mrekullite.html#embrioni">
+          <span class="ku-pic" aria-hidden="true"><img src="../img/films/embrioni/nutfah-1280.webp" alt="" width="1280" height="720" loading="lazy"></span>
+          <span class="journey-kicker">Zeichen in der Schöpfung</span>
+          <span class="journey-title"><span class="ku-num">2.13</span> Die Erschaffung des Menschen, Stufe um Stufe</span>
+          <span class="journey-sub">Der Koran beschreibt, dass der Mensch nicht auf einmal erschaffen wird, sondern in Stufen.</span>
+          <span class="journey-cta">Film ansehen →</span>
+        </a>
+        <a class="journey-card ku-mk" href="mrekullite.html#detet">
+          <span class="ku-pic" aria-hidden="true"><img src="../films/detet.jpg" alt="" width="1280" height="720" loading="lazy"></span>
+          <span class="journey-kicker">Zeichen in der Schöpfung</span>
+          <span class="journey-title"><span class="ku-num">2.14</span> Die Schranke zwischen zwei Gewässern</span>
+          <span class="journey-sub">Allah ließ die beiden Gewässer fließen: das eine süß und wohlschmeckend, das andere salzig und bitter, und setzte eine…</span>
+          <span class="journey-cta">Film ansehen →</span>
+        </a>
+        <a class="journey-card ku-mk" href="mrekullite.html#erresira">
+          <span class="ku-pic" aria-hidden="true"><img src="../films/erresira.jpg" alt="" width="1280" height="720" loading="lazy"></span>
+          <span class="journey-kicker">Zeichen in der Schöpfung</span>
+          <span class="journey-title"><span class="ku-num">2.15</span> Dunkelheit im tiefen Meer</span>
+          <span class="journey-sub">Der Koran beschreibt Dunkelheit in einem tiefen Meer, bedeckt von Wogen über Wogen, Finsternis über Finsternis.</span>
+          <span class="journey-cta">Film ansehen →</span>
+        </a>
+        <a class="journey-card ku-mk" href="mrekullite.html#malet">
+          <span class="ku-pic" aria-hidden="true"><img src="../films/malet.jpg" alt="" width="1280" height="720" loading="lazy"></span>
+          <span class="journey-kicker">Zeichen in der Schöpfung</span>
+          <span class="journey-title"><span class="ku-num">2.16</span> Berge als Pflöcke</span>
+          <span class="journey-sub">Allah hat die Berge fest gesetzt, damit sie die Erde stabilisieren und sie nicht wanken lassen.</span>
+          <span class="journey-cta">Film ansehen →</span>
         </a>
       </div>
     </div>
@@ -251,25 +359,25 @@
         <span class="ku-ar" lang="ar" dir="rtl" aria-hidden="true">ٱلْإِسْلَام</span>
       </div>
       <div class="home-grid ku-thin">
+        <a class="journey-card" href="zoti-yt.html">
+          <span class="ku-pic" aria-hidden="true"><picture><source media="(max-width:699px)" srcset="../img/bars/bar-4-3-s.webp"><img src="../img/bars/bar-4-3.webp" alt="" width="1200" height="360" loading="lazy"></picture></span>
+          <span class="journey-kicker">Die Namen Allahs</span>
+          <span class="journey-title"><span class="ku-num">4.1</span> Wer ist dein Herr?</span>
+          <span class="journey-sub">86 der Namen Allahs mit ihrer Bedeutung.</span>
+          <span class="journey-cta">Mehr lesen →</span>
+        </a>
         <a class="journey-card" href="profeti-muhamed.html">
           <span class="ku-pic" aria-hidden="true"><picture><source media="(max-width:699px)" srcset="../img/bars/bar-4-1-s.webp"><img src="../img/bars/bar-4-1.webp" alt="" width="1200" height="360" loading="lazy"></picture></span>
           <span class="journey-kicker">Sein Leben</span>
-          <span class="journey-title"><span class="ku-num">4.1</span> Wer war der Prophet Muhammad <span class="saw" lang="ar">ﷺ</span>?</span>
+          <span class="journey-title"><span class="ku-num">4.2</span> Wer war der Prophet Muhammad <span class="saw" lang="ar">ﷺ</span>?</span>
           <span class="journey-sub">Sein Leben, von Mekka bis Medina.</span>
           <span class="journey-cta">Mehr lesen →</span>
         </a>
         <a class="journey-card" href="si-filloi-islami.html">
           <span class="ku-pic" aria-hidden="true"><picture><source media="(max-width:699px)" srcset="../img/bars/bar-4-2-s.webp"><img src="../img/bars/bar-4-2.webp" alt="" width="1200" height="360" loading="lazy"></picture></span>
           <span class="journey-kicker">Geschichte</span>
-          <span class="journey-title"><span class="ku-num">4.2</span> Wie begann der Islam?</span>
+          <span class="journey-title"><span class="ku-num">4.3</span> Wie begann der Islam?</span>
           <span class="journey-sub">Von der ersten Offenbarung bis zur Verbreitung in der Welt.</span>
-          <span class="journey-cta">Mehr lesen →</span>
-        </a>
-        <a class="journey-card" href="zoti-yt.html">
-          <span class="ku-pic" aria-hidden="true"><picture><source media="(max-width:699px)" srcset="../img/bars/bar-4-3-s.webp"><img src="../img/bars/bar-4-3.webp" alt="" width="1200" height="360" loading="lazy"></picture></span>
-          <span class="journey-kicker">Die Namen Allahs</span>
-          <span class="journey-title"><span class="ku-num">4.3</span> Wer ist dein Herr?</span>
-          <span class="journey-sub">86 der Namen Allahs mit ihrer Bedeutung.</span>
           <span class="journey-cta">Mehr lesen →</span>
         </a>
         <a class="journey-card" href="pyetje.html">

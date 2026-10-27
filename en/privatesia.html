@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+<script src="../theme.js"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Privacy · Read the Quran</title>
@@ -17,6 +18,7 @@
 <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
+<div class="site-notice" id="siteNotice" role="note"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 20.5h20L12 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 9.5v5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="17.4" r="1.2" fill="currentColor"/></svg><span>This site is still under construction. Some parts may change or not work yet.</span><button type="button" id="siteNoticeX" aria-label="Close" title="Close">×</button></div>
 <header>
   <div class="wrap nav">
     <a class="brand" href="index.html">
@@ -26,7 +28,7 @@
     <nav class="nav-links" id="navLinks">
       <div class="nav-dropdown nav-pages" id="navLearnDropdown">
         <button type="button" class="nav-dropdown-btn" aria-haspopup="true" aria-expanded="false">Pages ▾</button>
-        <div class="nav-dropdown-menu" hidden aria-label="All pages"><div class="np-group"><p class="np-h"><span class="ku-num">1.</span> Learn the Quran</p><a href="meso.html"><span class="ku-num">1.1</span> Learn to read the Quran</a><a href="kurani.html"><span class="ku-num">1.2</span> Read the Quran</a></div><div class="np-group"><p class="np-h"><span class="ku-num">2.</span> Miracles of the Quran</p><a href="mrekullite.html"><span class="ku-num">2.1</span> Miracles of the Quran</a></div><div class="np-group"><p class="np-h"><span class="ku-num">3.</span> Reflection</p><a href="deshmi.html"><span class="ku-num">3.1</span> Evidence for the Creator</a><a href="kujt-lutesh.html"><span class="ku-num">3.2</span> Who are you praying to?</a><a href="pse-jemi-ketu.html"><span class="ku-num">3.3</span> Why are we here?</a><a href="shenjat.html"><span class="ku-num">3.4</span> Signs in the heavens and the earth</a><a href="gjumi.html"><span class="ku-num">3.5</span> Sleep, a sign of Allah</a><a href="shiu.html"><span class="ku-num">3.6</span> Rain and water, signs of Allah</a><a href="xheneti.html"><span class="ku-num">3.7</span> Paradise, the reward of the believers</a></div><div class="np-group"><p class="np-h"><span class="ku-num">4.</span> Get to know Islam</p><a href="profeti-muhamed.html"><span class="ku-num">4.1</span> Who was Prophet Muhammad <span class="saw" lang="ar">ﷺ</span>?</a><a href="si-filloi-islami.html"><span class="ku-num">4.2</span> How did Islam begin?</a><a href="zoti-yt.html"><span class="ku-num">4.3</span> Who is your Lord?</a><a href="pyetje.html"><span class="ku-num">4.4</span> Frequently asked questions</a></div><div class="np-group"><p class="np-h">More</p><a href="hifz.html">Memorize</a><a href="namazi.html">How to pray</a><a href="fjalorth.html">Glossary</a></div></div>
+        <div class="nav-dropdown-menu" hidden aria-label="All pages"><div class="np-group"><p class="np-h"><span class="ku-num">1.</span> Learn the Quran</p><a href="meso.html"><span class="ku-num">1.1</span> Learn to read the Quran</a><a href="kurani.html"><span class="ku-num">1.2</span> Read the Quran</a></div><div class="np-group"><p class="np-h"><span class="ku-num">2.</span> Miracles of the Quran</p></div><div class="np-group"><p class="np-h"><span class="ku-num">3.</span> Reflection</p><a href="deshmi.html"><span class="ku-num">3.1</span> Evidence for the Creator</a><a href="kujt-lutesh.html"><span class="ku-num">3.2</span> Who are you praying to?</a><a href="pse-jemi-ketu.html"><span class="ku-num">3.3</span> Why are we here?</a><a href="shenjat.html"><span class="ku-num">3.4</span> Signs in the heavens and the earth</a><a href="gjumi.html"><span class="ku-num">3.5</span> Sleep, a sign of Allah</a><a href="shiu.html"><span class="ku-num">3.6</span> Rain and water, signs of Allah</a><a href="xheneti.html"><span class="ku-num">3.7</span> Paradise, the reward of the believers</a></div><div class="np-group"><p class="np-h"><span class="ku-num">4.</span> Get to know Islam</p><a href="zoti-yt.html"><span class="ku-num">4.1</span> Who is your Lord?</a><a href="profeti-muhamed.html"><span class="ku-num">4.2</span> Who was Prophet Muhammad <span class="saw" lang="ar">ﷺ</span>?</a><a href="si-filloi-islami.html"><span class="ku-num">4.3</span> How did Islam begin?</a><a href="pyetje.html"><span class="ku-num">4.4</span> Frequently asked questions</a></div><div class="np-group"><p class="np-h">More</p><a href="hifz.html">Memorize</a><a href="namazi.html">How to pray</a><a href="mrekullite.html">Miracles</a><a href="fjalorth.html">Glossary</a></div></div>
       </div>
       <a href="rreth-nesh.html">About us</a>
     </nav>
@@ -36,6 +38,7 @@
       <a class="lang-flag" data-lang="nl" href="../nl/privatesia.html" hreflang="nl" lang="nl" aria-label="Nederlands" title="Nederlands">🇳🇱</a>
       <a class="lang-flag" data-lang="de" href="../de/privatesia.html" hreflang="de" lang="de" aria-label="Deutsch" title="Deutsch">🇩🇪</a>
     </div>
+    <button type="button" class="theme-btn" id="themeBtn" aria-label="Switch the look: day or night" title="Switch the look: day or night"><svg class="tb-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="currentColor"/></svg><svg class="tb-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="currentColor"/><g stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M5.3 18.7 7 17M17 7l1.7-1.7"/></g></svg></button>
     <button type="button" class="nav-menu-btn" id="navMenuBtn" aria-expanded="false" aria-controls="navLinks">☰ Menu</button>
   </div>
 </header>
