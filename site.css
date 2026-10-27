@@ -1485,6 +1485,11 @@ body.qr-night .qr-ar .qw.sel{background:rgba(241,210,157,0.2)}
 .quiz-step-badge.is-test{color:var(--test-ink);background:var(--test-bg2);border-color:var(--test-line)}
 .prep-doc>li:nth-child(3){margin-top:1.6rem}
 .prep-pretty>p>b{color:var(--ink)}
+.wbw{grid-template-columns:repeat(auto-fit,7.5rem);justify-content:end}
+@media(max-width:560px){.wbw{grid-template-columns:repeat(auto-fill,minmax(6.5rem,1fr));justify-content:normal}}
+.texhvid-layout{align-items:flex-start}
+.texhvid-cheat{position:sticky;top:5.5rem}
+@media(max-width:860px){.texhvid-cheat{position:static}}
 html{font-size:112.5%}
 body{font-size:1.0556rem}
 @media(min-width:1000px){header .brand{font-size:1.02rem}
