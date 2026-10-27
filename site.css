@@ -1231,6 +1231,17 @@ ol.prep-need>li::before{content:counter(need);position:absolute;left:0;top:.08re
 .nz-src h2{font-size:1.1rem}
 @media (max-width:480px){.nz-rks{grid-template-columns:repeat(3,minmax(0,1fr))}
 .nz-steps{padding-left:1.7rem}}
+.nz-tw{overflow-x:auto}
+.nz-rt{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.nz-rt th,.nz-rt td{padding:.55rem .6rem;border-bottom:1px solid var(--line);text-align:center}
+.nz-rt th[scope="row"],.nz-rt thead th:first-child{text-align:left}
+.nz-rt thead th{font-size:.78rem;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-soft);font-weight:600}
+.nz-rt tbody th{font-weight:600}
+.nz-rt td{font-size:1.25rem}
+.nz-rt td.nz-fz{font-size:1.6rem;color:var(--accent-deep);font-weight:600}
+.nz-rt thead th.nz-fz{color:var(--accent-deep)}
+.nz-rt td.nz-none{color:var(--ink-soft);opacity:.6}
+ul.nz-note{margin:.8rem 0 0;padding-left:1.1rem;display:grid;gap:.3rem}
 .nav-pages .nav-dropdown-menu{display:block;columns:3 13rem;column-gap:1.4rem;width:min(46rem,94vw);min-width:0;padding:1rem 1.1rem;left:auto;right:0}
 .nav-pages .nav-dropdown-menu[hidden]{display:none}
 .np-group{break-inside:avoid;display:flex;flex-direction:column;gap:.05rem;margin-bottom:.8rem}
