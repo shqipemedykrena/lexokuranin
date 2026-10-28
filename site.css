@@ -1411,6 +1411,93 @@ a.nz-card:hover,a.nz-card:focus-visible{border-color:var(--accent);transform:tra
 .nz-tipico svg{width:3.2rem;height:3.2rem;display:block}
 @media (max-width:560px){.nz-box-tip{grid-template-columns:2.4rem 1fr;gap:.7rem}
 .nz-tipico svg{width:2.4rem;height:2.4rem}}
+.nz-calc{margin-top:1.4rem;padding:1.1rem 1.1rem 1rem;border:2px solid var(--accent);border-radius:.8rem;background:var(--paper-lift);scroll-margin-top:5rem}
+.nz-calc h3{margin:0 0 .3rem;font-size:1.2rem;text-wrap:balance}
+.nz-clead{margin:0 0 .8rem}
+.nz-cf label{display:block;font-weight:700;margin-bottom:.3rem}
+.nz-cfrow{display:flex;gap:.5rem;flex-wrap:wrap}
+.nz-cfrow input{flex:1 1 13rem;min-width:0;font:inherit;padding:.6rem .75rem;border:1px solid var(--ink-soft);border-radius:.5rem;background:var(--paper);color:var(--ink)}
+.nz-cfrow button,.nz-cdl button{font:inherit;font-weight:700;padding:.6rem 1.1rem;border:2px solid var(--accent);border-radius:.5rem;background:var(--accent);color:#fff;cursor:pointer}
+.nz-cfrow button:disabled{opacity:.6;cursor:wait}
+.nz-cdl button+button{background:transparent;color:var(--accent-deep)}
+.nz-clink{display:inline-flex;align-items:center;gap:.35rem;margin-top:.55rem;padding:.2rem 0;border:0;background:none;font:inherit;color:var(--accent-deep);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.nz-clink svg{width:1.1em;height:1.1em;flex:none}
+.nz-cmsg{margin:.5rem 0 0;min-height:1.2em;font-size:.92rem;color:var(--ink-soft)}
+.nz-cmsg:empty{display:none}
+.nz-cmsg.is-bad{color:var(--accent-deep);font-weight:600}
+.nz-cpick{display:flex;flex-direction:column;gap:.4rem;margin-top:.5rem}
+.nz-cpick button{font:inherit;text-align:left;padding:.55rem .75rem;border:1px solid var(--line);border-radius:.5rem;background:var(--paper);color:var(--ink);cursor:pointer}
+.nz-cpick button:hover,.nz-cpick button:focus-visible{border-color:var(--accent)}
+.nz-cset{margin-top:.8rem;font-size:.94rem}
+.nz-cset summary{cursor:pointer;font-weight:600;color:var(--accent-deep)}
+.nz-csetg{display:grid;gap:.6rem;margin-top:.5rem}
+@media (min-width:700px){.nz-csetg{grid-template-columns:3fr 2fr}}
+.nz-cset fieldset{margin:0;padding:.5rem .7rem;border:1px solid var(--line);border-radius:.5rem}
+.nz-cset legend{font-weight:700;padding:0 .3rem}
+.nz-crad{display:flex;gap:.5rem;align-items:flex-start;padding:.25rem 0;cursor:pointer}
+.nz-crad input{margin-top:.25rem;accent-color:var(--accent)}
+.nz-crad small{display:block;color:var(--ink-soft);font-size:.85rem}
+.nz-cout{margin-top:1rem}
+.nz-chead{display:flex;flex-wrap:wrap;gap:.5rem 1rem;align-items:center;justify-content:space-between;margin-bottom:.4rem}
+.nz-cplace{margin:0;font-size:1.05rem}
+.nz-cex{display:inline-block;margin-left:.3rem;padding:.05rem .45rem;border-radius:1rem;border:1px solid var(--ink-soft);font-size:.75rem;color:var(--ink-soft);vertical-align:.1em}
+.nz-cex[hidden]{display:none}
+.nz-cmon{display:flex;align-items:center;gap:.4rem;font-weight:700}
+.nz-cmon span{min-width:8.5rem;text-align:center}
+.nz-cmon button{width:2.2rem;height:2.2rem;font:inherit;font-size:1.3rem;line-height:1;border:1px solid var(--line);border-radius:50%;background:var(--paper);color:var(--ink);cursor:pointer}
+.nz-cmon button:hover,.nz-cmon button:focus-visible{border-color:var(--accent)}
+.nz-ctw{overflow-x:auto;border:1px solid var(--line);border-radius:.5rem;background:var(--paper)}
+.nz-ct{width:100%;border-collapse:collapse;font-size:.88rem;font-variant-numeric:tabular-nums;white-space:nowrap}
+.nz-ct th,.nz-ct td{padding:.32rem .5rem;text-align:right;border-bottom:1px solid var(--line)}
+.nz-ct thead th{position:sticky;top:0;background:var(--paper-lift);font-size:.72rem;letter-spacing:.03em;text-transform:uppercase;color:var(--ink-soft);font-weight:700}
+.nz-ct th:first-child{text-align:left}
+.nz-ct tbody th{font-weight:400;position:sticky;left:0;background:var(--paper)}
+.nz-cd{display:inline-block;min-width:1.4em;font-weight:700}
+.nz-cw{color:var(--ink-soft);font-size:.82rem}
+.nz-ct .nz-csub{color:var(--ink-soft);font-size:.82rem}
+.nz-ct sup{color:var(--accent-deep);font-weight:700}
+.nz-ct tr.is-today th,.nz-ct tr.is-today td{background:var(--paper-lift);font-weight:700;box-shadow:inset 0 2px 0 var(--accent),inset 0 -2px 0 var(--accent)}
+.nz-ctoday{font-size:.7rem;text-transform:uppercase;letter-spacing:.04em;color:var(--accent-deep)}
+.nz-cdl{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.7rem}
+.nz-cinfo{margin-top:.8rem;font-size:.9rem}
+.nz-cinfo ul{margin:0;padding-left:1.1rem}
+.nz-cinfo p{margin:.4rem 0 0}
+.nz-cpriv{margin-top:.9rem;font-size:.85rem}
+.nz-cprinth{display:none}
+@media print{html.nz-pt body *{visibility:hidden}
+html.nz-pt #nzcOut,html.nz-pt #nzcOut *{visibility:visible}
+html.nz-pt #nzcOut{position:absolute;left:0;top:0;width:100%;margin:0}
+html.nz-pt .nz-cprinth{display:block;font-size:16pt;font-weight:700;margin:0 0 6pt;color:#000}
+html.nz-pt .nz-chead,html.nz-pt .nz-cdl{display:none}
+html.nz-pt .nz-ctw{overflow:visible;border:0}
+html.nz-pt .nz-ct{font-size:9.5pt}
+html.nz-pt .nz-ct th,html.nz-pt .nz-ct td{padding:2pt 5pt;color:#000;background:#fff !important;box-shadow:none !important}
+html.nz-pt .nz-ct tr.is-today th,html.nz-pt .nz-ct tr.is-today td{font-weight:400}
+html.nz-pt .nz-cinfo,html.nz-pt #nzcOut .nz-note{font-size:8.5pt;color:#000}
+html.nz-pt .nz-ctoday{display:none}}
+.nz-layout .wrap>*{min-width:0}
+.nz-ct thead th{white-space:normal;vertical-align:bottom;line-height:1.15}
+@media (max-width:560px){.nz-calc{padding:.9rem .7rem}
+.nz-ct{font-size:.8rem}
+.nz-ct th,.nz-ct td{padding:.3rem .28rem}
+.nz-ct thead th{font-size:.6rem;letter-spacing:0}
+.nz-cw{display:block;font-size:.7rem;line-height:1}
+.nz-ctoday{display:none}
+.nz-ct .nz-csub{font-size:.74rem}}
+@media (max-width:560px){.nz-ct{font-size:.74rem}
+.nz-ct th,.nz-ct td{padding:.3rem .2rem}
+.nz-ct thead th,.nz-ct thead th.nz-csub{font-size:.62rem;text-transform:none;font-weight:700}
+.nz-ct td.nz-csub{font-size:.7rem}}
+@media (max-width:420px){.nz-ct{font-size:.69rem}
+.nz-ct th,.nz-ct td{padding:.3rem .13rem}
+.nz-ct td.nz-csub{font-size:.66rem}
+.nz-ct tbody th{padding-left:.3rem}}
+@media (max-width:420px){.nz-ct thead th,.nz-ct thead th.nz-csub{font-size:.55rem}}
+.nz-wfig{display:flex;gap:.6rem;margin:.55rem 0 .2rem}
+.nz-wfig figure{margin:0;flex:0 1 auto;max-width:15rem}
+.nz-wfig.two figure{max-width:calc(50% - .3rem)}
+.nz-wfig img{display:block;width:100%;height:auto;max-height:15rem;object-fit:contain;border-radius:.7rem;border:1px solid var(--line);background:#FCFBF8}
+.nz-wfig figcaption{margin-top:.2rem;font-size:.82rem;font-weight:600;color:var(--ink-soft)}
 .nav-pages .nav-dropdown-menu{display:block;columns:3 13rem;column-gap:1.4rem;width:min(46rem,94vw);min-width:0;padding:1rem 1.1rem;left:auto;right:0}
 .nav-pages .nav-dropdown-menu[hidden]{display:none}
 .np-group{break-inside:avoid;display:flex;flex-direction:column;gap:.05rem;margin-bottom:.8rem}
@@ -1746,6 +1833,10 @@ html[data-theme="night"] .nz-sfig .nz-tall{background:#312a15}
 html[data-theme="night"] .nz-srcs li:target{background:var(--how-bg,#123924)}
 html[data-theme="night"] .nz-mp{background:#312a15}
 html[data-theme="night"] .nz-backf{box-shadow:0 6px 20px rgba(237,241,250,0.275)}
+@media print{html[data-theme="night"].nz-pt .nz-cprinth{color:#eeeff7}
+html[data-theme="night"].nz-pt .nz-ct th,html[data-theme="night"].nz-pt .nz-ct td{color:#eeeff7;background:#0a0d1d !important}
+html[data-theme="night"].nz-pt .nz-cinfo,html[data-theme="night"].nz-pt #nzcOut .nz-note{color:#eeeff7}}
+html[data-theme="night"] .nz-wfig img{background:#312a15}
 html[data-theme="night"] .qr-tile.done{background:#123e20}
 html[data-theme="night"] .qr-sajda{color:#efcf92;background:#403413}
 html[data-theme="night"] .qr-know.on{background:#123e20;color:#9ce2b5}
@@ -1786,7 +1877,7 @@ html.no-notice .site-notice{display:none}
 .prep-table tbody td:first-child::before{background:#C8102E}
 html[data-theme="night"] .prep-table tbody td:first-child::before{background:#e0525a}
 /* how to pray (owner 28 Oct): the drawn pictures keep their own light ground in both looks; warnings stay red */
-.nz-cim,.nz-sfig img,.nz-next img,.nz-rpos img,.nz-tall{background:#FCFBF8}
+.nz-cim,.nz-sfig img,.nz-next img,.nz-rpos img,.nz-tall,.nz-wfig img{background:#FCFBF8}
 .nz-warn{color:#C8102E}
 html[data-theme="night"] .nz-warn{color:#ff8f86}
 /* "Kur duhet abdest i ri?" box in light tropical red (owner 28 Oct), like the "Gabime te zakonshme" table */
