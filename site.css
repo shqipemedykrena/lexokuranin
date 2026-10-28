@@ -1512,6 +1512,8 @@ html.nz-pt .nz-ctoday{display:none}}
 .nz-day figcaption{margin-top:.3rem}
 .nz-dswipe{display:none;margin:.3rem 0 0;font-size:.8rem;color:var(--ink-soft);text-align:center}
 @media (max-width:760px){.nz-dswipe{display:block}}
+.nz-wsteps-pic li{grid-template-columns:2rem 1fr}
+@media (max-width:560px){.nz-wsteps-pic li{grid-template-columns:1.6rem 1fr}}
 .nav-pages .nav-dropdown-menu{display:block;columns:3 13rem;column-gap:1.4rem;width:min(46rem,94vw);min-width:0;padding:1rem 1.1rem;left:auto;right:0}
 .nav-pages .nav-dropdown-menu[hidden]{display:none}
 .np-group{break-inside:avoid;display:flex;flex-direction:column;gap:.05rem;margin-bottom:.8rem}

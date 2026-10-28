@@ -1,7 +1,7 @@
 /* Ikre offline cache (owner, 28 Oct: a new block did not show after a push). Pages: always asked fresh from the
    server when online (cache only offline). Files: shown from the cache and updated in the background, and the
    cache name V changes whenever the site's CSS or scripts change (build/swver.py), so old copies are dropped. */
-var V = "ikre-1af47b578b";
+var V = "ikre-59b305aff1";
 var PRE = ["index.html", "kurani.html", "meso.html", "mrekullite.html", "hifz.html", "namazi.html", "zoti-yt.html", "site.css", "site.js", "quran-reader.js", "mk.js", "progress.js", "offline.js", "en/index.html", "en/kurani.html", "en/meso.html", "en/mrekullite.html", "en/hifz.html", "en/namazi.html", "en/zoti-yt.html", "en/progress.js", "nl/index.html", "nl/kurani.html", "nl/meso.html", "nl/mrekullite.html", "nl/hifz.html", "nl/namazi.html", "nl/zoti-yt.html", "nl/progress.js", "de/index.html", "de/kurani.html", "de/meso.html", "de/mrekullite.html", "de/hifz.html", "de/namazi.html", "de/zoti-yt.html", "de/progress.js"];
 self.addEventListener("install", function(e){
   e.waitUntil(caches.open(V).then(function(c){ return Promise.all(PRE.map(function(u){ return c.add(u).catch(function(){}); })); }).then(function(){ return self.skipWaiting(); }));
