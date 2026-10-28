@@ -1318,6 +1318,20 @@ a.nz-card:hover,a.nz-card:focus-visible{border-color:var(--accent);transform:tra
 .nz-wi{width:2.6rem;height:2.6rem}
 .nz-ico{width:1.4rem;height:1.4rem}
 .nz-fitn{width:100%}}
+.nz-pick{margin:.2rem 0 .5rem;font-weight:600}
+.nz-nbtns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.5rem;margin-bottom:.4rem}
+.nz-nbtn{display:grid;gap:.1rem;padding:.6rem .5rem;border:2px solid var(--line);border-radius:.6rem;background:var(--paper-lift);color:var(--ink);font:inherit;cursor:pointer;text-align:center}
+.nz-nbtn b{font-size:1.05rem}
+.nz-nbtn small{font-size:.78rem;color:var(--ink-soft)}
+.nz-nbtn:hover,.nz-nbtn:focus-visible{border-color:var(--accent)}
+.nz-nbtn[aria-pressed="true"]{border-color:var(--accent-deep);background:var(--accent-deep);color:#fff}
+.nz-nbtn[aria-pressed="true"] small{color:rgba(255,255,255,.85)}
+.nz-seq .nz-cards{grid-template-columns:repeat(auto-fill,minmax(8rem,1fr))}
+.nz-seq .nz-card b{font-size:.9rem}
+.nz-seq .nz-card small{font-size:.74rem}
+.nz-g-first,.nz-g-final{border-style:dashed}
+.nz-g-first .nz-raklbl,.nz-g-final .nz-raklbl{background:var(--accent-deep)}
+@media (max-width:560px){.nz-seq .nz-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .nav-pages .nav-dropdown-menu{display:block;columns:3 13rem;column-gap:1.4rem;width:min(46rem,94vw);min-width:0;padding:1rem 1.1rem;left:auto;right:0}
 .nav-pages .nav-dropdown-menu[hidden]{display:none}
 .np-group{break-inside:avoid;display:flex;flex-direction:column;gap:.05rem;margin-bottom:.8rem}
