@@ -1501,13 +1501,17 @@ html.nz-pt .nz-ctoday{display:none}}
 .nz-check li>span:last-child>b:first-child{display:block;margin-bottom:.15rem;font-size:1.02rem}
 .nz-check li>span:last-child{line-height:1.55}
 .nz-day{margin:1rem 0 .4rem}
+.nz-dayx{overflow-x:auto;border-radius:.7rem}
+.nz-dayw{position:relative;min-width:720px}
 .nz-dayw img{display:block;width:100%;height:auto;border-radius:.7rem}
-.nz-daylb{position:relative;height:2.9rem;margin-top:.15rem}
-.nz-daylb span{position:absolute;transform:translateX(-50%);font-size:.8rem;font-weight:700;color:var(--accent-deep);white-space:nowrap;padding-top:.5rem}
-.nz-daylb span::before{content:"";position:absolute;left:50%;top:0;width:2px;height:.45rem;background:var(--accent);transform:translateX(-50%)}
-.nz-daylb .nz-dl2{top:1.35rem}
-.nz-daylb .nz-dl2::before{top:-1.35rem;height:1.8rem}
-.nz-day figcaption{margin-top:.2rem}
+.nz-dsegs{position:absolute;inset:0;display:flex}
+.nz-dseg{position:relative;display:flex;justify-content:center;align-items:flex-start;padding-top:.6rem}
+.nz-dseg+.nz-dseg{border-left:2px dashed rgba(255,255,255,.85)}
+.nz-dseg b{font-size:.72rem;font-weight:600;color:#fff;background:rgba(10,14,40,.55);padding:.15rem .4rem;border-radius:1rem;white-space:nowrap;letter-spacing:.01em}
+.nz-dseg.is-p b{font-size:.8rem;font-weight:800;background:rgba(10,14,40,.78);box-shadow:0 0 0 1.5px rgba(255,255,255,.9)}
+.nz-day figcaption{margin-top:.3rem}
+.nz-dswipe{display:none;margin:.3rem 0 0;font-size:.8rem;color:var(--ink-soft);text-align:center}
+@media (max-width:760px){.nz-dswipe{display:block}}
 .nav-pages .nav-dropdown-menu{display:block;columns:3 13rem;column-gap:1.4rem;width:min(46rem,94vw);min-width:0;padding:1rem 1.1rem;left:auto;right:0}
 .nav-pages .nav-dropdown-menu[hidden]{display:none}
 .np-group{break-inside:avoid;display:flex;flex-direction:column;gap:.05rem;margin-bottom:.8rem}
@@ -1847,6 +1851,8 @@ html[data-theme="night"] .nz-backf{box-shadow:0 6px 20px rgba(237,241,250,0.275)
 html[data-theme="night"].nz-pt .nz-ct th,html[data-theme="night"].nz-pt .nz-ct td{color:#eeeff7;background:#0a0d1d !important}
 html[data-theme="night"].nz-pt .nz-cinfo,html[data-theme="night"].nz-pt #nzcOut .nz-note{color:#eeeff7}}
 html[data-theme="night"] .nz-wfig img{background:#312a15}
+html[data-theme="night"] .nz-dseg+.nz-dseg{border-left:2px dashed rgba(10,13,29,0.85)}
+html[data-theme="night"] .nz-dseg.is-p b{box-shadow:0 0 0 1.5px rgba(10,13,29,0.9)}
 html[data-theme="night"] .qr-tile.done{background:#123e20}
 html[data-theme="night"] .qr-sajda{color:#efcf92;background:#403413}
 html[data-theme="night"] .qr-know.on{background:#123e20;color:#9ce2b5}
