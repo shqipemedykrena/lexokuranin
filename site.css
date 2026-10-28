@@ -1371,6 +1371,17 @@ a.nz-card:hover,a.nz-card:focus-visible{border-color:var(--accent);transform:tra
 .nz-ph .nz-tr,.nz-ph .nz-m{line-height:1.45}
 .nz-srcs{margin:0;padding-left:1.6rem;font-size:.92rem;display:grid;gap:.25rem}
 .nz-srcs li:target{background:var(--how-bg,#e9f8f0);border-radius:.3rem}
+.nz-ringtxt{margin:0 0 .8rem}
+.nz-fitrow{padding:.5rem 0;border-top:1px solid var(--line)}
+.nz-fitrow:first-of-type{border-top:0}
+.nz-fitseq{gap:.35rem}
+.nz-mring{position:relative;display:inline-block;width:6.4rem;height:6.4rem;flex:none;color:var(--accent)}
+.nz-mring svg{position:absolute;inset:0;width:100%;height:100%}
+.nz-mring b{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:1.6rem;line-height:1;color:var(--accent-deep)}
+.nz-mp{position:absolute;width:30%;height:auto;transform:translate(-50%,-50%);border-radius:50%;border:1.5px solid var(--accent);background:#FCFBF8}
+.nz-b.nz-sit1{background:var(--paper);color:var(--accent-deep);border:2px solid var(--accent)}
+@media (max-width:560px){.nz-mring{width:5.4rem;height:5.4rem}
+.nz-mring b{font-size:1.35rem}}
 .nav-pages .nav-dropdown-menu{display:block;columns:3 13rem;column-gap:1.4rem;width:min(46rem,94vw);min-width:0;padding:1rem 1.1rem;left:auto;right:0}
 .nav-pages .nav-dropdown-menu[hidden]{display:none}
 .np-group{break-inside:avoid;display:flex;flex-direction:column;gap:.05rem;margin-bottom:.8rem}
@@ -1704,6 +1715,7 @@ html[data-theme="night"] .nm-alt .nm-bt i{background:#1e2a5b}
 html[data-theme="night"] .wc-tile:hover,html[data-theme="night"] .wc-tile:focus-visible{box-shadow:0 6px 16px rgba(237,241,250,0.088)}
 html[data-theme="night"] .nz-sfig .nz-tall{background:#312a15}
 html[data-theme="night"] .nz-srcs li:target{background:var(--how-bg,#123924)}
+html[data-theme="night"] .nz-mp{background:#312a15}
 html[data-theme="night"] .qr-tile.done{background:#123e20}
 html[data-theme="night"] .qr-sajda{color:#efcf92;background:#403413}
 html[data-theme="night"] .qr-know.on{background:#123e20;color:#9ce2b5}
@@ -1750,5 +1762,12 @@ html[data-theme="night"] .nz-warn{color:#ff8f86}
 /* "Kur duhet abdest i ri?" box in light tropical red (owner 28 Oct), like the "Gabime te zakonshme" table */
 .nz-box-red{background:#ffe3df;border-color:#f4b9b0}
 html[data-theme="night"] .nz-box-red{background:#3d1a1c;border-color:#6b2b2e}
+/* "Ulja e fundit" in green, "Ulja e pare" in gold (owner 28 Oct: a different colour for the final sitting) */
+.nz-b.nz-sit{background:#e3f6ec;color:#0f5c3a;border:2px solid #19b37b}
+.nz-g-final{border-color:#19b37b}
+.nz-g-final .nz-raklbl{background:#19b37b}
+html[data-theme="night"] .nz-b.nz-sit{background:#0f3324;color:#bff0d7;border-color:#3ccf8e}
+html[data-theme="night"] .nz-g-final{border-color:#3ccf8e}
+html[data-theme="night"] .nz-g-final .nz-raklbl{background:#1f8f5f}
 html[data-theme="night"] .prep-table tbody td:first-child,html[data-theme="night"] .prep-table thead th.prep-th-pitfall{background:#3d1a1c}
 html[data-theme="night"] .prep-table thead th.prep-th-pitfall{color:#ff8f86;border-bottom-color:#ff8f86}
