@@ -324,19 +324,11 @@ function tzlookup(Y,W){"use strict";var U="XIXHXHXGXGXQXQXPXPXOXOXN##U6U6UW#$U%U
     var p = place.name.split(',')[0].toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
     return T.file + '-' + (p || 'place') + '-' + ym.y + '-' + (ym.m < 10 ? '0' : '') + ym.m + '.' + ext;
   }
-  $('nzcCsv').addEventListener('click', function () {
-    var sep = L === 'en' ? ',' : ';';
-    var cell = function (v) { v = String(v); return /[",;\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; };
-    var lines = [[T.printH.replace('{p}', place.name).replace('{m}', monthName)], [T.cols[0]].concat(T.cols.slice(1))].concat(rows);
-    var txt = '﻿' + lines.map(function (r) { return r.map(cell).join(sep); }).join('\r\n').replace(/\u00ad/g, '') + '\r\n\r\n' + cell($('nzcInfo').innerText.replace(/\s*\n\s*/g, ' | ')) + '\r\n';
-    var a = document.createElement('a');
-    a.href = URL.createObjectURL(new Blob([txt], { type: 'text/csv;charset=utf-8' }));
-    a.download = fileName('csv'); document.body.appendChild(a); a.click();
-    setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 2000);
-  });
+  // owner, 28 Oct: "only pdf is ok, remove the csv": the download is the print view, saved as PDF
   $('nzcPrint').addEventListener('click', function () {
-    var h = document.documentElement; h.classList.add('nz-pt');
-    var off = function () { h.classList.remove('nz-pt'); window.removeEventListener('afterprint', off); };
+    var h = document.documentElement, t0 = document.title; h.classList.add('nz-pt');
+    document.title = fileName('pdf').replace(/\.pdf$/, '');   // the PDF gets this name, e.g. kohet-e-namazit-gjilan-2026-10
+    var off = function () { h.classList.remove('nz-pt'); document.title = t0; window.removeEventListener('afterprint', off); };
     window.addEventListener('afterprint', off);
     window.print();
   });
