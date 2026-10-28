@@ -1402,6 +1402,11 @@ a.nz-card:hover,a.nz-card:focus-visible{border-color:var(--accent);transform:tra
 .nz-sumtag{margin:0 0 .2rem;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);font-weight:700}
 .nz-fitseq{row-gap:1rem;column-gap:.35rem;padding:.2rem 0}
 .nz-endgrp{display:inline-flex;align-items:center;gap:.35rem;white-space:nowrap}
+.nz-backl{margin:1rem 0 0;font-size:.9rem}
+.nz-backl a{color:var(--accent-deep);text-decoration:none;font-weight:600}
+.nz-backl a:hover{text-decoration:underline}
+.nz-backf{position:fixed;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));z-index:60;padding:.65rem 1rem;border-radius:2rem;background:var(--accent-deep);color:#fff;font-weight:700;font-size:.9rem;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+.nz-backf:hover,.nz-backf:focus-visible{filter:brightness(1.1)}
 .nav-pages .nav-dropdown-menu{display:block;columns:3 13rem;column-gap:1.4rem;width:min(46rem,94vw);min-width:0;padding:1rem 1.1rem;left:auto;right:0}
 .nav-pages .nav-dropdown-menu[hidden]{display:none}
 .np-group{break-inside:avoid;display:flex;flex-direction:column;gap:.05rem;margin-bottom:.8rem}
@@ -1736,6 +1741,7 @@ html[data-theme="night"] .wc-tile:hover,html[data-theme="night"] .wc-tile:focus-
 html[data-theme="night"] .nz-sfig .nz-tall{background:#312a15}
 html[data-theme="night"] .nz-srcs li:target{background:var(--how-bg,#123924)}
 html[data-theme="night"] .nz-mp{background:#312a15}
+html[data-theme="night"] .nz-backf{box-shadow:0 6px 20px rgba(237,241,250,0.275)}
 html[data-theme="night"] .qr-tile.done{background:#123e20}
 html[data-theme="night"] .qr-sajda{color:#efcf92;background:#403413}
 html[data-theme="night"] .qr-know.on{background:#123e20;color:#9ce2b5}
