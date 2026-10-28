@@ -1692,5 +1692,8 @@ html[data-theme="night"] .prep-table tbody td:first-child::before{background:#e0
 .nz-cim,.nz-sfig img,.nz-next img{background:#FCFBF8}
 .nz-warn{color:#C8102E}
 html[data-theme="night"] .nz-warn{color:#ff8f86}
+/* "Kur duhet abdest i ri?" box in light tropical red (owner 28 Oct), like the "Gabime te zakonshme" table */
+.nz-box-red{background:#ffe3df;border-color:#f4b9b0}
+html[data-theme="night"] .nz-box-red{background:#3d1a1c;border-color:#6b2b2e}
 html[data-theme="night"] .prep-table tbody td:first-child,html[data-theme="night"] .prep-table thead th.prep-th-pitfall{background:#3d1a1c}
 html[data-theme="night"] .prep-table thead th.prep-th-pitfall{color:#ff8f86;border-bottom-color:#ff8f86}
