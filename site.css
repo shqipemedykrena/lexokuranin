@@ -1360,6 +1360,11 @@ a.nz-card:hover,a.nz-card:focus-visible{border-color:var(--accent);transform:tra
 .nz-sfig img{width:100%;border-radius:.7rem}
 .nz-sfig.two img{width:50%}
 @media (max-width:640px){.nz-sfig{float:none;width:100%;max-width:24rem;margin:.4rem 0 .7rem}}
+.nz-sfig{float:none;width:auto;max-width:100%;margin:.5rem 0 .8rem;display:flex;gap:.6rem;flex-wrap:wrap}
+.nz-sfig .nz-tall{width:auto;height:auto;max-width:100%;max-height:24rem;border-radius:.8rem;border:1px solid var(--line);background:#FCFBF8}
+.nz-sfig.two .nz-tall{max-width:calc(50% - .3rem);max-height:20rem}
+@media (max-width:640px){.nz-sfig{margin:.4rem 0 .7rem}
+.nz-sfig .nz-tall{max-height:19rem}}
 .nav-pages .nav-dropdown-menu{display:block;columns:3 13rem;column-gap:1.4rem;width:min(46rem,94vw);min-width:0;padding:1rem 1.1rem;left:auto;right:0}
 .nav-pages .nav-dropdown-menu[hidden]{display:none}
 .np-group{break-inside:avoid;display:flex;flex-direction:column;gap:.05rem;margin-bottom:.8rem}
@@ -1691,6 +1696,7 @@ html[data-theme="night"] .nm-no{background:#0e132a;color:#ee8b95}
 html[data-theme="night"] .nm-bt{background:rgba(237,241,250,0.088)}
 html[data-theme="night"] .nm-alt .nm-bt i{background:#1e2a5b}
 html[data-theme="night"] .wc-tile:hover,html[data-theme="night"] .wc-tile:focus-visible{box-shadow:0 6px 16px rgba(237,241,250,0.088)}
+html[data-theme="night"] .nz-sfig .nz-tall{background:#312a15}
 html[data-theme="night"] .qr-tile.done{background:#123e20}
 html[data-theme="night"] .qr-sajda{color:#efcf92;background:#403413}
 html[data-theme="night"] .qr-know.on{background:#123e20;color:#9ce2b5}
@@ -1731,7 +1737,7 @@ html.no-notice .site-notice{display:none}
 .prep-table tbody td:first-child::before{background:#C8102E}
 html[data-theme="night"] .prep-table tbody td:first-child::before{background:#e0525a}
 /* how to pray (owner 28 Oct): the drawn pictures keep their own light ground in both looks; warnings stay red */
-.nz-cim,.nz-sfig img,.nz-next img,.nz-rpos img{background:#FCFBF8}
+.nz-cim,.nz-sfig img,.nz-next img,.nz-rpos img,.nz-tall{background:#FCFBF8}
 .nz-warn{color:#C8102E}
 html[data-theme="night"] .nz-warn{color:#ff8f86}
 /* "Kur duhet abdest i ri?" box in light tropical red (owner 28 Oct), like the "Gabime te zakonshme" table */
