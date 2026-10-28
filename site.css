@@ -1500,6 +1500,14 @@ html.nz-pt .nz-ctoday{display:none}}
 .nz-wfig figcaption{margin-top:.2rem;font-size:.82rem;font-weight:600;color:var(--ink-soft)}
 .nz-check li>span:last-child>b:first-child{display:block;margin-bottom:.15rem;font-size:1.02rem}
 .nz-check li>span:last-child{line-height:1.55}
+.nz-day{margin:1rem 0 .4rem}
+.nz-dayw img{display:block;width:100%;height:auto;border-radius:.7rem}
+.nz-daylb{position:relative;height:2.9rem;margin-top:.15rem}
+.nz-daylb span{position:absolute;transform:translateX(-50%);font-size:.8rem;font-weight:700;color:var(--accent-deep);white-space:nowrap;padding-top:.5rem}
+.nz-daylb span::before{content:"";position:absolute;left:50%;top:0;width:2px;height:.45rem;background:var(--accent);transform:translateX(-50%)}
+.nz-daylb .nz-dl2{top:1.35rem}
+.nz-daylb .nz-dl2::before{top:-1.35rem;height:1.8rem}
+.nz-day figcaption{margin-top:.2rem}
 .nav-pages .nav-dropdown-menu{display:block;columns:3 13rem;column-gap:1.4rem;width:min(46rem,94vw);min-width:0;padding:1rem 1.1rem;left:auto;right:0}
 .nav-pages .nav-dropdown-menu[hidden]{display:none}
 .np-group{break-inside:avoid;display:flex;flex-direction:column;gap:.05rem;margin-bottom:.8rem}
