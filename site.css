@@ -1407,6 +1407,10 @@ a.nz-card:hover,a.nz-card:focus-visible{border-color:var(--accent);transform:tra
 .nz-backl a:hover{text-decoration:underline}
 .nz-backf{position:fixed;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));z-index:60;padding:.65rem 1rem;border-radius:2rem;background:var(--accent-deep);color:#fff;font-weight:700;font-size:.9rem;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.25)}
 .nz-backf:hover,.nz-backf:focus-visible{filter:brightness(1.1)}
+.nz-box-tip{display:grid;grid-template-columns:3.2rem 1fr;gap:1rem;align-items:start;border-left-width:6px}
+.nz-tipico svg{width:3.2rem;height:3.2rem;display:block}
+@media (max-width:560px){.nz-box-tip{grid-template-columns:2.4rem 1fr;gap:.7rem}
+.nz-tipico svg{width:2.4rem;height:2.4rem}}
 .nav-pages .nav-dropdown-menu{display:block;columns:3 13rem;column-gap:1.4rem;width:min(46rem,94vw);min-width:0;padding:1rem 1.1rem;left:auto;right:0}
 .nav-pages .nav-dropdown-menu[hidden]{display:none}
 .np-group{break-inside:avoid;display:flex;flex-direction:column;gap:.05rem;margin-bottom:.8rem}
@@ -1795,6 +1799,11 @@ html[data-theme="night"] .nz-box-red{background:#3d1a1c;border-color:#6b2b2e}
 html[data-theme="night"] .nz-b.nz-sit{background:#0f3324;color:#bff0d7;border-color:#3ccf8e}
 html[data-theme="night"] .nz-g-final{border-color:#3ccf8e}
 html[data-theme="night"] .nz-g-final .nz-raklbl{background:#1f8f5f}
+/* practical tips box: warm amber with an attention sign (owner 28 Oct) */
+.nz-box-tip{background:#fff3d1;border-color:#f0c35a;border-left-color:#e0a21b}
+.nz-tipico{color:#e0a21b}
+html[data-theme="night"] .nz-box-tip{background:#3a2d0c;border-color:#7a5a17;border-left-color:#f0b432}
+html[data-theme="night"] .nz-tipico{color:#f0b432}
 /* prayer-times day bar: fixed sky colours in both looks */
 .nz-tb-night{background:#1b2340}.nz-tb-fajr{background:#7a5c9e}.nz-tb-morning{background:#f3dfa9;color:#5b4a1e}
 .nz-tb-zuhr{background:#e2a93b}.nz-tb-asr{background:#d47a2e}.nz-tb-maghrib{background:#b6443f}.nz-tb-isha{background:#3e3a74}
