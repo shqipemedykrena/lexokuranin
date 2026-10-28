@@ -1342,6 +1342,20 @@ a.nz-card:hover,a.nz-card:focus-visible{border-color:var(--accent);transform:tra
 .nz-toc a{display:block;padding:.2rem .4rem;border-radius:.3rem;color:var(--ink-soft);text-decoration:none;line-height:1.3}
 .nz-toc a:hover{color:var(--ink)}
 .nz-toc a.is-on{color:var(--accent-deep);font-weight:700;background:var(--paper-lift)}}
+.nz-ringwrap{display:grid;grid-template-columns:minmax(0,22rem) minmax(0,1fr);gap:1.4rem;align-items:center;margin:.2rem 0 1.2rem}
+.nz-ring{position:relative;width:100%;aspect-ratio:1;max-width:100%;color:var(--accent)}
+.nz-ring svg{position:absolute;inset:0;width:100%;height:100%}
+.nz-rc{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:grid;justify-items:center;line-height:1}
+.nz-rc b{font-size:3.6rem;color:var(--accent-deep);font-weight:700}
+.nz-rc span{font-size:.85rem;color:var(--ink-soft);margin-top:.15rem}
+.nz-rpos{position:absolute;width:26%;margin:0;transform:translate(-50%,-50%);display:grid;justify-items:center;gap:.1rem}
+.nz-rpos img{width:100%;height:auto;border-radius:50%;border:2px solid var(--accent);display:block}
+.nz-rpos figcaption{font-size:.68rem;line-height:1.15;text-align:center;color:var(--ink);font-weight:600;background:var(--paper-lift);padding:0 .25rem;border-radius:.3rem}
+.nz-ringtxt h4{margin:0 0 .3rem;font-size:1.05rem}
+.nz-ringtxt p{margin:0;color:var(--ink-soft)}
+.nz-fitseq .nz-b:not(.nz-sit1):not(.nz-sit):not(.nz-end){border-radius:50%;width:2.1rem;height:2.1rem;min-width:0;padding:0;box-shadow:0 0 0 2px var(--paper-lift),0 0 0 3.5px var(--accent)}
+@media (max-width:640px){.nz-ringwrap{grid-template-columns:1fr}
+.nz-ring{max-width:21rem;margin:0 auto}}
 .nav-pages .nav-dropdown-menu{display:block;columns:3 13rem;column-gap:1.4rem;width:min(46rem,94vw);min-width:0;padding:1rem 1.1rem;left:auto;right:0}
 .nav-pages .nav-dropdown-menu[hidden]{display:none}
 .np-group{break-inside:avoid;display:flex;flex-direction:column;gap:.05rem;margin-bottom:.8rem}
@@ -1713,7 +1727,7 @@ html.no-notice .site-notice{display:none}
 .prep-table tbody td:first-child::before{background:#C8102E}
 html[data-theme="night"] .prep-table tbody td:first-child::before{background:#e0525a}
 /* how to pray (owner 28 Oct): the drawn pictures keep their own light ground in both looks; warnings stay red */
-.nz-cim,.nz-sfig img,.nz-next img{background:#FCFBF8}
+.nz-cim,.nz-sfig img,.nz-next img,.nz-rpos img{background:#FCFBF8}
 .nz-warn{color:#C8102E}
 html[data-theme="night"] .nz-warn{color:#ff8f86}
 /* "Kur duhet abdest i ri?" box in light tropical red (owner 28 Oct), like the "Gabime te zakonshme" table */
