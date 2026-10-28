@@ -1385,6 +1385,18 @@ a.nz-card:hover,a.nz-card:focus-visible{border-color:var(--accent);transform:tra
 .nz .wrap>section,.nz .nz-stepsall>section{padding:.6rem 0 0;border-top:0}
 .nz .nz-stepsall{gap:1.6rem}
 .nz [id]{scroll-margin-top:5.5rem}
+.nz-tbar{display:flex;height:3rem;border-radius:.6rem;overflow:hidden;margin:.4rem 0 .3rem;border:1px solid var(--line)}
+.nz-tb{display:flex;align-items:center;justify-content:center;min-width:0;font-size:.74rem;font-weight:700;color:#fff;text-align:center;line-height:1.1;padding:0 .15rem}
+.nz-tb span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.nz-tb-night span,.nz-tb-morning span{font-weight:400;opacity:.8}
+.nz-tbn{margin:0 0 1rem;font-size:.8rem}
+.nz-tt{width:100%;border-collapse:collapse;font-size:.95rem}
+.nz-tt th,.nz-tt td{padding:.55rem .6rem;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.nz-tt thead th{font-size:.78rem;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-soft);font-weight:600}
+.nz-tt tbody th{font-weight:700;color:var(--accent-deep);white-space:nowrap}
+.nz-before a{color:var(--accent-deep)}
+@media (max-width:560px){.nz-tb{font-size:.62rem}
+.nz-tbar{height:2.6rem}}
 .nav-pages .nav-dropdown-menu{display:block;columns:3 13rem;column-gap:1.4rem;width:min(46rem,94vw);min-width:0;padding:1rem 1.1rem;left:auto;right:0}
 .nav-pages .nav-dropdown-menu[hidden]{display:none}
 .np-group{break-inside:avoid;display:flex;flex-direction:column;gap:.05rem;margin-bottom:.8rem}
@@ -1772,5 +1784,8 @@ html[data-theme="night"] .nz-box-red{background:#3d1a1c;border-color:#6b2b2e}
 html[data-theme="night"] .nz-b.nz-sit{background:#0f3324;color:#bff0d7;border-color:#3ccf8e}
 html[data-theme="night"] .nz-g-final{border-color:#3ccf8e}
 html[data-theme="night"] .nz-g-final .nz-raklbl{background:#1f8f5f}
+/* prayer-times day bar: fixed sky colours in both looks */
+.nz-tb-night{background:#1b2340}.nz-tb-fajr{background:#7a5c9e}.nz-tb-morning{background:#f3dfa9;color:#5b4a1e}
+.nz-tb-zuhr{background:#e2a93b}.nz-tb-asr{background:#d47a2e}.nz-tb-maghrib{background:#b6443f}.nz-tb-isha{background:#3e3a74}
 html[data-theme="night"] .prep-table tbody td:first-child,html[data-theme="night"] .prep-table thead th.prep-th-pitfall{background:#3d1a1c}
 html[data-theme="night"] .prep-table thead th.prep-th-pitfall{color:#ff8f86;border-bottom-color:#ff8f86}
