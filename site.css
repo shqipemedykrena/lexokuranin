@@ -1333,9 +1333,9 @@ a.nz-card:hover,a.nz-card:focus-visible{border-color:var(--accent);transform:tra
 .nz-g-first .nz-raklbl,.nz-g-final .nz-raklbl{background:var(--accent-deep)}
 @media (max-width:560px){.nz-seq .nz-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .nz-toc{display:none}
-@media (min-width:1180px){.nz-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,46rem) minmax(0,1fr);column-gap:2rem}
-.nz-layout>.wrap{grid-column:2;grid-row:1;width:100%}
-.nz-toc{display:block;grid-column:1;grid-row:1;justify-self:end;width:15rem;position:sticky;top:5.5rem;align-self:start;max-height:calc(100vh - 7rem);overflow:auto;background:none;border:0;border-left:2px solid var(--line);border-radius:0;padding:.2rem 0 .2rem .9rem;font-size:.9rem}
+@media (min-width:1180px){.nz-layout{display:grid;grid-template-columns:14rem minmax(0,46rem);column-gap:2rem;justify-content:center;padding:0 1rem}
+.nz-layout>.wrap{grid-column:2;grid-row:1;width:100%;padding-left:0;padding-right:0}
+.nz-toc{display:block;grid-column:1;grid-row:1;justify-self:stretch;width:auto;position:sticky;top:5.5rem;align-self:start;max-height:calc(100vh - 7rem);overflow:auto;background:none;border:0;border-left:2px solid var(--line);border-radius:0;padding:.2rem 0 .2rem .9rem;font-size:.9rem}
 .nz-toch{margin:0 0 .5rem;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);font-weight:700}
 .nz-toc ol{list-style:none;padding:0;gap:.15rem}
 .nz-toc ol ol{padding-left:.8rem;margin:.15rem 0;font-size:.86rem}
@@ -1356,6 +1356,10 @@ a.nz-card:hover,a.nz-card:focus-visible{border-color:var(--accent);transform:tra
 .nz-fitseq .nz-b:not(.nz-sit1):not(.nz-sit):not(.nz-end){border-radius:50%;width:2.1rem;height:2.1rem;min-width:0;padding:0;box-shadow:0 0 0 2px var(--paper-lift),0 0 0 3.5px var(--accent)}
 @media (max-width:640px){.nz-ringwrap{grid-template-columns:1fr}
 .nz-ring{max-width:21rem;margin:0 auto}}
+.nz-sfig{float:right;width:min(46%,20rem);margin:0 0 .8rem 1.2rem;display:flex;gap:.4rem}
+.nz-sfig img{width:100%;border-radius:.7rem}
+.nz-sfig.two img{width:50%}
+@media (max-width:640px){.nz-sfig{float:none;width:100%;max-width:24rem;margin:.4rem 0 .7rem}}
 .nav-pages .nav-dropdown-menu{display:block;columns:3 13rem;column-gap:1.4rem;width:min(46rem,94vw);min-width:0;padding:1rem 1.1rem;left:auto;right:0}
 .nav-pages .nav-dropdown-menu[hidden]{display:none}
 .np-group{break-inside:avoid;display:flex;flex-direction:column;gap:.05rem;margin-bottom:.8rem}
