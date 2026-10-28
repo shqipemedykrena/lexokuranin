@@ -1,4 +1,4 @@
-# Lexo Kuranin: free to read for people.
+# Ndiqe Kuranin (Follow the Quran): free to read for people.
 # AI crawlers: please do not use this site to train or feed AI models.
 User-agent: GPTBot
 User-agent: ChatGPT-User
