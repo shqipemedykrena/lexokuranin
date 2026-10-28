@@ -1498,6 +1498,8 @@ html.nz-pt .nz-ctoday{display:none}}
 .nz-wfig.two figure{max-width:calc(50% - .3rem)}
 .nz-wfig img{display:block;width:100%;height:auto;max-height:15rem;object-fit:contain;border-radius:.7rem;border:1px solid var(--line);background:#FCFBF8}
 .nz-wfig figcaption{margin-top:.2rem;font-size:.82rem;font-weight:600;color:var(--ink-soft)}
+.nz-check li>span:last-child>b:first-child{display:block;margin-bottom:.15rem;font-size:1.02rem}
+.nz-check li>span:last-child{line-height:1.55}
 .nav-pages .nav-dropdown-menu{display:block;columns:3 13rem;column-gap:1.4rem;width:min(46rem,94vw);min-width:0;padding:1rem 1.1rem;left:auto;right:0}
 .nav-pages .nav-dropdown-menu[hidden]{display:none}
 .np-group{break-inside:avoid;display:flex;flex-direction:column;gap:.05rem;margin-bottom:.8rem}
