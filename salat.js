@@ -316,7 +316,8 @@ function tzlookup(Y,W){"use strict";var U="XIXHXHXGXGXQXQXPXPXOXOXN##U6U6UW#$U%U
     if (star.share) notes.push('<sup>*</sup> ' + esc(T.share.replace('{f}', M.fajr).replace('{i}', M.isha)));
     if (star.summer) notes.push('<sup>*</sup> ' + esc(T.summer));
     if (polar) notes.push('— ' + esc(T.polar));
-    $('nzcInfo').innerHTML = '<ul>' + info.map(function (x) { return '<li>' + x + '</li>'; }).join('') + '</ul>' + notes.map(function (x) { return '<p>' + x + '</p>'; }).join('');
+    // one numbered list (owner, 28 Oct): place, time, rules, the notes for this month, then the fixed notes
+    $('nzcInfo').innerHTML = info.concat(notes, T.fixed || []).map(function (x) { return '<li>' + x + '</li>'; }).join('');
     $('nzcPrintH').textContent = T.printH.replace('{p}', place.name).replace('{m}', monthName);
   }
   function fileName(ext) {

@@ -1529,6 +1529,10 @@ html.nz-pt .nz-ctoday{display:none}}
 @media (max-width:640px){.nz-fitseq{flex-wrap:wrap;row-gap:.6rem;column-gap:.3rem}
 .nz-fitseq .nz-mring{flex:none;width:4.6rem;height:4.6rem}
 .nz-fitseq .nz-b{font-size:.8rem;white-space:nowrap}}
+.nz-cinfo{padding-left:1.5rem;line-height:1.5}
+.nz-cinfo li{margin:.3rem 0;padding-left:.15rem}
+.nz-cinfo li::marker{font-weight:700;color:var(--accent-deep)}
+.nz-cpriv:has(#nzcForget[hidden]) br{display:none}
 .nav-pages .nav-dropdown-menu{display:block;columns:3 13rem;column-gap:1.4rem;width:min(46rem,94vw);min-width:0;padding:1rem 1.1rem;left:auto;right:0}
 .nav-pages .nav-dropdown-menu[hidden]{display:none}
 .np-group{break-inside:avoid;display:flex;flex-direction:column;gap:.05rem;margin-bottom:.8rem}
