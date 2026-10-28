@@ -1514,6 +1514,21 @@ html.nz-pt .nz-ctoday{display:none}}
 @media (max-width:760px){.nz-dswipe{display:block}}
 .nz-wsteps-pic li{grid-template-columns:2rem 1fr}
 @media (max-width:560px){.nz-wsteps-pic li{grid-template-columns:1.6rem 1fr}}
+.nz-fit{container-type:inline-size}
+.nz-fitrow{display:block}
+.nz-fitrow .nz-fitn{display:block;width:auto;margin-bottom:.35rem}
+.nz-fitseq{flex-wrap:nowrap;column-gap:clamp(.1rem,.8cqw,.35rem);row-gap:0}
+.nz-fitseq .nz-mring{flex:0 1 6.4rem;width:auto;height:auto;aspect-ratio:1;min-width:2.2rem;container-type:inline-size}
+.nz-fitseq .nz-mring b{font-size:26cqw}
+.nz-fitseq .nz-b{flex:none;font-size:clamp(.6rem,2.1cqw,.85rem);padding:.3em .55em;white-space:nowrap}
+.nz-fitseq .nz-endgrp{flex:none;gap:clamp(.1rem,.8cqw,.35rem)}
+.nz-fitseq .nz-ar2{flex:none;font-size:clamp(.7rem,2.4cqw,1rem)}
+@media (max-width:560px){.nz-fitseq .nz-mring{width:auto;height:auto}}
+.nz-fitseq .nz-mring{min-width:1.9rem}
+.nz-fitseq .nz-b{height:auto;min-height:2em;min-width:0;line-height:1.15;text-align:center}
+@media (max-width:640px){.nz-fitseq{flex-wrap:wrap;row-gap:.6rem;column-gap:.3rem}
+.nz-fitseq .nz-mring{flex:none;width:4.6rem;height:4.6rem}
+.nz-fitseq .nz-b{font-size:.8rem;white-space:nowrap}}
 .nav-pages .nav-dropdown-menu{display:block;columns:3 13rem;column-gap:1.4rem;width:min(46rem,94vw);min-width:0;padding:1rem 1.1rem;left:auto;right:0}
 .nav-pages .nav-dropdown-menu[hidden]{display:none}
 .np-group{break-inside:avoid;display:flex;flex-direction:column;gap:.05rem;margin-bottom:.8rem}
