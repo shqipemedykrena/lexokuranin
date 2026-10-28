@@ -1382,6 +1382,9 @@ a.nz-card:hover,a.nz-card:focus-visible{border-color:var(--accent);transform:tra
 .nz-b.nz-sit1{background:var(--paper);color:var(--accent-deep);border:2px solid var(--accent)}
 @media (max-width:560px){.nz-mring{width:5.4rem;height:5.4rem}
 .nz-mring b{font-size:1.35rem}}
+.nz .wrap>section,.nz .nz-stepsall>section{padding:.6rem 0 0;border-top:0}
+.nz .nz-stepsall{gap:1.6rem}
+.nz [id]{scroll-margin-top:5.5rem}
 .nav-pages .nav-dropdown-menu{display:block;columns:3 13rem;column-gap:1.4rem;width:min(46rem,94vw);min-width:0;padding:1rem 1.1rem;left:auto;right:0}
 .nav-pages .nav-dropdown-menu[hidden]{display:none}
 .np-group{break-inside:avoid;display:flex;flex-direction:column;gap:.05rem;margin-bottom:.8rem}
