@@ -1400,6 +1400,8 @@ a.nz-card:hover,a.nz-card:focus-visible{border-color:var(--accent);transform:tra
 .nz-box-tip{border-left:4px solid var(--accent);margin:0 0 1.2rem}
 .nz-fit{border-left:4px solid var(--accent)}
 .nz-sumtag{margin:0 0 .2rem;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);font-weight:700}
+.nz-fitseq{row-gap:1rem;column-gap:.35rem;padding:.2rem 0}
+.nz-endgrp{display:inline-flex;align-items:center;gap:.35rem;white-space:nowrap}
 .nav-pages .nav-dropdown-menu{display:block;columns:3 13rem;column-gap:1.4rem;width:min(46rem,94vw);min-width:0;padding:1rem 1.1rem;left:auto;right:0}
 .nav-pages .nav-dropdown-menu[hidden]{display:none}
 .np-group{break-inside:avoid;display:flex;flex-direction:column;gap:.05rem;margin-bottom:.8rem}
