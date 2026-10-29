@@ -1214,6 +1214,7 @@ ol.prep-need>li::before{content:counter(need);position:absolute;left:0;top:.08re
 @media (max-width:560px){.wc-grid{grid-template-columns:repeat(auto-fill,minmax(6.6rem,1fr))}
 .wc-tile{min-height:7.6rem}
 .wc-allah .wc-ar{font-size:3rem}}
+.zn-ar{display:block;font-family:"Amiri","Scheherazade New",serif;font-size:1.25rem;font-weight:400;color:var(--accent-deep);line-height:1.5}
 .nz{padding:1rem 0 4rem}
 .nz .wrap{display:grid;gap:2rem;max-width:46rem}
 .nz-rak{background:var(--paper-lift);border:1px solid var(--line);padding:1.1rem 1.2rem}
