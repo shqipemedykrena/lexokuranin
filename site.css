@@ -1583,6 +1583,10 @@ html.nz-pt .nz-ctoday{display:none}}
 .nz-rak>h2{font-size:2.1rem}
 @media (max-width:640px){.nz-rak>h2{font-size:1.55rem}}
 .nz .nz-rak{border:0;background:none;padding:0;box-shadow:none;margin-top:1.6rem}
+.nz-calc .nz-ctw{display:none}
+@media print{html.nz-pt .nz-calc .nz-ctw{display:block}}
+.nz-calc .nz-cdl{margin-top:.4rem}
+.nz-calc .nz-cdl button{font-size:1.05rem;padding:.75rem 1.4rem}
 .nav-pages .nav-dropdown-menu{display:block;columns:3 13rem;column-gap:1.4rem;width:min(46rem,94vw);min-width:0;padding:1rem 1.1rem;left:auto;right:0}
 .nav-pages .nav-dropdown-menu[hidden]{display:none}
 .np-group{break-inside:avoid;display:flex;flex-direction:column;gap:.05rem;margin-bottom:.8rem}
