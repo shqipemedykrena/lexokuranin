@@ -1587,6 +1587,28 @@ html.nz-pt .nz-ctoday{display:none}}
 @media print{html.nz-pt .nz-calc .nz-ctw{display:block}}
 .nz-calc .nz-cdl{margin-top:.4rem}
 .nz-calc .nz-cdl button{font-size:1.05rem;padding:.75rem 1.4rem}
+.nz-calc{padding:.7rem .9rem .6rem;border-width:1.5px}
+.nz-calc .nz-clead{margin:0 0 .5rem;font-size:.9rem;line-height:1.45}
+.nz-calc .nz-cf label{font-size:.9rem;margin-bottom:.2rem}
+.nz-calc .nz-cfrow input{padding:.42rem .6rem;font-size:.92rem}
+.nz-calc .nz-cfrow button{padding:.42rem .9rem;font-size:.92rem}
+.nz-calc .nz-clink{margin-top:.3rem;font-size:.88rem}
+.nz-calc .nz-cset{margin-top:.4rem;font-size:.86rem}
+.nz-calc .nz-cout{margin-top:.5rem}
+.nz-calc .nz-chead{margin-bottom:.2rem}
+.nz-calc .nz-cplace{font-size:.95rem}
+.nz-calc .nz-cmon button{width:1.8rem;height:1.8rem;font-size:1.1rem}
+.nz-calc .nz-cmon span{min-width:7rem;font-size:.92rem}
+.nz-calc .nz-ctop{margin:.1rem 0 .4rem;font-size:.8rem;line-height:1.35}
+.nz-calc .nz-cinfo li{margin:.1rem 0}
+.nz-calc .nz-cdl{margin-top:.2rem}
+.nz-calc .nz-cdl button{font-size:.95rem;padding:.5rem 1.1rem}
+.nz-calc #nzcInfo{margin-top:.5rem;font-size:.76rem;line-height:1.35;color:var(--ink-soft)}
+.nz-calc .nz-cpriv{margin-top:.3rem;font-size:.74rem}
+.nz-calc .nz-cfrow{align-items:stretch}
+.nz-calc .nz-cfrow input,.nz-calc .nz-cfrow button{min-height:0;height:2.3rem;line-height:1.2}
+.nz-calc details.nz-cset{padding:.3rem 0}
+.nz-calc .nz-cdl button{min-height:0;height:2.4rem;padding:0 1.1rem;font-size:.95rem;line-height:1}
 .nav-pages .nav-dropdown-menu{display:block;columns:3 13rem;column-gap:1.4rem;width:min(46rem,94vw);min-width:0;padding:1rem 1.1rem;left:auto;right:0}
 .nav-pages .nav-dropdown-menu[hidden]{display:none}
 .np-group{break-inside:avoid;display:flex;flex-direction:column;gap:.05rem;margin-bottom:.8rem}
