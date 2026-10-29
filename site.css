@@ -1572,6 +1572,9 @@ html.nz-pt .nz-ctoday{display:none}}
 .nz-ghsub{margin:1.3rem 0 .3rem;font-size:1.1rem;color:var(--accent-deep)}
 .nz .nz-box,.nz .nz-box-tip,.nz .nz-box-how,.nz .nz-box-red,#nz-wudu .nz-box-tip,#nz-wudu .nz-box-red{max-width:none;width:auto}
 .nz .nz-ph{width:auto;max-width:none}
+.nz-raklbl{animation:nzRakPulse 2.2s ease-in-out infinite}
+@keyframes nzRakPulse{0%,100%{box-shadow:0 0 0 0 color-mix(in srgb,var(--accent) 55%,transparent);filter:none}50%{box-shadow:0 0 0 .45rem color-mix(in srgb,var(--accent) 0%,transparent);filter:brightness(1.15)}}
+@media (prefers-reduced-motion:reduce){.nz-raklbl{animation:none}}
 .nav-pages .nav-dropdown-menu{display:block;columns:3 13rem;column-gap:1.4rem;width:min(46rem,94vw);min-width:0;padding:1rem 1.1rem;left:auto;right:0}
 .nav-pages .nav-dropdown-menu[hidden]{display:none}
 .np-group{break-inside:avoid;display:flex;flex-direction:column;gap:.05rem;margin-bottom:.8rem}
