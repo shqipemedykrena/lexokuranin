@@ -1569,6 +1569,7 @@ html.nz-pt .nz-ctoday{display:none}}
 .nz-box-tip ul{margin:0;padding-left:1.1rem}
 .nz-box-tip li{margin:.05rem 0}
 #nz-ghusl .nz-box-tip{margin:.2rem 0 1rem}
+.nz-ghsub{margin:1.3rem 0 .3rem;font-size:1.1rem;color:var(--accent-deep)}
 .nav-pages .nav-dropdown-menu{display:block;columns:3 13rem;column-gap:1.4rem;width:min(46rem,94vw);min-width:0;padding:1rem 1.1rem;left:auto;right:0}
 .nav-pages .nav-dropdown-menu[hidden]{display:none}
 .np-group{break-inside:avoid;display:flex;flex-direction:column;gap:.05rem;margin-bottom:.8rem}
