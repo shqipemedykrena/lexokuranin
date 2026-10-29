@@ -1575,6 +1575,12 @@ html.nz-pt .nz-ctoday{display:none}}
 .nz-raklbl{animation:nzRakPulse 2.2s ease-in-out infinite}
 @keyframes nzRakPulse{0%,100%{box-shadow:0 0 0 0 color-mix(in srgb,var(--accent) 55%,transparent);filter:none}50%{box-shadow:0 0 0 .45rem color-mix(in srgb,var(--accent) 0%,transparent);filter:brightness(1.15)}}
 @media (prefers-reduced-motion:reduce){.nz-raklbl{animation:none}}
+.nz-said{color:var(--accent-deep);font-weight:800}
+.nz-step>p,.nz-step .nz-ph p{max-width:none}
+.nz-rak>h2{font-size:revert;margin:0 0 .8rem;padding:.45rem .85rem;border:0;border-left:5px solid var(--accent);border-radius:.5rem;background:color-mix(in srgb,var(--accent) 13%,var(--paper));text-wrap:balance}
+.nz-rak>h2{font-size:2.1rem}
+@media (max-width:640px){.nz-rak>h2{font-size:1.55rem}}
+.nz .nz-rak{border:0;background:none;padding:0;box-shadow:none;margin-top:1.6rem}
 .nav-pages .nav-dropdown-menu{display:block;columns:3 13rem;column-gap:1.4rem;width:min(46rem,94vw);min-width:0;padding:1rem 1.1rem;left:auto;right:0}
 .nav-pages .nav-dropdown-menu[hidden]{display:none}
 .np-group{break-inside:avoid;display:flex;flex-direction:column;gap:.05rem;margin-bottom:.8rem}
