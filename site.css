@@ -1562,6 +1562,9 @@ html.nz-pt .nz-ctoday{display:none}}
 #nz-wudu .nz-box-tip li{margin:.05rem 0}
 .nz-times>h2.nz-calch{margin:1.8rem 0 .8rem;padding:.45rem .85rem;border:0;border-left:5px solid var(--accent);border-radius:.5rem;background:color-mix(in srgb,var(--accent) 13%,var(--paper));text-wrap:balance;scroll-margin-top:5.5rem}
 .nz-calch+.nz-calc{margin-top:0}
+.nz-box-tip,.nz-box-how{grid-template-columns:1.8rem 1fr;gap:.6rem;padding:.55rem .85rem;font-size:.84rem;line-height:1.45;max-width:40rem;border-left-width:4px}
+.nz-box-tip .nz-tipico svg{width:1.8rem;height:1.8rem}
+.nz-box-how{align-items:start}
 .nav-pages .nav-dropdown-menu{display:block;columns:3 13rem;column-gap:1.4rem;width:min(46rem,94vw);min-width:0;padding:1rem 1.1rem;left:auto;right:0}
 .nav-pages .nav-dropdown-menu[hidden]{display:none}
 .np-group{break-inside:avoid;display:flex;flex-direction:column;gap:.05rem;margin-bottom:.8rem}
