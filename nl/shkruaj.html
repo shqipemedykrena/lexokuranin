@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<script src="../theme.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Schrijf ons · Volg de Koran</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../site.css">
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="theme-color" content="#241A1A">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="../img/logo/round-32.png" sizes="32x32">
+<meta property="og:image" content="https://followthequran.com/img/logo/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<div class="site-notice" id="siteNotice" role="note"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 20.5h20L12 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 9.5v5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="17.4" r="1.2" fill="currentColor"/></svg><span>Deze site is nog in aanbouw. Sommige delen kunnen nog veranderen of nog niet werken.</span><button type="button" id="siteNoticeX" aria-label="Sluiten" title="Sluiten">×</button></div>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <img class="brand-logo" src="../img/logo/round-96.png" alt="" width="38" height="38">
+      Volg de Koran
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <div class="nav-dropdown nav-pages" id="navLearnDropdown">
+        <button type="button" class="nav-dropdown-btn" aria-haspopup="true" aria-expanded="false">Pagina's ▾</button>
+        <div class="nav-dropdown-menu" hidden aria-label="Alle pagina's"><div class="np-group"><p class="np-h"><span class="ku-num">1.</span> De Koran leren</p><a href="meso.html"><span class="ku-num">1.1</span> Leer de Koran lezen</a><a href="kurani.html"><span class="ku-num">1.2</span> Lees de Koran</a></div><div class="np-group"><p class="np-h"><span class="ku-num">2.</span> Wonderen van de Koran</p></div><div class="np-group"><p class="np-h"><span class="ku-num">3.</span> Bezinning</p><a href="deshmi.html"><span class="ku-num">3.1</span> Bewijzen voor de Schepper</a><a href="kujt-lutesh.html"><span class="ku-num">3.2</span> Tot wie bid je?</a><a href="pse-jemi-ketu.html"><span class="ku-num">3.3</span> Waarom zijn we hier?</a><a href="shenjat.html"><span class="ku-num">3.4</span> Tekenen in de hemelen en op aarde</a><a href="gjumi.html"><span class="ku-num">3.5</span> Slaap, een teken van Allah</a><a href="shiu.html"><span class="ku-num">3.6</span> Regen en water, tekenen van Allah</a><a href="xheneti.html"><span class="ku-num">3.7</span> Het Paradijs, de beloning van de gelovigen</a></div><div class="np-group"><p class="np-h"><span class="ku-num">4.</span> Leer de islam kennen</p><a href="zoti-yt.html"><span class="ku-num">4.1</span> Wie is je Heer?</a><a href="profeti-muhamed.html"><span class="ku-num">4.2</span> Wie was de Profeet Mohammed <span class="saw" lang="ar">ﷺ</span>?</a><a href="si-filloi-islami.html"><span class="ku-num">4.3</span> Hoe begon de islam?</a><a href="pyetje.html"><span class="ku-num">4.4</span> Veelgestelde vragen</a></div><div class="np-group"><p class="np-h">Meer</p><a href="hifz.html">Uit het hoofd leren</a><a href="namazi.html">Hoe bid je</a><a href="mrekullite.html">Wonderen</a><a href="fjalorth.html">Woordenlijst</a><a href="shkruaj.html">Schrijf ons</a></div></div>
+      </div>
+    </nav>
+    <div class="lang-switch" id="langSwitch" role="group" aria-label="Kies je taal">
+      <a class="lang-flag" data-lang="sq" href="../shkruaj.html" hreflang="sq" lang="sq" aria-label="Shqip" title="Shqip">🇦🇱</a>
+      <a class="lang-flag" data-lang="en" href="../en/shkruaj.html" hreflang="en" lang="en" aria-label="English" title="English">🇬🇧</a>
+      <a class="lang-flag active" aria-current="true" data-lang="nl" href="shkruaj.html" hreflang="nl" lang="nl" aria-label="Nederlands" title="Nederlands">🇳🇱</a>
+      <a class="lang-flag" data-lang="de" href="../de/shkruaj.html" hreflang="de" lang="de" aria-label="Deutsch" title="Deutsch">🇩🇪</a>
+    </div>
+    <button type="button" class="theme-btn" id="themeBtn" aria-label="Wissel de weergave: dag of nacht" title="Wissel de weergave: dag of nacht"><svg class="tb-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="currentColor"/></svg><svg class="tb-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="currentColor"/><g stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M5.3 18.7 7 17M17 7l1.7-1.7"/></g></svg></button>
+    <button type="button" class="nav-menu-btn" id="navMenuBtn" aria-expanded="false" aria-controls="navLinks">☰ Menu</button>
+  </div>
+</header>
+<div class="lang-toast" id="langToast" role="status" aria-live="polite" hidden></div>
+
+<main>
+<section class="page-head"><div class="wrap"><h1>Schrijf ons</h1></div></section>
+<section class="wr"><div class="wrap">
+  <p class="wr-lead">Schrijf ons wat er in je hart zit. Dat kan een bedankje zijn, jouw verhaal met deze site, of een fout die je zag. We lezen elk bericht.</p>
+  <form class="wr-form" id="wrForm" novalidate data-w="{&quot;key&quot;: &quot;&quot;, &quot;site&quot;: &quot;Volg de Koran&quot;, &quot;lang&quot;: &quot;nl&quot;, &quot;kinds&quot;: {&quot;thanks&quot;: &quot;Bedankt&quot;, &quot;story&quot;: &quot;Mijn verhaal&quot;, &quot;mistake&quot;: &quot;Fout op de site&quot;}, &quot;m&quot;: {&quot;sending&quot;: &quot;Bezig met versturen…&quot;, &quot;empty&quot;: &quot;Schrijf eerst een bericht.&quot;, &quot;fail&quot;: &quot;Het bericht is niet verstuurd. Controleer je internet en probeer het opnieuw.&quot;, &quot;soon&quot;: &quot;Het formulier wordt binnenkort aangesloten. Probeer het over een paar dagen opnieuw.&quot;}}">
+    <fieldset class="wr-kind"><legend>Wat wil je ons schrijven?</legend><div class="wr-chips"><label><input type="radio" name="kind" value="thanks" checked><span>Bedankt</span></label><label><input type="radio" name="kind" value="story"><span>Mijn verhaal</span></label><label><input type="radio" name="kind" value="mistake"><span>Fout op de site</span></label></div><p class="wr-hint" data-for="thanks">Wat heeft je geholpen? Ook een paar woorden maken ons blij.</p><p class="wr-hint" data-for="story" hidden>Hoe heeft deze site je geholpen? Bijvoorbeeld als je de islam hebt aanvaard, bent gaan bidden of de Koran bent gaan lezen.</p><p class="wr-hint" data-for="mistake" hidden>Schrijf wat er fout is en hoe het moet zijn. Kopieer de zin als dat kan.</p></fieldset>
+    <label class="wr-field" data-for="mistake" hidden><span>Op welke pagina?</span><input type="text" id="wrPage" name="page" maxlength="300" autocomplete="off"><small>Bijvoorbeeld: Hoe bid je, of het adres van de pagina.</small></label>
+    <label class="wr-field"><span>Je bericht</span><textarea id="wrMsg" name="message" maxlength="6000" required></textarea></label>
+    <div class="wr-two">
+      <label class="wr-field"><span>Naam</span><input type="text" id="wrName" name="name" maxlength="120" autocomplete="name"><small>Niet verplicht.</small></label>
+      <label class="wr-field"><span>E-mail</span><input type="email" id="wrMail" name="email" maxlength="200" autocomplete="email"><small>Alleen als je een antwoord wilt.</small></label>
+    </div>
+    <label class="wr-ok" data-for="story" hidden><input type="checkbox" id="wrShare" name="share"><span>Jullie mogen mijn verhaal op de site delen, zonder mijn naam of e-mail.</span></label>
+    <label class="wr-trap" aria-hidden="true">x <input type="checkbox" name="botcheck" id="wrBot" tabindex="-1" autocomplete="off"></label>
+    <div class="wr-send"><button type="submit" class="btn" id="wrSend">Versturen</button><p class="wr-status" id="wrStatus" role="status" aria-live="polite"></p></div>
+  </form>
+  <div class="wr-done" id="wrDone" hidden tabindex="-1"><h2>Bedankt!</h2><p>Je bericht is bij ons aangekomen. Moge Allah je belonen met het goede.</p><p><button type="button" class="btn btn-ghost" id="wrAgain">Nog een bericht schrijven</button></p></div>
+  <p class="wr-note">Je bericht gaat via de dienst Web3Forms naar onze mailbox. We delen het met niemand. Je verhaal delen we alleen als je dat hierboven toestaat, en zonder je naam.</p>
+</div></section>
+</main>
+
+<footer>
+  <div class="wrap fgrid">
+    <div>
+      <h4>Volg de Koran</h4>
+      <p style="margin:0">Gratis website om de Koran te leren lezen en begrijpen, in het Nederlands.</p>
+    </div>
+    <div>
+      <h4>Leren</h4>
+      <ul>
+        <li><a href="meso.html#alfabeti">Arabisch alfabet</a></li>
+        <li><a href="meso.html#texhvid">Tajwied</a></li>
+        <li><a href="meso.html#kurani">Korte soera's</a></li>
+        <li><a href="kurani.html">Koran en voortgang</a></li>
+        <li><a href="mrekullite.html">Wonderen van de Koran</a></li>
+        <li><a href="zoti-yt.html">Wie is je Heer?</a></li>
+        <li><a href="fjalorth.html">Woordenlijst</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Website</h4>
+      <ul>
+        <li><a href="pyetje.html">Veelgestelde vragen</a></li>
+        <li><a href="shkruaj.html">Schrijf ons</a></li>
+        <li><a href="privatesia.html">Privacy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap copy">© 2026 Volg de Koran. Het materiaal mag vrij worden gebruikt om te leren.</div>
+</footer>
+
+<script src="../site.js"></script>
+<script>(function(){
+var f=document.getElementById("wrForm");if(!f)return;var W=JSON.parse(f.dataset.w),st=document.getElementById("wrStatus"),btn=document.getElementById("wrSend"),done=document.getElementById("wrDone");
+function kind(){var r=f.querySelector('input[name=kind]:checked');return r?r.value:"thanks";}
+function show(){var k=kind();f.querySelectorAll("[data-for]").forEach(function(x){x.hidden=x.dataset.for!==k;});}
+var q=new URLSearchParams(location.search),k0=q.get("k"),p0=q.get("p");
+if(k0){var r0=f.querySelector('input[name=kind][value="'+k0+'"]');if(r0)r0.checked=true;}
+if(p0)document.getElementById("wrPage").value=p0.slice(0,300);
+else{try{var ref=document.referrer?new URL(document.referrer):null;if(ref&&ref.host===location.host&&ref.pathname!==location.pathname)document.getElementById("wrPage").value=ref.pathname+ref.hash;}catch(e){}}
+f.addEventListener("change",function(ev){if(ev.target.name==="kind")show();});show();
+function say(t,c){st.textContent=t||"";st.className="wr-status"+(c?" "+c:"");}
+if(!W.key){btn.disabled=true;say(W.m.soon);}
+f.addEventListener("submit",function(ev){ev.preventDefault();
+  var msg=document.getElementById("wrMsg").value.trim();if(!msg){say(W.m.empty,"bad");document.getElementById("wrMsg").focus();return;}
+  if(!W.key){say(W.m.soon);return;}
+  if(document.getElementById("wrBot").checked)return;
+  var k=kind(),name=document.getElementById("wrName").value.trim(),mail=document.getElementById("wrMail").value.trim(),page=document.getElementById("wrPage").value.trim();
+  var body={access_key:W.key,subject:W.site+": "+W.kinds[k],from_name:W.site,kind:W.kinds[k],language:W.lang,message:msg,botcheck:false};
+  if(name)body.name=name;if(mail)body.email=mail;if(k==="mistake"&&page)body.page=page;if(k==="story")body.share_on_site=document.getElementById("wrShare").checked?"yes":"no";
+  btn.disabled=true;say(W.m.sending);
+  fetch("https://api.web3forms.com/submit",{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify(body)})
+   .then(function(r){return r.json().catch(function(){return{};}).then(function(j){if(!r.ok||!j.success)throw 0;});})
+   .then(function(){f.reset();show();say("");f.hidden=true;done.hidden=false;done.focus();})
+   .catch(function(){say(W.m.fail,"bad");})
+   .then(function(){btn.disabled=false;});
+});
+document.getElementById("wrAgain").addEventListener("click",function(){done.hidden=true;f.hidden=false;document.getElementById("wrMsg").focus();});
+})();</script>
+<script src="../offline.js"></script>
+</body>
+</html>

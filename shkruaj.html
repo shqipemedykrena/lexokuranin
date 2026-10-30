@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="sq">
+<head>
+<script src="theme.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Na shkruaj · Ndiqe Kuranin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#241A1A">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="img/logo/round-32.png" sizes="32x32">
+<meta property="og:image" content="https://followthequran.com/img/logo/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<div class="site-notice" id="siteNotice" role="note"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 20.5h20L12 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 9.5v5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="17.4" r="1.2" fill="currentColor"/></svg><span>Faqja është ende në ndërtim. Disa pjesë mund të ndryshojnë ose të mos punojnë ende.</span><button type="button" id="siteNoticeX" aria-label="Mbyll" title="Mbyll">×</button></div>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="./">
+      <img class="brand-logo" src="img/logo/round-96.png" alt="" width="38" height="38">
+      Ndiqe Kuranin
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <div class="nav-dropdown nav-pages" id="navLearnDropdown">
+        <button type="button" class="nav-dropdown-btn" aria-haspopup="true" aria-expanded="false">Faqet ▾</button>
+        <div class="nav-dropdown-menu" hidden aria-label="Të gjitha faqet"><div class="np-group"><p class="np-h"><span class="ku-num">1.</span> Mëso Kuranin</p><a href="meso.html"><span class="ku-num">1.1</span> Mëso ta lexosh Kuranin</a><a href="kurani.html"><span class="ku-num">1.2</span> Lexo Kuranin</a></div><div class="np-group"><p class="np-h"><span class="ku-num">2.</span> Mrekullitë e Kuranit</p></div><div class="np-group"><p class="np-h"><span class="ku-num">3.</span> Reflektim</p><a href="deshmi.html"><span class="ku-num">3.1</span> Dëshmi për Krijuesin</a><a href="kujt-lutesh.html"><span class="ku-num">3.2</span> Kujt po i lutesh?</a><a href="pse-jemi-ketu.html"><span class="ku-num">3.3</span> Pse jemi këtu?</a><a href="shenjat.html"><span class="ku-num">3.4</span> Shenjat në qiej dhe në tokë</a><a href="gjumi.html"><span class="ku-num">3.5</span> Gjumi, një shenjë e Allahut</a><a href="shiu.html"><span class="ku-num">3.6</span> Shiu dhe uji, shenja të Allahut</a><a href="xheneti.html"><span class="ku-num">3.7</span> Xheneti, shpërblimi i besimtarëve</a></div><div class="np-group"><p class="np-h"><span class="ku-num">4.</span> Njih Islamin</p><a href="zoti-yt.html"><span class="ku-num">4.1</span> Kush është Zoti yt?</a><a href="profeti-muhamed.html"><span class="ku-num">4.2</span> Kush ishte Profeti Muhamed <span class="saw" lang="ar">ﷺ</span>?</a><a href="si-filloi-islami.html"><span class="ku-num">4.3</span> Si filloi Islami?</a><a href="pyetje.html"><span class="ku-num">4.4</span> Pyetje të shpeshta</a></div><div class="np-group"><p class="np-h">Më shumë</p><a href="hifz.html">Mbaj përmendësh</a><a href="namazi.html">Si falet namazi</a><a href="mrekullite.html">Mrekullitë</a><a href="fjalorth.html">Fjalorth</a><a href="shkruaj.html">Na shkruaj</a></div></div>
+      </div>
+    </nav>
+    <div class="lang-switch" id="langSwitch" role="group" aria-label="Zgjidh gjuhën">
+      <a class="lang-flag active" aria-current="true" data-lang="sq" href="shkruaj.html" hreflang="sq" lang="sq" aria-label="Shqip" title="Shqip">🇦🇱</a>
+      <a class="lang-flag" data-lang="en" href="en/shkruaj.html" hreflang="en" lang="en" aria-label="English" title="English">🇬🇧</a>
+      <a class="lang-flag" data-lang="nl" href="nl/shkruaj.html" hreflang="nl" lang="nl" aria-label="Nederlands" title="Nederlands">🇳🇱</a>
+      <a class="lang-flag" data-lang="de" href="de/shkruaj.html" hreflang="de" lang="de" aria-label="Deutsch" title="Deutsch">🇩🇪</a>
+    </div>
+    <button type="button" class="theme-btn" id="themeBtn" aria-label="Ndrysho pamjen: ditë ose natë" title="Ndrysho pamjen: ditë ose natë"><svg class="tb-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="currentColor"/></svg><svg class="tb-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="currentColor"/><g stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M5.3 18.7 7 17M17 7l1.7-1.7"/></g></svg></button>
+    <button type="button" class="nav-menu-btn" id="navMenuBtn" aria-expanded="false" aria-controls="navLinks">☰ Menu</button>
+  </div>
+</header>
+<div class="lang-toast" id="langToast" role="status" aria-live="polite" hidden></div>
+
+<main>
+<section class="page-head"><div class="wrap"><h1>Na shkruaj</h1></div></section>
+<section class="wr"><div class="wrap">
+  <p class="wr-lead">Na shkruaj çfarë të vjen në zemër. Mund të jetë një falënderim, historia jote me këtë faqe, ose një gabim që ke parë. Ne e lexojmë çdo mesazh.</p>
+  <form class="wr-form" id="wrForm" novalidate data-w="{&quot;key&quot;: &quot;&quot;, &quot;site&quot;: &quot;Ndiqe Kuranin&quot;, &quot;lang&quot;: &quot;sq&quot;, &quot;kinds&quot;: {&quot;thanks&quot;: &quot;Falënderim&quot;, &quot;story&quot;: &quot;Historia ime&quot;, &quot;mistake&quot;: &quot;Gabim në faqe&quot;}, &quot;m&quot;: {&quot;sending&quot;: &quot;Po dërgohet…&quot;, &quot;empty&quot;: &quot;Shkruaj një mesazh para se ta dërgosh.&quot;, &quot;fail&quot;: &quot;Mesazhi nuk u dërgua. Kontrollo internetin dhe provo përsëri.&quot;, &quot;soon&quot;: &quot;Forma do të lidhet së shpejti. Provo përsëri pas disa ditësh.&quot;}}">
+    <fieldset class="wr-kind"><legend>Çfarë do të na shkruash?</legend><div class="wr-chips"><label><input type="radio" name="kind" value="thanks" checked><span>Falënderim</span></label><label><input type="radio" name="kind" value="story"><span>Historia ime</span></label><label><input type="radio" name="kind" value="mistake"><span>Gabim në faqe</span></label></div><p class="wr-hint" data-for="thanks">Çfarë të ndihmoi? Edhe dy fjalë na gëzojnë.</p><p class="wr-hint" data-for="story" hidden>Si të ndihmoi kjo faqe? Për shembull, nëse e pranove Islamin, fillove të falesh ose të lexosh Kuranin.</p><p class="wr-hint" data-for="mistake" hidden>Shkruaj çfarë është gabim dhe si duhet të jetë. Nëse mundesh, kopjo fjalinë.</p></fieldset>
+    <label class="wr-field" data-for="mistake" hidden><span>Në cilën faqe?</span><input type="text" id="wrPage" name="page" maxlength="300" autocomplete="off"><small>Për shembull: Si falet namazi, ose adresa e faqes.</small></label>
+    <label class="wr-field"><span>Mesazhi yt</span><textarea id="wrMsg" name="message" maxlength="6000" required></textarea></label>
+    <div class="wr-two">
+      <label class="wr-field"><span>Emri</span><input type="text" id="wrName" name="name" maxlength="120" autocomplete="name"><small>Nuk është e detyrueshme.</small></label>
+      <label class="wr-field"><span>Emaili</span><input type="email" id="wrMail" name="email" maxlength="200" autocomplete="email"><small>Vetëm nëse do që të të përgjigjemi.</small></label>
+    </div>
+    <label class="wr-ok" data-for="story" hidden><input type="checkbox" id="wrShare" name="share"><span>Mund ta tregoni historinë time në faqe, pa emrin dhe pa emailin tim.</span></label>
+    <label class="wr-trap" aria-hidden="true">x <input type="checkbox" name="botcheck" id="wrBot" tabindex="-1" autocomplete="off"></label>
+    <div class="wr-send"><button type="submit" class="btn" id="wrSend">Dërgo</button><p class="wr-status" id="wrStatus" role="status" aria-live="polite"></p></div>
+  </form>
+  <div class="wr-done" id="wrDone" hidden tabindex="-1"><h2>Faleminderit!</h2><p>Mesazhi yt arriti te ne. Allahu të shpërbleftë me të mira.</p><p><button type="button" class="btn btn-ghost" id="wrAgain">Shkruaj një mesazh tjetër</button></p></div>
+  <p class="wr-note">Mesazhi kalon përmes shërbimit Web3Forms dhe arrin në kutinë tonë të postës. Nuk e ndajmë me askënd. Historinë tënde e tregojmë vetëm nëse e lejon më lart, dhe pa emrin tënd.</p>
+</div></section>
+</main>
+
+<footer>
+  <div class="wrap fgrid">
+    <div>
+      <h4>Ndiqe Kuranin</h4>
+      <p style="margin:0">Faqe falas për të mësuar leximin dhe kuptimin e Kuranit në gjuhën shqipe.</p>
+    </div>
+    <div>
+      <h4>Mëso</h4>
+      <ul>
+        <li><a href="meso.html#alfabeti">Alfabeti arab</a></li>
+        <li><a href="meso.html#texhvid">Texhvidi</a></li>
+        <li><a href="meso.html#kurani">Suret e shkurtra</a></li>
+        <li><a href="kurani.html">Kurani dhe progresi</a></li>
+        <li><a href="mrekullite.html">Mrekullitë e Kuranit</a></li>
+        <li><a href="zoti-yt.html">Kush është Zoti yt?</a></li>
+        <li><a href="fjalorth.html">Fjalorth</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Faqja</h4>
+      <ul>
+        <li><a href="pyetje.html">Pyetje të shpeshta</a></li>
+        <li><a href="shkruaj.html">Na shkruaj</a></li>
+        <li><a href="privatesia.html">Privatësia</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap copy">© 2026 Ndiqe Kuranin. Materiali mund të përdoret lirisht për mësim.</div>
+</footer>
+
+<script src="site.js"></script>
+<script>(function(){
+var f=document.getElementById("wrForm");if(!f)return;var W=JSON.parse(f.dataset.w),st=document.getElementById("wrStatus"),btn=document.getElementById("wrSend"),done=document.getElementById("wrDone");
+function kind(){var r=f.querySelector('input[name=kind]:checked');return r?r.value:"thanks";}
+function show(){var k=kind();f.querySelectorAll("[data-for]").forEach(function(x){x.hidden=x.dataset.for!==k;});}
+var q=new URLSearchParams(location.search),k0=q.get("k"),p0=q.get("p");
+if(k0){var r0=f.querySelector('input[name=kind][value="'+k0+'"]');if(r0)r0.checked=true;}
+if(p0)document.getElementById("wrPage").value=p0.slice(0,300);
+else{try{var ref=document.referrer?new URL(document.referrer):null;if(ref&&ref.host===location.host&&ref.pathname!==location.pathname)document.getElementById("wrPage").value=ref.pathname+ref.hash;}catch(e){}}
+f.addEventListener("change",function(ev){if(ev.target.name==="kind")show();});show();
+function say(t,c){st.textContent=t||"";st.className="wr-status"+(c?" "+c:"");}
+if(!W.key){btn.disabled=true;say(W.m.soon);}
+f.addEventListener("submit",function(ev){ev.preventDefault();
+  var msg=document.getElementById("wrMsg").value.trim();if(!msg){say(W.m.empty,"bad");document.getElementById("wrMsg").focus();return;}
+  if(!W.key){say(W.m.soon);return;}
+  if(document.getElementById("wrBot").checked)return;
+  var k=kind(),name=document.getElementById("wrName").value.trim(),mail=document.getElementById("wrMail").value.trim(),page=document.getElementById("wrPage").value.trim();
+  var body={access_key:W.key,subject:W.site+": "+W.kinds[k],from_name:W.site,kind:W.kinds[k],language:W.lang,message:msg,botcheck:false};
+  if(name)body.name=name;if(mail)body.email=mail;if(k==="mistake"&&page)body.page=page;if(k==="story")body.share_on_site=document.getElementById("wrShare").checked?"yes":"no";
+  btn.disabled=true;say(W.m.sending);
+  fetch("https://api.web3forms.com/submit",{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify(body)})
+   .then(function(r){return r.json().catch(function(){return{};}).then(function(j){if(!r.ok||!j.success)throw 0;});})
+   .then(function(){f.reset();show();say("");f.hidden=true;done.hidden=false;done.focus();})
+   .catch(function(){say(W.m.fail,"bad");})
+   .then(function(){btn.disabled=false;});
+});
+document.getElementById("wrAgain").addEventListener("click",function(){done.hidden=true;f.hidden=false;document.getElementById("wrMsg").focus();});
+})();</script>
+<script src="offline.js"></script>
+</body>
+</html>
